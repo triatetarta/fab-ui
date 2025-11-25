@@ -27,6 +27,19 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'autocomplete',
+    type: 'registry:ui',
+    title: 'Autocomplete',
+    registryDependencies: ['@fab-ui/input'],
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/autocomplete.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'avatar',
     type: 'registry:ui',
     title: 'Avatar',
@@ -106,6 +119,18 @@ export const ui: Registry['items'] = [
     files: [
       {
         path: 'ui/fieldset.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
+    name: 'input',
+    type: 'registry:ui',
+    title: 'Input',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/input.tsx',
         type: 'registry:ui',
       },
     ],
