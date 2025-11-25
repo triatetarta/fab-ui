@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible",
+  "type": "registry:ui",
+  "title": "Collapsible",
+  "dependencies": [
+    "@base-ui-components/react"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/collapsible.tsx",
+      "content": "'use client';\n\nimport { Collapsible as CollapsiblePrimitive } from '@base-ui-components/react/collapsible';\n\nimport { cn } from '@/lib/utils';\n\nfunction Collapsible({ ...props }: CollapsiblePrimitive.Root.Props) {\n  return <CollapsiblePrimitive.Root data-slot='collapsible' {...props} />;\n}\n\nfunction CollapsibleTrigger({\n  className,\n  ...props\n}: CollapsiblePrimitive.Trigger.Props) {\n  return (\n    <CollapsiblePrimitive.Trigger\n      data-slot='collapsible-trigger'\n      className={cn('cursor-pointer', className)}\n      {...props}\n    />\n  );\n}\n\nfunction CollapsiblePanel({\n  className,\n  ...props\n}: CollapsiblePrimitive.Panel.Props) {\n  return (\n    <CollapsiblePrimitive.Panel\n      data-slot='collapsible-content'\n      className={cn(\n        \"h-(--collapsible-panel-height) overflow-hidden transition-all duration-150 ease-out data-ending-style:h-0 data-starting-style:h-0 [&[hidden]:not([hidden='until-found'])]:hidden\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\nexport { Collapsible, CollapsibleTrigger, CollapsiblePanel };\n",
+      "type": "registry:ui"
+    }
+  ]
+}
