@@ -36,8 +36,10 @@
     "next": "16.0.4",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "rimraf": "^6.1.2",
     "shadcn": "3.5.0",
     "tailwind-merge": "3.4.0",
+    "tsx": "^4.20.6",
     "zod": "4.1.13"
   },
   "devDependencies": {
