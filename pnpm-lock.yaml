@@ -15,16 +15,16 @@ importers:
         specifier: 1.0.0-beta.6
         version: 1.0.0-beta.6(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@vercel/analytics':
-        specifier: ^1.5.0
+        specifier: 1.5.0
         version: 1.5.0(next@16.0.4(@babel/core@7.28.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
       '@vercel/speed-insights':
-        specifier: ^1.2.0
+        specifier: 1.2.0
         version: 1.2.0(next@16.0.4(@babel/core@7.28.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
       class-variance-authority:
-        specifier: ^0.7.1
+        specifier: 0.7.1
         version: 0.7.1
       clsx:
-        specifier: ^2.1.1
+        specifier: 2.1.1
         version: 2.1.1
       fumadocs-core:
         specifier: 16.1.0
@@ -36,47 +36,47 @@ importers:
         specifier: 16.1.0
         version: 16.1.0(@types/react-dom@19.2.3(@types/react@19.2.6))(@types/react@19.2.6)(lucide-react@0.552.0(react@19.2.0))(next@16.0.4(@babel/core@7.28.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(tailwindcss@4.1.17)
       geist:
-        specifier: ^1.5.1
+        specifier: 1.5.1
         version: 1.5.1(next@16.0.4(@babel/core@7.28.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       husky:
-        specifier: ^9.1.7
+        specifier: 9.1.7
         version: 9.1.7
       lucide-react:
-        specifier: ^0.552.0
+        specifier: 0.552.0
         version: 0.552.0(react@19.2.0)
       next:
         specifier: 16.0.4
         version: 16.0.4(@babel/core@7.28.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       react:
-        specifier: ^19.2.0
+        specifier: 19.2.0
         version: 19.2.0
       react-dom:
-        specifier: ^19.2.0
+        specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
       shadcn:
-        specifier: ^3.5.0
+        specifier: 3.5.0
         version: 3.5.0(@types/node@24.10.1)(typescript@5.9.3)
       tailwind-merge:
-        specifier: ^3.4.0
+        specifier: 3.4.0
         version: 3.4.0
       zod:
-        specifier: ^4.1.13
+        specifier: 4.1.13
         version: 4.1.13
     devDependencies:
       '@eslint/eslintrc':
-        specifier: ^3.3.1
+        specifier: 3.3.1
         version: 3.3.1
       '@ianvs/prettier-plugin-sort-imports':
-        specifier: ^4.7.0
+        specifier: 4.7.0
         version: 4.7.0(prettier@3.6.2)
       '@tailwindcss/postcss':
-        specifier: ^4.1.17
+        specifier: 4.1.17
         version: 4.1.17
       '@types/mdx':
-        specifier: ^2.0.13
+        specifier: 2.0.13
         version: 2.0.13
       '@types/node':
-        specifier: ^24.10.1
+        specifier: 24.10.1
         version: 24.10.1
       '@types/react':
         specifier: 19.2.6
@@ -85,31 +85,31 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.6)
       eslint:
-        specifier: ^9.39.1
+        specifier: 9.39.1
         version: 9.39.1(jiti@2.6.1)
       eslint-config-next:
         specifier: 16.0.3
         version: 16.0.3(@typescript-eslint/parser@8.48.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       eslint-config-prettier:
-        specifier: ^10.1.8
+        specifier: 10.1.8
         version: 10.1.8(eslint@9.39.1(jiti@2.6.1))
       lint-staged:
-        specifier: ^16.2.7
+        specifier: 16.2.7
         version: 16.2.7
       postcss:
-        specifier: ^8.5.6
+        specifier: 8.5.6
         version: 8.5.6
       prettier:
-        specifier: ^3.6.2
+        specifier: 3.6.2
         version: 3.6.2
       prettier-plugin-tailwindcss:
-        specifier: ^0.7.1
+        specifier: 0.7.1
         version: 0.7.1(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier@3.6.2)
       tailwindcss:
-        specifier: ^4.1.17
+        specifier: 4.1.17
         version: 4.1.17
       typescript:
-        specifier: ^5.9.3
+        specifier: 5.9.3
         version: 5.9.3
 
 packages:
