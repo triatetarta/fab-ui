@@ -195,6 +195,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'slider',
+    type: 'registry:ui',
+    title: 'Slider',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/slider.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'switch',
     type: 'registry:ui',
     title: 'Switch',
