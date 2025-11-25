@@ -100,6 +100,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'dialog',
+    type: 'registry:ui',
+    title: 'Dialog',
+    dependencies: ['@base-ui-components/react', 'lucide-react'],
+    files: [
+      {
+        path: 'ui/dialog.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'field',
     type: 'registry:ui',
     title: 'Field',
