@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field",
+  "type": "registry:ui",
+  "title": "Field",
+  "dependencies": [
+    "@base-ui-components/react"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/field.tsx",
+      "content": "'use client';\n\nimport { Field as FieldPrimitive } from '@base-ui-components/react/field';\n\nimport { cn } from '@/lib/utils';\n\nfunction Field({ className, ...props }: FieldPrimitive.Root.Props) {\n  return (\n    <FieldPrimitive.Root\n      data-slot='field'\n      className={cn(\n        'flex w-full max-w-64 flex-col items-start gap-1',\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\nfunction FieldLabel({ className, ...props }: FieldPrimitive.Label.Props) {\n  return (\n    <FieldPrimitive.Label\n      data-slot='field-label'\n      className={cn('text-sm font-medium', className)}\n      {...props}\n    />\n  );\n}\n\nfunction FieldDescription({\n  className,\n  ...props\n}: FieldPrimitive.Description.Props) {\n  return (\n    <FieldPrimitive.Description\n      data-slot='field-description'\n      className={cn('text-sm text-muted-foreground', className)}\n      {...props}\n    />\n  );\n}\n\nfunction FieldError({ className, ...props }: FieldPrimitive.Error.Props) {\n  return (\n    <FieldPrimitive.Error\n      data-slot='field-error'\n      className={cn('text-destructive-foreground text-sm', className)}\n      {...props}\n    />\n  );\n}\n\nconst FieldControl = FieldPrimitive.Control;\nconst FieldValidity = FieldPrimitive.Validity;\n\nexport {\n  Field,\n  FieldLabel,\n  FieldDescription,\n  FieldError,\n  FieldControl,\n  FieldValidity,\n};\n",
+      "type": "registry:ui"
+    }
+  ]
+}

@@ -30,6 +30,30 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  avatar: {
+    name: 'avatar',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/avatar.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/avatar.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   button: {
     name: 'button',
     description: '',
@@ -44,6 +68,270 @@ export const Index: Record<string, any> = {
     ],
     component: React.lazy(async () => {
       const mod = await import('@/registry/default/ui/button.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  checkbox: {
+    name: 'checkbox',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/checkbox.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/checkbox.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'checkbox-group': {
+    name: 'checkbox-group',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/checkbox-group.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/checkbox-group.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  collapsible: {
+    name: 'collapsible',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/collapsible.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/collapsible.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  field: {
+    name: 'field',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/field.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/field.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  fieldset: {
+    name: 'fieldset',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/fieldset.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/fieldset.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  label: {
+    name: 'label',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/label.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/label.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  meter: {
+    name: 'meter',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/meter.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/meter.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  progress: {
+    name: 'progress',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/progress.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/progress.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  separator: {
+    name: 'separator',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/separator.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/separator.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  switch: {
+    name: 'switch',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/switch.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/switch.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  toggle: {
+    name: 'toggle',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/toggle.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/toggle.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
