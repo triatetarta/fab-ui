@@ -1,12 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "target": "ESNext",
+    "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -17,19 +15,23 @@
     "incremental": true,
     "paths": {
       "@/*": ["./*"],
+      "@/.source": [".source"],
       "fumadocs-mdx:collections/*": [".source/*"]
     },
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": "."
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
+    "scripts/build-registry.mts",
+    "next.config.mjs",
     ".next/dev/types/**/*.ts"
   ],
   "exclude": ["node_modules"]

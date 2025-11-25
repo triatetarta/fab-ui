@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":prHourlyLimit4", ":label(dependencies)"],
+  "rangeStrategy": "pin",
+  "automergeType": "pr",
+  "packageRules": [
+    {
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ],
+  "schedule": ["* 22-23 * * 1", "* 0-8 * * 2"]
+}

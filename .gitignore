@@ -20,7 +20,19 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# vercel
+.vercel
+
+# dev tools
+.idea
+.vscode
+
 # others
 .env*.local
 .vercel
 next-env.d.ts
+
+# claude
+CLAUDE.md
+
+.eslintcache
