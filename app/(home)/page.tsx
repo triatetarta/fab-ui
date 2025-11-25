@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { Example } from './example';
+
 export default function HomePage() {
   return (
     <div className='flex flex-1 flex-col justify-center text-center'>
@@ -11,6 +13,8 @@ export default function HomePage() {
         </Link>{' '}
         and see the documentation.
       </p>
+
+      <Example />
     </div>
   );
 }
