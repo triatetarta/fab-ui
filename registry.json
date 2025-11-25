@@ -3,10 +3,26 @@
   "homepage": "https://fab-ui.vercel.app",
   "items": [
     {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "dependencies": [
+        "@base-ui-components/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/accordion.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "button",
       "type": "registry:ui",
       "title": "Button",
-      "dependencies": ["@base-ui-components/react"],
+      "dependencies": [
+        "@base-ui-components/react"
+      ],
       "files": [
         {
           "path": "registry/default/ui/button.tsx",
@@ -17,7 +33,10 @@
     {
       "name": "utils",
       "type": "registry:lib",
-      "dependencies": ["clsx", "tailwind-merge"],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
       "files": [
         {
           "path": "registry/default/lib/utils.ts",
