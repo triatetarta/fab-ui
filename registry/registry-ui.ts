@@ -195,6 +195,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'radio',
+    type: 'registry:ui',
+    title: 'Radio',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/radio.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'select',
     type: 'registry:ui',
     title: 'Select',
