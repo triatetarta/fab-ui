@@ -243,6 +243,19 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'toggle-group',
+    type: 'registry:ui',
+    title: 'Toggle Group',
+    registryDependencies: ['@fab-ui/toggle'],
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/toggle-group.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'toggle',
     type: 'registry:ui',
     title: 'Toggle',
