@@ -233,6 +233,20 @@
       ]
     },
     {
+      "name": "radio",
+      "type": "registry:ui",
+      "title": "Radio",
+      "dependencies": [
+        "@base-ui-components/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/radio.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "select",
       "type": "registry:ui",
       "title": "Select",
