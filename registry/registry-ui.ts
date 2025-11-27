@@ -195,6 +195,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'select',
+    type: 'registry:ui',
+    title: 'Select',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/select.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'separator',
     type: 'registry:ui',
     title: 'Separator',
