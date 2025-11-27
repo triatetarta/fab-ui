@@ -160,6 +160,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'menu',
+    type: 'registry:ui',
+    title: 'Menu',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/menu.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'meter',
     type: 'registry:ui',
     title: 'Meter',
