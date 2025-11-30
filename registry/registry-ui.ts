@@ -267,6 +267,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'tabs',
+    type: 'registry:ui',
+    title: 'Tabs',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/tabs.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'toggle-group',
     type: 'registry:ui',
     title: 'Toggle Group',
