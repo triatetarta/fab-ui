@@ -57,8 +57,8 @@ importers:
         specifier: ^6.1.2
         version: 6.1.2
       shadcn:
-        specifier: 3.5.0
-        version: 3.5.0(@types/node@24.10.1)(typescript@5.9.3)
+        specifier: 3.5.1
+        version: 3.5.1(@types/node@24.10.1)(typescript@5.9.3)
       tailwind-merge:
         specifier: 3.4.0
         version: 3.4.0
@@ -4008,8 +4008,8 @@ packages:
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
 
-  shadcn@3.5.0:
-    resolution: {integrity: sha512-5f9tn7gHOiI8CqJ8LGrUEmX6dOivGgSbHkMCeOMCzxHZy9cPwyuRXt7ZyjwukO8QH9kGqi6oiKOpfvTXNGBP4g==}
+  shadcn@3.5.1:
+    resolution: {integrity: sha512-yLbIDouYv8Xz25BxV/GAGC/46R7/oNwoXIs/IFIYXK47+fKcFIYzThtBqJwFEZTzkkvqJCo+MBg0K9QLTmhFmQ==}
     hasBin: true
 
   sharp@0.34.5:
@@ -8759,7 +8759,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shadcn@3.5.0(@types/node@24.10.1)(typescript@5.9.3):
+  shadcn@3.5.1(@types/node@24.10.1)(typescript@5.9.3):
     dependencies:
       '@antfu/ni': 25.0.0
       '@babel/core': 7.28.5
