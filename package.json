@@ -43,7 +43,7 @@
     "zod": "4.1.13"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "3.3.1",
+    "@eslint/eslintrc": "3.3.3",
     "@ianvs/prettier-plugin-sort-imports": "4.7.0",
     "@tailwindcss/postcss": "4.1.17",
     "@types/mdx": "2.0.13",
