@@ -100,6 +100,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'context-menu',
+    type: 'registry:ui',
+    title: 'Context Menu',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/context-menu.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'dialog',
     type: 'registry:ui',
     title: 'Dialog',
@@ -131,6 +143,18 @@ export const ui: Registry['items'] = [
     files: [
       {
         path: 'ui/fieldset.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
+    name: 'form',
+    type: 'registry:ui',
+    title: 'Form',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/form.tsx',
         type: 'registry:ui',
       },
     ],
@@ -179,6 +203,18 @@ export const ui: Registry['items'] = [
     files: [
       {
         path: 'ui/meter.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
+    name: 'number-field',
+    type: 'registry:ui',
+    title: 'Number Field',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/number-field.tsx',
         type: 'registry:ui',
       },
     ],
