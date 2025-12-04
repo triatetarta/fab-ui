@@ -184,6 +184,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'number-field',
+    type: 'registry:ui',
+    title: 'Number Field',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/number-field.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'popover',
     type: 'registry:ui',
     title: 'Popover',
