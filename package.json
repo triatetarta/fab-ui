@@ -39,7 +39,7 @@
     "rimraf": "6.1.2",
     "shadcn": "3.5.1",
     "tailwind-merge": "3.4.0",
-    "tsx": "4.20.6",
+    "tsx": "4.21.0",
     "zod": "4.1.13"
   },
   "devDependencies": {
