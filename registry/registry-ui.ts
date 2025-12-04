@@ -136,6 +136,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'form',
+    type: 'registry:ui',
+    title: 'Form',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/form.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'input',
     type: 'registry:ui',
     title: 'Input',
