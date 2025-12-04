@@ -121,6 +121,20 @@
       ]
     },
     {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "dependencies": [
+        "@base-ui-components/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/context-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "dialog",
       "type": "registry:ui",
       "title": "Dialog",

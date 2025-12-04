@@ -100,6 +100,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'context-menu',
+    type: 'registry:ui',
+    title: 'Context Menu',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/context-menu.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'dialog',
     type: 'registry:ui',
     title: 'Dialog',
