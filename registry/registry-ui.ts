@@ -100,6 +100,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'combobox',
+    type: 'registry:ui',
+    title: 'Combobox',
+    dependencies: ['@base-ui-components/react'],
+    files: [
+      {
+        path: 'ui/combobox.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'context-menu',
     type: 'registry:ui',
     title: 'Context Menu',
