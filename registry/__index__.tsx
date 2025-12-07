@@ -198,6 +198,30 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  combobox: {
+    name: 'combobox',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/combobox.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/combobox.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   'context-menu': {
     name: 'context-menu',
     description: '',
