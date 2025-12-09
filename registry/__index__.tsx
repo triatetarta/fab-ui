@@ -798,6 +798,31 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'example-button-1': {
+    name: 'example-button-1',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['button'],
+    files: [
+      {
+        path: 'registry/default/examples/example-button-1.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/example-button-1.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',
