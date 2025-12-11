@@ -78,6 +78,6 @@
 
 @layer base {
   body {
-    @apply relative;
+    @apply relative bg-background text-foreground;
   }
 }
