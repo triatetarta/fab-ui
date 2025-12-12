@@ -1,6 +1,6 @@
 'use client';
 
-import { Menu as MenuPrimitive } from '@base-ui-components/react/menu';
+import { Menu as MenuPrimitive } from '@base-ui/react/menu';
 import { CheckIcon, ChevronRightIcon } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
@@ -41,7 +41,10 @@ function MenuPopup({
       >
         <MenuPrimitive.Popup
           data-slot='menu-popup'
-          className='origin-(--transform-origin) rounded-md bg-[canvas] py-1 text-foreground shadow-sm transition-[transform,scale,opacity] duration-100 data-ending-style:scale-90 data-ending-style:opacity-0 data-starting-style:scale-90 data-starting-style:opacity-0 dark:shadow-none'
+          className={cn(
+            'origin-(--transform-origin) rounded-md bg-[canvas] py-1 text-foreground shadow-sm transition-[transform,scale,opacity] duration-100 data-ending-style:scale-90 data-ending-style:opacity-0 data-starting-style:scale-90 data-starting-style:opacity-0 dark:shadow-none',
+            className
+          )}
           {...props}
         />
       </MenuPrimitive.Positioner>
@@ -58,7 +61,7 @@ function MenuItem({ className, ...props }: MenuPrimitive.Item.Props) {
     <MenuPrimitive.Item
       data-slot='menu-item'
       className={cn(
-        'flex cursor-pointer py-2 pr-8 pl-4 text-sm leading-4 outline-none select-none data-highlighted:relative data-highlighted:z-0 data-highlighted:before:absolute data-highlighted:before:inset-x-1 data-highlighted:before:inset-y-0 data-highlighted:before:z-[-1] data-highlighted:before:rounded-sm data-highlighted:before:bg-accent',
+        "flex cursor-pointer gap-2 py-2 pr-8 pl-4 text-sm leading-4 outline-none select-none data-highlighted:relative data-highlighted:z-0 data-highlighted:before:absolute data-highlighted:before:inset-x-1 data-highlighted:before:inset-y-0 data-highlighted:before:z-[-1] data-highlighted:before:rounded-sm data-highlighted:before:bg-accent [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         className
       )}
       {...props}

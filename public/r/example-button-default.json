@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "example-button-default",
+  "type": "registry:example",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/example-button-default.tsx",
+      "content": "import { Button } from '@/registry/default/ui/button';\n\nexport function ExampleButtonDefault() {\n  return <Button>Button</Button>;\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

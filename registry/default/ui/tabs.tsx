@@ -1,8 +1,10 @@
 'use client';
 
-import { Tabs as TabsPrimitive } from '@base-ui-components/react/tabs';
+import { Tabs as TabsPrimitive } from '@base-ui/react/tabs';
 
 import { cn } from '@/lib/utils';
+
+type TabsVariant = 'default' | 'underline';
 
 function Tabs({ className, ...props }: TabsPrimitive.Root.Props) {
   return (
@@ -17,13 +19,23 @@ function Tabs({ className, ...props }: TabsPrimitive.Root.Props) {
   );
 }
 
-function TabsList({ className, children, ...props }: TabsPrimitive.List.Props) {
+function TabsList({
+  variant = 'default',
+  className,
+  children,
+  ...props
+}: TabsPrimitive.List.Props & {
+  variant?: TabsVariant;
+}) {
   return (
     <TabsPrimitive.List
       data-slot='tabs-list'
       className={cn(
-        'relative z-0 flex w-fit items-center justify-center gap-x-0.5 rounded-lg bg-muted p-0.5 text-foreground',
+        'relative z-0 flex w-fit items-center justify-center gap-x-0.5',
         'data-[orientation=vertical]:flex-col',
+        variant === 'default'
+          ? 'rounded-lg bg-muted p-0.5 text-foreground'
+          : 'text-foreground/50 hover:text-foreground data-[orientation=horizontal]:py-1 data-[orientation=vertical]:px-1 *:data-[slot=tabs-trigger]:data-active:text-foreground',
         className
       )}
       {...props}
@@ -33,7 +45,9 @@ function TabsList({ className, children, ...props }: TabsPrimitive.List.Props) {
         data-slot='tab-indicator'
         className={cn(
           'absolute bottom-0 left-0 h-(--active-tab-height) w-(--active-tab-width) translate-x-(--active-tab-left) -translate-y-(--active-tab-bottom) transition-[width,translate] duration-200 ease-in-out',
-          '-z-1 rounded-md bg-background shadow-sm dark:bg-accent'
+          variant === 'underline'
+            ? 'z-10 bg-primary data-[orientation=horizontal]:h-0.5 data-[orientation=horizontal]:translate-y-px data-[orientation=vertical]:w-0.5 data-[orientation=vertical]:-translate-x-px'
+            : '-z-1 rounded-md bg-background/70 shadow-sm dark:bg-background/50'
         )}
       />
     </TabsPrimitive.List>
@@ -45,7 +59,7 @@ function TabsTrigger({ className, ...props }: TabsPrimitive.Tab.Props) {
     <TabsPrimitive.Tab
       data-slot='tabs-trigger'
       className={cn(
-        "flex flex-1 shrink-0 cursor-pointer items-center justify-center rounded-md border border-transparent text-sm font-medium whitespace-nowrap transition-[color,background-color,box-shadow] outline-none focus-visible:ring-2 focus-visible:ring-ring data-disabled:pointer-events-none data-disabled:opacity-64 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "flex flex-1 shrink-0 cursor-pointer items-center justify-center rounded-md border border-transparent text-sm font-medium whitespace-nowrap shadow-none transition-[color,background-color,box-shadow] outline-none focus-visible:ring-2 focus-visible:ring-ring data-disabled:pointer-events-none data-disabled:opacity-64 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         'gap-1.5 px-[calc(--spacing(2.5)-1px)] py-[calc(--spacing(1.5)-1px)]',
         'data-[orientation=vertical]:w-full data-[orientation=vertical]:justify-start',
         className
