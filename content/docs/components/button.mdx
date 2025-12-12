@@ -1,10 +1,14 @@
 ---
 title: Button
 description: A button component that can be rendered as another tag or focusable when disabled.
+
+links:
+  doc: https://base-ui.com/react/components/button
+  api: https://base-ui.com/react/components/button#api-reference
 ---
 
 <ComponentPreview
-  name='example-button-1'
+  name='button-default'
   description='A button'
   className='mb-4'
 />
@@ -20,7 +24,7 @@ description: A button component that can be rendered as another tag or focusable
 <TabsPanel value="cli">
 
 ```bash
-npx shadcn@latest add button
+npx shadcn@latest add @fab-ui/button
 ```
 
 </TabsPanel>
@@ -32,7 +36,7 @@ npx shadcn@latest add button
 <Step>Install the following dependencies:</Step>
 
 ```bash
-npm install @radix-ui/react-slot
+npm install @base-ui-components/react
 ```
 
 <Step>Copy and paste the following code into your project.</Step>
@@ -46,3 +50,118 @@ npm install @radix-ui/react-slot
 </TabsPanel>
 
 </CodeTabs>
+
+## Usage
+
+```tsx
+import { Button } from "@/components/ui/button"
+```
+
+```tsx
+<Button variant="outline">Button</Button>
+```
+
+## Cursor
+
+Tailwind v4 [switched](https://tailwindcss.com/docs/upgrade-guide#buttons-use-the-default-cursor) from `cursor: pointer` to `cursor: default` for the button component.
+
+If you want to keep the `cursor: pointer` behavior, add the following code to your CSS file:
+
+```css showLineNumbers title="globals.css"
+@layer base {
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+}
+```
+
+## Examples
+
+### Outline
+
+<ComponentPreview
+  name='button-outline'
+  description='A button using the outline variant.'
+  className='mb-4'
+/>
+
+```tsx
+<Button variant="outline">Outline</Button>
+```
+
+### Secondary
+
+<ComponentPreview
+  name='button-secondary'
+  description='A button using the secondary variant.'
+  className='mb-4'
+/>
+
+```tsx
+<Button variant="secondary">Secondary</Button>
+```
+
+### Ghost
+
+<ComponentPreview
+  name='button-ghost'
+  description='A button using the ghost variant.'
+  className='mb-4'
+/>
+
+```tsx
+<Button variant="ghost">Ghost</Button>
+```
+
+### Link
+
+<ComponentPreview
+  name='button-link'
+  description='A button using the link variant.'
+  className='mb-4'
+/>
+
+```tsx
+<Button variant="link">Link</Button>
+```
+
+### Icon
+
+<ComponentPreview
+  name='button-icon'
+  description='A button using the icon size and outline variant.'
+  className='mb-4'
+/>
+
+```tsx
+<Button size="icon" variant="outline">
+  <ChevronRightIcon />
+</Button>
+```
+
+### With Icon
+
+The spacing between the icon and the text is automatically adjusted
+based on the size of the button. You do not need any margin on the icon.
+
+<ComponentPreview
+  name='button-with-icon'
+  description='The spacing between the icon and the text is automatically adjusted based on the size of the button. You do not need any margin on the icon.'
+  className='mb-4'
+/>
+
+```tsx
+<Button variant="outline">
+  Enter <ArrowRightIcon />
+</Button>
+```
+
+## API Reference
+
+### Button
+
+| Prop      | Type                                                                          | Default     |
+| --------- | ----------------------------------------------------------------------------- | ----------- |
+| `variant` | `"default" \| "outline" \| "ghost" \| "destructive" \| "secondary" \| "link"` | `"default"` |
+| `size`    | `"default" \| "sm" \| "lg" \| "icon" \| "icon-sm" \| "icon-lg"`               | `"default"` |

@@ -150,6 +150,11 @@
   html {
     @apply overscroll-y-none scroll-smooth;
   }
+
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
 }
 
 @utility no-scrollbar {
@@ -228,14 +233,14 @@
   }
 
   [data-line-numbers] {
-    display: grid;
-    min-width: 100%;
-    white-space: pre;
+    display: grid !important;
+    min-width: 100% !important;
+    white-space: pre !important;
     border: 0 !important;
     background-color: transparent !important;
-    padding: 0;
-    counter-reset: line;
-    box-decoration-break: clone;
+    padding: 0 !important;
+    counter-reset: line !important;
+    box-decoration-break: clone !important;
   }
 
   [data-line-numbers] [data-line]::before {
@@ -256,8 +261,6 @@
   }
 
   [data-line] {
-    padding-top: calc(var(--spacing) * 0.5);
-    padding-bottom: calc(var(--spacing) * 0.5);
     min-height: calc(var(--spacing) * 1);
     width: 100%;
     display: inline-block;

@@ -2,6 +2,7 @@ import { TabsList, TabsPanel, TabsTrigger } from '@/registry/default/ui/tabs';
 import defaultMdxComponents from 'fumadocs-ui/mdx';
 import type { MDXComponents } from 'mdx/types';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
 
@@ -45,7 +46,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     h3: ({ className, ...props }: React.ComponentProps<'h3'>) => (
       <h3
         className={cn(
-          'font-heading mt-12 scroll-m-28 text-lg font-medium tracking-tight [&+p]:mt-4! *:[code]:text-xl',
+          'font-heading mt-12 scroll-m-28 text-lg font-normal tracking-tight [&+p]:mt-4! *:[code]:text-xl',
           className
         )}
         {...props}
@@ -121,7 +122,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
       <div className='my-6 no-scrollbar w-full overflow-y-auto rounded-lg border'>
         <table
           className={cn(
-            'relative w-full overflow-hidden border-none text-sm [&_tbody_tr:last-child]:border-b-0',
+            'relative my-0! w-full overflow-hidden border-none bg-transparent! text-sm [&_tbody_tr:last-child]:border-b-0',
             className
           )}
           {...props}
@@ -242,7 +243,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     Step: ({ className, ...props }: React.ComponentProps<'h3'>) => (
       <h3
         className={cn(
-          'font-heading mt-8 scroll-m-32 text-xl font-medium tracking-tight',
+          'font-heading mt-8 scroll-m-32 text-xl font-normal tracking-tight',
           className
         )}
         {...props}
@@ -295,7 +296,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     }: React.ComponentProps<typeof TabsPanel>) => (
       <TabsPanel
         className={cn(
-          'relative [&_h3.font-heading]:text-base [&_h3.font-heading]:font-medium *:[figure]:first:mt-0 [&>.steps]:mt-6',
+          'relative [&_h3.font-heading]:text-base *:[figure]:first:mt-0 [&>.steps]:mt-6',
           className
         )}
         {...props}
@@ -304,5 +305,23 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     ComponentPreview,
     ComponentSource,
     CodeTabs,
+    Link: ({ className, ...props }: React.ComponentProps<typeof Link>) => (
+      <Link
+        className={cn('font-medium underline underline-offset-4', className)}
+        {...props}
+      />
+    ),
+    LinkedCard: ({
+      className,
+      ...props
+    }: React.ComponentProps<typeof Link>) => (
+      <Link
+        className={cn(
+          'flex w-full flex-col items-center rounded-xl bg-surface p-6 text-surface-foreground transition-colors hover:bg-surface/80 sm:p-10',
+          className
+        )}
+        {...props}
+      />
+    ),
   };
 }
