@@ -7,7 +7,7 @@
       "type": "registry:ui",
       "title": "Accordion",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -24,7 +24,7 @@
         "@fab-ui/button"
       ],
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -41,7 +41,7 @@
         "@fab-ui/input"
       ],
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -55,7 +55,7 @@
       "type": "registry:ui",
       "title": "Avatar",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -69,7 +69,7 @@
       "type": "registry:ui",
       "title": "Button",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -83,7 +83,7 @@
       "type": "registry:ui",
       "title": "Checkbox",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -97,7 +97,7 @@
       "type": "registry:ui",
       "title": "Checkbox Group",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -111,7 +111,7 @@
       "type": "registry:ui",
       "title": "Collapsible",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -125,7 +125,7 @@
       "type": "registry:ui",
       "title": "Combobox",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -139,7 +139,7 @@
       "type": "registry:ui",
       "title": "Context Menu",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -153,7 +153,7 @@
       "type": "registry:ui",
       "title": "Dialog",
       "dependencies": [
-        "@base-ui-components/react",
+        "@base-ui/react",
         "lucide-react"
       ],
       "files": [
@@ -168,7 +168,7 @@
       "type": "registry:ui",
       "title": "Field",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -182,7 +182,7 @@
       "type": "registry:ui",
       "title": "Fieldset",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -196,7 +196,7 @@
       "type": "registry:ui",
       "title": "Form",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -210,7 +210,7 @@
       "type": "registry:ui",
       "title": "Input",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -224,7 +224,7 @@
       "type": "registry:ui",
       "title": "Label",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -238,7 +238,7 @@
       "type": "registry:ui",
       "title": "Menu",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -252,7 +252,7 @@
       "type": "registry:ui",
       "title": "Meter",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -266,7 +266,7 @@
       "type": "registry:ui",
       "title": "Number Field",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -280,7 +280,7 @@
       "type": "registry:ui",
       "title": "Popover",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -294,7 +294,7 @@
       "type": "registry:ui",
       "title": "Preview Card",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -307,7 +307,7 @@
       "name": "progress",
       "type": "registry:ui",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -321,7 +321,7 @@
       "type": "registry:ui",
       "title": "Radio",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -335,7 +335,7 @@
       "type": "registry:ui",
       "title": "Scroll Area",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -349,7 +349,7 @@
       "type": "registry:ui",
       "title": "Select",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -363,7 +363,7 @@
       "type": "registry:ui",
       "title": "Separator",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -377,7 +377,7 @@
       "type": "registry:ui",
       "title": "Slider",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -391,7 +391,7 @@
       "type": "registry:ui",
       "title": "Switch",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -405,7 +405,7 @@
       "type": "registry:ui",
       "title": "Tabs",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -422,7 +422,7 @@
         "@fab-ui/toggle"
       ],
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -436,7 +436,7 @@
       "type": "registry:ui",
       "title": "Toggle",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -450,7 +450,7 @@
       "type": "registry:ui",
       "title": "Toolbar",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {
@@ -464,7 +464,7 @@
       "type": "registry:ui",
       "title": "Tooltip",
       "dependencies": [
-        "@base-ui-components/react"
+        "@base-ui/react"
       ],
       "files": [
         {

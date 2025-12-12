@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "title": "Label",
   "dependencies": [
-    "@base-ui-components/react"
+    "@base-ui/react"
   ],
   "files": [
     {

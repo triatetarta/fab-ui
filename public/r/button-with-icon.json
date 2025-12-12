@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/default/examples/button-with-icon.tsx",
-      "content": "import { Button } from '@/registry/default/ui/button';\nimport { SendIcon } from 'lucide-react';\n\nexport function ButtonWithIcon() {\n  return (\n    <Button variant='outline'>\n      <SendIcon /> Post\n    </Button>\n  );\n}\n",
+      "content": "import { Button } from '@/registry/default/ui/button';\nimport { ArrowRightIcon } from 'lucide-react';\n\nexport function ButtonWithIcon() {\n  return (\n    <Button variant='outline'>\n      Enter <ArrowRightIcon />\n    </Button>\n  );\n}\n",
       "type": "registry:example"
     }
   ]

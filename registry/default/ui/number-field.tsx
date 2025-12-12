@@ -3,7 +3,7 @@
 import * as React from 'react';
 
 import { Label } from '@/registry/default/ui/label';
-import { NumberField as NumberFieldPrimitive } from '@base-ui-components/react/number-field';
+import { NumberField as NumberFieldPrimitive } from '@base-ui/react/number-field';
 import { MinusIcon, MoveHorizontal, PlusIcon } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
