@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-render",
+  "type": "registry:example",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/button-render.tsx",
+      "content": "import { Button } from '@/registry/default/ui/button';\nimport Link from 'next/link';\n\nexport function ButtonRender() {\n  return (\n    <Button variant='outline' render={<Link href='/sign-in'></Link>}>\n      Sign in\n    </Button>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 import * as React from 'react';
 
 import { Toggle, toggleVariants } from '@/registry/default/ui/toggle';
-import { ToggleGroup as ToggleGroupPrimitive } from '@base-ui-components/react/toggle-group';
+import { ToggleGroup as ToggleGroupPrimitive } from '@base-ui/react/toggle-group';
 import { type VariantProps } from 'class-variance-authority';
 
 import { cn } from '@/lib/utils';
