@@ -1,6 +1,6 @@
 # fab ui
 
-A modern registry of React and Next.js components, built on top of Base UI and beyond. Open source, accessible, customizable
+A modern registry of React and Next.js components, built on top of Base UI and beyond. Open source, accessible, customizable.
 
 ## Installation
 
