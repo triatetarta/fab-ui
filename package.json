@@ -55,7 +55,7 @@
     "@types/node": "24.10.3",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
-    "eslint": "9.39.1",
+    "eslint": "9.39.2",
     "eslint-config-next": "16.0.9",
     "eslint-config-prettier": "10.1.8",
     "lint-staged": "16.2.7",
