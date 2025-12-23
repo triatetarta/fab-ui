@@ -45,7 +45,7 @@
     "tailwind-merge": "3.4.0",
     "ts-morph": "^27.0.2",
     "tsx": "4.21.0",
-    "zod": "4.1.13"
+    "zod": "4.2.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "3.3.3",
