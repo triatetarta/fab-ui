@@ -12,7 +12,7 @@ importers:
   .:
     dependencies:
       '@base-ui/react':
-        specifier: ^1.0.0
+        specifier: 1.0.0
         version: 1.0.0(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@vercel/analytics':
         specifier: 1.6.1
@@ -27,7 +27,7 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       front-matter:
-        specifier: ^4.0.2
+        specifier: 4.0.2
         version: 4.0.2
       fumadocs-core:
         specifier: 16.4.1
@@ -45,7 +45,7 @@ importers:
         specifier: 9.1.7
         version: 9.1.7
       jotai:
-        specifier: ^2.16.0
+        specifier: 2.16.0
         version: 2.16.0(@babel/core@7.28.5)(@babel/template@7.27.2)(@types/react@19.2.7)(react@19.2.3)
       lucide-react:
         specifier: 0.562.0
@@ -60,7 +60,7 @@ importers:
         specifier: 19.2.3
         version: 19.2.3(react@19.2.3)
       rehype-pretty-code:
-        specifier: ^0.14.1
+        specifier: 0.14.1
         version: 0.14.1(shiki@3.19.0)
       rimraf:
         specifier: 6.1.2
@@ -69,13 +69,13 @@ importers:
         specifier: 3.6.2
         version: 3.6.2(@types/node@24.10.4)(typescript@5.9.3)
       shiki:
-        specifier: ^3.19.0
+        specifier: 3.19.0
         version: 3.19.0
       tailwind-merge:
         specifier: 3.4.0
         version: 3.4.0
       ts-morph:
-        specifier: ^27.0.2
+        specifier: 27.0.2
         version: 27.0.2
       tsx:
         specifier: 4.21.0
@@ -279,7 +279,6 @@ packages:
   '@base-ui/react@1.0.0':
     resolution: {integrity: sha512-4USBWz++DUSLTuIYpbYkSgy1F9ZmNG9S/lXvlUN6qMK0P0RlW+6eQmDUB4DgZ7HVvtXl4pvi4z5J2fv6Z3+9hg==}
     engines: {node: '>=14.0.0'}
-    deprecated: Package was renamed to @base-ui/react
     peerDependencies:
       '@types/react': 19.2.7
       react: ^17 || ^18 || ^19
