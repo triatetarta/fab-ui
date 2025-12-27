@@ -28,7 +28,7 @@
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "front-matter": "^4.0.2",
-    "fumadocs-core": "16.3.0",
+    "fumadocs-core": "16.4.1",
     "fumadocs-mdx": "14.1.0",
     "fumadocs-ui": "16.4.0",
     "geist": "1.5.1",
