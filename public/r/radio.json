@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "radio",
-  "type": "registry:ui",
   "title": "Radio",
   "dependencies": [
     "@base-ui/react"
@@ -12,5 +11,6 @@
       "content": "'use client';\n\nimport { Radio as RadioPrimitive } from '@base-ui/react/radio';\nimport { RadioGroup as RadioGroupPrimitive } from '@base-ui/react/radio-group';\n\nimport { cn } from '@/lib/utils';\n\nfunction RadioGroup({ className, ...props }: RadioGroupPrimitive.Props) {\n  return (\n    <RadioGroupPrimitive\n      data-slot='radio-group'\n      className={cn('flex flex-col items-start gap-2', className)}\n      {...props}\n    />\n  );\n}\n\nfunction Radio({ className, ...props }: RadioPrimitive.Root.Props) {\n  return (\n    <RadioPrimitive.Root\n      data-slot='radio'\n      className={cn(\n        'relative flex size-4 items-center justify-center rounded-full focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:outline-offset-2 data-checked:bg-primary data-unchecked:border data-unchecked:border-border',\n        className\n      )}\n      {...props}\n    >\n      <RadioPrimitive.Indicator\n        data-slot='radio-indicator'\n        className='flex before:size-2 before:rounded-full before:bg-muted data-unchecked:hidden'\n      />\n    </RadioPrimitive.Root>\n  );\n}\n\nexport { RadioGroup, Radio };\n",
       "type": "registry:ui"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }
