@@ -30,7 +30,7 @@
     "front-matter": "^4.0.2",
     "fumadocs-core": "16.4.1",
     "fumadocs-mdx": "14.2.3",
-    "fumadocs-ui": "16.4.0",
+    "fumadocs-ui": "16.4.1",
     "geist": "1.5.1",
     "husky": "9.1.7",
     "jotai": "^2.16.0",
