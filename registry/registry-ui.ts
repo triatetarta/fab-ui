@@ -52,6 +52,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'badge',
+    type: 'registry:ui',
+    title: 'Badge',
+    dependencies: ['@base-ui/react'],
+    files: [
+      {
+        path: 'ui/badge.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'button',
     type: 'registry:ui',
     title: 'Button',
@@ -59,6 +71,18 @@ export const ui: Registry['items'] = [
     files: [
       {
         path: 'ui/button.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
+    name: 'card',
+    type: 'registry:ui',
+    title: 'Card',
+    dependencies: ['@base-ui/react'],
+    files: [
+      {
+        path: 'ui/card.tsx',
         type: 'registry:ui',
       },
     ],
@@ -103,7 +127,8 @@ export const ui: Registry['items'] = [
     name: 'combobox',
     type: 'registry:ui',
     title: 'Combobox',
-    dependencies: ['@base-ui/react'],
+    registryDependencies: ['@fab-ui/button', '@fab-ui/input-group'],
+    dependencies: ['@base-ui/react', 'lucide-react'],
     files: [
       {
         path: 'ui/combobox.tsx',
@@ -131,6 +156,18 @@ export const ui: Registry['items'] = [
     files: [
       {
         path: 'ui/dialog.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
+    name: 'dropdown-menu',
+    type: 'registry:ui',
+    title: 'Dropdown Menu',
+    dependencies: ['@base-ui/react'],
+    files: [
+      {
+        path: 'ui/dropdown-menu.tsx',
         type: 'registry:ui',
       },
     ],
@@ -184,6 +221,23 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'input-group',
+    type: 'registry:ui',
+    title: 'Input Group',
+    registryDependencies: [
+      '@fab-ui/button',
+      '@fab-ui/input',
+      '@fab-ui/textarea',
+    ],
+    dependencies: ['@base-ui/react'],
+    files: [
+      {
+        path: 'ui/input-group.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'label',
     type: 'registry:ui',
     title: 'Label',
@@ -191,18 +245,6 @@ export const ui: Registry['items'] = [
     files: [
       {
         path: 'ui/label.tsx',
-        type: 'registry:ui',
-      },
-    ],
-  },
-  {
-    name: 'menu',
-    type: 'registry:ui',
-    title: 'Menu',
-    dependencies: ['@base-ui/react'],
-    files: [
-      {
-        path: 'ui/menu.tsx',
         type: 'registry:ui',
       },
     ],
@@ -346,6 +388,18 @@ export const ui: Registry['items'] = [
     files: [
       {
         path: 'ui/tabs.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
+    name: 'textarea',
+    type: 'registry:ui',
+    title: 'Textarea',
+    dependencies: ['@base-ui/react'],
+    files: [
+      {
+        path: 'ui/textarea.tsx',
         type: 'registry:ui',
       },
     ],

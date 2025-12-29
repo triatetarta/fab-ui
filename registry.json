@@ -65,6 +65,20 @@
       ]
     },
     {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "button",
       "type": "registry:ui",
       "title": "Button",
@@ -74,6 +88,20 @@
       "files": [
         {
           "path": "registry/default/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/card.tsx",
           "type": "registry:ui"
         }
       ]
@@ -124,8 +152,13 @@
       "name": "combobox",
       "type": "registry:ui",
       "title": "Combobox",
+      "registryDependencies": [
+        "@fab-ui/button",
+        "@fab-ui/input-group"
+      ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -159,6 +192,20 @@
       "files": [
         {
           "path": "registry/default/ui/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/dropdown-menu.tsx",
           "type": "registry:ui"
         }
       ]
@@ -220,6 +267,25 @@
       ]
     },
     {
+      "name": "input-group",
+      "type": "registry:ui",
+      "title": "Input Group",
+      "registryDependencies": [
+        "@fab-ui/button",
+        "@fab-ui/input",
+        "@fab-ui/textarea"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/input-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "label",
       "type": "registry:ui",
       "title": "Label",
@@ -229,20 +295,6 @@
       "files": [
         {
           "path": "registry/default/ui/label.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "menu",
-      "type": "registry:ui",
-      "title": "Menu",
-      "dependencies": [
-        "@base-ui/react"
-      ],
-      "files": [
-        {
-          "path": "registry/default/ui/menu.tsx",
           "type": "registry:ui"
         }
       ]
@@ -410,6 +462,20 @@
       "files": [
         {
           "path": "registry/default/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/textarea.tsx",
           "type": "registry:ui"
         }
       ]

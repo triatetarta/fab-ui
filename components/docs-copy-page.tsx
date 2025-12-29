@@ -3,11 +3,11 @@
 import { useCopyToClipboard } from '@/registry/default/hooks/use-copy-to-clipboard';
 import { Button } from '@/registry/default/ui/button';
 import {
-  Menu,
-  MenuItem,
-  MenuPopup,
-  MenuTrigger,
-} from '@/registry/default/ui/menu';
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/registry/default/ui/dropdown-menu';
 import { Check, ChevronDown, Copy } from 'lucide-react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
@@ -65,11 +65,11 @@ export function DocsCopyPage({
   ];
 
   return (
-    <div className={cn('flex items-center', className)} {...props}>
+    <div className={cn('relative flex items-center', className)} {...props}>
       <Button
         variant='secondary'
         size='sm'
-        className='h-8 rounded-e-none text-xs'
+        className='h-8 rounded-e-none border-e-0 text-xs'
         onClick={() => copyToClipboard(page)}
       >
         {isCopied ? (
@@ -79,22 +79,22 @@ export function DocsCopyPage({
         )}
         Copy Page
       </Button>
-      <Menu>
-        <MenuTrigger
+      <DropdownMenu>
+        <DropdownMenuTrigger
           render={
             <Button
               size='icon'
               variant='secondary'
-              className='size-8 rounded-s-none border-l'
+              className='size-8 rounded-s-none border-s border-s-foreground/10'
             />
           }
         >
           <ChevronDown />
-        </MenuTrigger>
-        <MenuPopup className='border'>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
           {menuItems.map((menuItem) => {
             return (
-              <MenuItem
+              <DropdownMenuItem
                 key={menuItem.label}
                 render={
                   <Link
@@ -105,11 +105,11 @@ export function DocsCopyPage({
                 }
               >
                 {menuItem.icon} {menuItem.label}
-              </MenuItem>
+              </DropdownMenuItem>
             );
           })}
-        </MenuPopup>
-      </Menu>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </div>
   );
 }
