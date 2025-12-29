@@ -102,6 +102,30 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  badge: {
+    name: 'badge',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/badge.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/badge.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   button: {
     name: 'button',
     description: '',
@@ -116,6 +140,30 @@ export const Index: Record<string, any> = {
     ],
     component: React.lazy(async () => {
       const mod = await import('@/registry/default/ui/button.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  card: {
+    name: 'card',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/card.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/card.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
@@ -202,7 +250,7 @@ export const Index: Record<string, any> = {
     name: 'combobox',
     description: '',
     type: 'registry:ui',
-    registryDependencies: undefined,
+    registryDependencies: ['@fab-ui/button', '@fab-ui/input-group'],
     files: [
       {
         path: 'registry/default/ui/combobox.tsx',
@@ -260,6 +308,30 @@ export const Index: Record<string, any> = {
     ],
     component: React.lazy(async () => {
       const mod = await import('@/registry/default/ui/dialog.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'dropdown-menu': {
+    name: 'dropdown-menu',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/dropdown-menu.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/dropdown-menu.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
@@ -366,6 +438,34 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'input-group': {
+    name: 'input-group',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: [
+      '@fab-ui/button',
+      '@fab-ui/input',
+      '@fab-ui/textarea',
+    ],
+    files: [
+      {
+        path: 'registry/default/ui/input-group.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/input-group.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   label: {
     name: 'label',
     description: '',
@@ -380,30 +480,6 @@ export const Index: Record<string, any> = {
     ],
     component: React.lazy(async () => {
       const mod = await import('@/registry/default/ui/label.tsx');
-      const exportName =
-        Object.keys(mod).find(
-          (key) =>
-            typeof mod[key] === 'function' || typeof mod[key] === 'object'
-        ) || item.name;
-      return { default: mod.default || mod[exportName] };
-    }),
-    categories: undefined,
-    meta: undefined,
-  },
-  menu: {
-    name: 'menu',
-    description: '',
-    type: 'registry:ui',
-    registryDependencies: undefined,
-    files: [
-      {
-        path: 'registry/default/ui/menu.tsx',
-        type: 'registry:ui',
-        target: '',
-      },
-    ],
-    component: React.lazy(async () => {
-      const mod = await import('@/registry/default/ui/menu.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
@@ -692,6 +768,30 @@ export const Index: Record<string, any> = {
     ],
     component: React.lazy(async () => {
       const mod = await import('@/registry/default/ui/tabs.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  textarea: {
+    name: 'textarea',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/textarea.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/textarea.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
