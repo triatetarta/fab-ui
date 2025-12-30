@@ -553,6 +553,19 @@
       ]
     },
     {
+      "name": "alert-dialog-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "alert-dialog"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/alert-dialog-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "button-default",
       "type": "registry:example",
       "registryDependencies": [
