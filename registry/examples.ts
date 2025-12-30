@@ -595,4 +595,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'switch-default',
+    type: 'registry:example',
+    registryDependencies: ['switch'],
+    files: [
+      {
+        path: 'examples/switch-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'switch-with-label',
+    type: 'registry:example',
+    registryDependencies: ['switch', 'label'],
+    files: [
+      {
+        path: 'examples/switch-with-label.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

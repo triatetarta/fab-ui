@@ -1270,6 +1270,33 @@
       ]
     },
     {
+      "name": "switch-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/switch-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "switch-with-label",
+      "type": "registry:example",
+      "registryDependencies": [
+        "switch",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/switch-with-label.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [
