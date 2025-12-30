@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-with-submenu",
+  "registryDependencies": [
+    "dropdown-menu",
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/dropdown-menu-with-submenu.tsx",
+      "content": "'use client';\n\nimport { Button } from '@/registry/default/ui/button';\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuItem,\n  DropdownMenuSeparator,\n  DropdownMenuSub,\n  DropdownMenuSubContent,\n  DropdownMenuSubTrigger,\n  DropdownMenuTrigger,\n} from '@/registry/default/ui/dropdown-menu';\n\nexport function DropdownMenuWithSubmenu() {\n  return (\n    <DropdownMenu>\n      <DropdownMenuTrigger render={<Button variant='outline' />}>\n        Open Menu\n      </DropdownMenuTrigger>\n      <DropdownMenuContent>\n        <DropdownMenuItem>New File</DropdownMenuItem>\n        <DropdownMenuItem>Open File</DropdownMenuItem>\n        <DropdownMenuSeparator />\n        <DropdownMenuSub>\n          <DropdownMenuSubTrigger>Share</DropdownMenuSubTrigger>\n          <DropdownMenuSubContent>\n            <DropdownMenuItem>Email</DropdownMenuItem>\n            <DropdownMenuItem>Messages</DropdownMenuItem>\n            <DropdownMenuItem>AirDrop</DropdownMenuItem>\n          </DropdownMenuSubContent>\n        </DropdownMenuSub>\n        <DropdownMenuSeparator />\n        <DropdownMenuItem>Print</DropdownMenuItem>\n      </DropdownMenuContent>\n    </DropdownMenu>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

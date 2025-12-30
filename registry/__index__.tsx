@@ -1443,6 +1443,156 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'context-menu-default': {
+    name: 'context-menu-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['context-menu'],
+    files: [
+      {
+        path: 'registry/default/examples/context-menu-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/context-menu-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'context-menu-with-submenu': {
+    name: 'context-menu-with-submenu',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['context-menu'],
+    files: [
+      {
+        path: 'registry/default/examples/context-menu-with-submenu.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/context-menu-with-submenu.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'dialog-default': {
+    name: 'dialog-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['dialog', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/dialog-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/dialog-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'dialog-no-close-button': {
+    name: 'dialog-no-close-button',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['dialog', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/dialog-no-close-button.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/dialog-no-close-button.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'dropdown-menu-default': {
+    name: 'dropdown-menu-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['dropdown-menu', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/dropdown-menu-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/dropdown-menu-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'dropdown-menu-with-submenu': {
+    name: 'dropdown-menu-with-submenu',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['dropdown-menu', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/dropdown-menu-with-submenu.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/dropdown-menu-with-submenu.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',

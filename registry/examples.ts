@@ -243,4 +243,70 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'context-menu-default',
+    type: 'registry:example',
+    registryDependencies: ['context-menu'],
+    files: [
+      {
+        path: 'examples/context-menu-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'context-menu-with-submenu',
+    type: 'registry:example',
+    registryDependencies: ['context-menu'],
+    files: [
+      {
+        path: 'examples/context-menu-with-submenu.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'dialog-default',
+    type: 'registry:example',
+    registryDependencies: ['dialog', 'button'],
+    files: [
+      {
+        path: 'examples/dialog-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'dialog-no-close-button',
+    type: 'registry:example',
+    registryDependencies: ['dialog', 'button'],
+    files: [
+      {
+        path: 'examples/dialog-no-close-button.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'dropdown-menu-default',
+    type: 'registry:example',
+    registryDependencies: ['dropdown-menu', 'button'],
+    files: [
+      {
+        path: 'examples/dropdown-menu-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'dropdown-menu-with-submenu',
+    type: 'registry:example',
+    registryDependencies: ['dropdown-menu', 'button'],
+    files: [
+      {
+        path: 'examples/dropdown-menu-with-submenu.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

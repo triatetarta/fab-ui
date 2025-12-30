@@ -832,6 +832,88 @@
       ]
     },
     {
+      "name": "context-menu-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "context-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/context-menu-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-with-submenu",
+      "type": "registry:example",
+      "registryDependencies": [
+        "context-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/context-menu-with-submenu.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "dialog-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dialog-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "dialog-no-close-button",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dialog-no-close-button.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dropdown-menu",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dropdown-menu-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-with-submenu",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dropdown-menu",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dropdown-menu-with-submenu.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [
