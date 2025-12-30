@@ -592,6 +592,19 @@
       ]
     },
     {
+      "name": "badge-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/badge-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "button-default",
       "type": "registry:example",
       "registryDependencies": [
