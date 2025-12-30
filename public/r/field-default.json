@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-default",
+  "registryDependencies": [
+    "field",
+    "input"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/field-default.tsx",
+      "content": "'use client';\n\nimport { Field, FieldLabel } from '@/registry/default/ui/field';\nimport { Input } from '@/registry/default/ui/input';\n\nexport function FieldDefault() {\n  return (\n    <Field>\n      <FieldLabel>Email</FieldLabel>\n      <Input type='email' placeholder='Enter your email' />\n    </Field>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

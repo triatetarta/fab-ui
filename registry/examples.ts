@@ -309,4 +309,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'field-default',
+    type: 'registry:example',
+    registryDependencies: ['field', 'input'],
+    files: [
+      {
+        path: 'examples/field-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'field-with-description',
+    type: 'registry:example',
+    registryDependencies: ['field', 'input'],
+    files: [
+      {
+        path: 'examples/field-with-description.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

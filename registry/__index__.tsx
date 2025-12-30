@@ -1593,6 +1593,55 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'field-default': {
+    name: 'field-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['field', 'input'],
+    files: [
+      {
+        path: 'registry/default/examples/field-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/examples/field-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'field-with-description': {
+    name: 'field-with-description',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['field', 'input'],
+    files: [
+      {
+        path: 'registry/default/examples/field-with-description.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/field-with-description.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',

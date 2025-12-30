@@ -914,6 +914,34 @@
       ]
     },
     {
+      "name": "field-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/field-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-with-description",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/field-with-description.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [
