@@ -221,4 +221,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'combobox-default',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'combobox-with-clear',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-with-clear.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

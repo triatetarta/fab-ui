@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "combobox-grouped",
+  "registryDependencies": [
+    "combobox"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/combobox-grouped.tsx",
+      "content": "'use client';\n\nimport {\n  Combobox,\n  ComboboxCollection,\n  ComboboxContent,\n  ComboboxEmpty,\n  ComboboxGroup,\n  ComboboxInput,\n  ComboboxItem,\n  ComboboxLabel,\n  ComboboxList,\n} from '@/registry/default/ui/combobox';\n\nconst groups = [\n  { label: 'Frontend', items: ['React', 'Vue', 'Angular'] },\n  { label: 'Backend', items: ['Express', 'Fastify', 'Hono'] },\n];\n\nexport function ComboboxGrouped() {\n  return (\n    <Combobox items={groups}>\n      <ComboboxInput placeholder='Select a framework...' />\n      <ComboboxContent>\n        <ComboboxEmpty>No frameworks found.</ComboboxEmpty>\n        <ComboboxList>\n          {(group) => (\n            <ComboboxGroup key={group.label}>\n              <ComboboxLabel>{group.label}</ComboboxLabel>\n              <ComboboxCollection items={group.items}>\n                {(item) => (\n                  <ComboboxItem key={item} value={item}>\n                    {item}\n                  </ComboboxItem>\n                )}\n              </ComboboxCollection>\n            </ComboboxGroup>\n          )}\n        </ComboboxList>\n      </ComboboxContent>\n    </Combobox>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

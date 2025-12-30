@@ -806,6 +806,32 @@
       ]
     },
     {
+      "name": "combobox-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "combobox-with-clear",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-with-clear.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [

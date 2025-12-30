@@ -1393,6 +1393,56 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'combobox-default': {
+    name: 'combobox-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'registry/default/examples/combobox-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/combobox-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'combobox-with-clear': {
+    name: 'combobox-with-clear',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'registry/default/examples/combobox-with-clear.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/combobox-with-clear.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',
