@@ -13,6 +13,17 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'alert-dialog-default',
+    type: 'registry:example',
+    registryDependencies: ['alert-dialog'],
+    files: [
+      {
+        path: 'examples/alert-dialog-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'button-default',
     type: 'registry:example',
     registryDependencies: ['button'],
