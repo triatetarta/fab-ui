@@ -2062,6 +2062,56 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'scroll-area-default': {
+    name: 'scroll-area-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['scroll-area', 'separator'],
+    files: [
+      {
+        path: 'registry/default/examples/scroll-area-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/scroll-area-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'scroll-area-horizontal': {
+    name: 'scroll-area-horizontal',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['scroll-area'],
+    files: [
+      {
+        path: 'registry/default/examples/scroll-area-horizontal.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/scroll-area-horizontal.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',

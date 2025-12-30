@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-area-default",
+  "registryDependencies": [
+    "scroll-area",
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/scroll-area-default.tsx",
+      "content": "'use client';\n\nimport { ScrollArea } from '@/registry/default/ui/scroll-area';\nimport { Separator } from '@/registry/default/ui/separator';\n\nconst tags = Array.from({ length: 50 }).map(\n  (_, i, a) => `v1.2.0-beta.${a.length - i}`\n);\n\nexport function ScrollAreaDefault() {\n  return (\n    <ScrollArea className='h-72 w-48 rounded-md border'>\n      <div className='p-4'>\n        <h4 className='mb-4 text-sm leading-none font-medium'>Tags</h4>\n        {tags.map((tag, index) => (\n          <div key={tag}>\n            <div className='text-sm'>{tag}</div>\n            {index < tags.length - 1 && <Separator className='my-2' />}\n          </div>\n        ))}\n      </div>\n    </ScrollArea>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -518,4 +518,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'scroll-area-default',
+    type: 'registry:example',
+    registryDependencies: ['scroll-area', 'separator'],
+    files: [
+      {
+        path: 'examples/scroll-area-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'scroll-area-horizontal',
+    type: 'registry:example',
+    registryDependencies: ['scroll-area'],
+    files: [
+      {
+        path: 'examples/scroll-area-horizontal.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

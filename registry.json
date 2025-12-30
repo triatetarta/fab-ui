@@ -1177,6 +1177,33 @@
       ]
     },
     {
+      "name": "scroll-area-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "scroll-area",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/scroll-area-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area-horizontal",
+      "type": "registry:example",
+      "registryDependencies": [
+        "scroll-area"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/scroll-area-horizontal.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [
