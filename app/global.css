@@ -257,7 +257,8 @@
     width: calc(var(--spacing) * 16);
     padding-right: calc(var(--spacing) * 6);
     text-align: right;
-    color: var(--color-code-number);
+    color: var(--color-code-number) !important;
+    background-color: var(--color-code) !important;
     position: sticky;
     left: 0;
   }
