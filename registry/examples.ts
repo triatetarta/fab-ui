@@ -463,4 +463,15 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'preview-card-default',
+    type: 'registry:example',
+    registryDependencies: ['preview-card'],
+    files: [
+      {
+        path: 'examples/preview-card-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

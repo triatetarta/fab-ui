@@ -1,0 +1,70 @@
+---
+title: Preview Card
+description: A card that appears on hover to preview content.
+links:
+  doc: https://base-ui.com/react/components/preview-card
+  api: https://base-ui.com/react/components/preview-card#api-reference
+---
+
+<ComponentPreview
+  name='preview-card-default'
+  description='A card that appears on hover to preview content.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/preview-card
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='preview-card' title='components/ui/preview-card.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  PreviewCard,
+  PreviewCardPopup,
+  PreviewCardTrigger,
+} from "@/components/ui/preview-card"
+```
+
+```tsx
+<PreviewCard>
+  <PreviewCardTrigger>Hover over me</PreviewCardTrigger>
+  <PreviewCardPopup>
+    <p>Preview content goes here.</p>
+  </PreviewCardPopup>
+</PreviewCard>
+```

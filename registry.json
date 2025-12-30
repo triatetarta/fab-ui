@@ -1110,6 +1110,19 @@
       ]
     },
     {
+      "name": "preview-card-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "preview-card"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/preview-card-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [
