@@ -1,0 +1,69 @@
+---
+title: Toggle
+description: A two-state button that can be either on or off.
+links:
+  doc: https://base-ui.com/react/components/toggle
+  api: https://base-ui.com/react/components/toggle#api-reference
+---
+
+<ComponentPreview name='toggle-default' />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/toggle
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='toggle' title='components/ui/toggle.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Toggle } from "@/components/ui/toggle"
+```
+
+```tsx
+<Toggle aria-label="Toggle bold">
+  <Bold />
+</Toggle>
+```
+
+## Examples
+
+### Outline
+
+<ComponentPreview name='toggle-outline' />
+
+### With Text
+
+<ComponentPreview name='toggle-with-text' />

@@ -1,0 +1,77 @@
+---
+title: Progress
+description: A progress bar that shows completion status of a task.
+links:
+  doc: https://base-ui.com/react/components/progress
+  api: https://base-ui.com/react/components/progress#api-reference
+---
+
+<ComponentPreview
+  name='progress-default'
+  description='A progress bar that shows completion status of a task.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/progress
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='progress' title='components/ui/progress.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Progress,
+  ProgressIndicator,
+  ProgressLabel,
+  ProgressTrack,
+  ProgressValue,
+} from "@/components/ui/progress"
+```
+
+```tsx
+<Progress value={60} />
+```
+
+## Examples
+
+### With Label
+
+<ComponentPreview
+  name='progress-with-label'
+  description='A progress bar with a label and value display.'
+  className='mb-4'
+/>

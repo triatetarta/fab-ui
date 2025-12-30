@@ -32,7 +32,7 @@ export const accordionItems: AccordionItem[] = [
   },
 ];
 
-export default function AccordionDemo() {
+export function AccordionDemo() {
   return (
     <Accordion className='w-full'>
       {accordionItems.map((accordionItem) => {

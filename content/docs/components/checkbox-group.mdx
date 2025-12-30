@@ -1,0 +1,85 @@
+---
+title: Checkbox Group
+description: A group of checkboxes that can be controlled together.
+links:
+  doc: https://base-ui.com/react/components/checkbox-group
+  api: https://base-ui.com/react/components/checkbox-group#api-reference
+---
+
+<ComponentPreview
+  name='checkbox-group-default'
+  description='A group of checkboxes that can be controlled together.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/checkbox-group
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource
+  name='checkbox-group'
+  title='components/ui/checkbox-group.tsx'
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Checkbox } from "@/components/ui/checkbox"
+import { CheckboxGroup } from "@/components/ui/checkbox-group"
+import { Label } from "@/components/ui/label"
+```
+
+```tsx
+<CheckboxGroup defaultValue={['option1']}>
+  <Label>
+    <Checkbox name='options' value='option1' />
+    Option 1
+  </Label>
+  <Label>
+    <Checkbox name='options' value='option2' />
+    Option 2
+  </Label>
+</CheckboxGroup>
+```
+
+## Examples
+
+### With Field
+
+<ComponentPreview
+  name='checkbox-group-with-field'
+  description='A checkbox group inside a field with label and description.'
+  className='mb-4'
+/>

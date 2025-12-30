@@ -1,0 +1,67 @@
+---
+title: Form
+description: A form container that handles validation and submission.
+links:
+  doc: https://base-ui.com/react/components/form
+  api: https://base-ui.com/react/components/form#api-reference
+---
+
+<ComponentPreview
+  name='form-default'
+  description='A form container that handles validation and submission.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/form
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='form' title='components/ui/form.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Form } from "@/components/ui/form"
+```
+
+```tsx
+<Form onSubmit={handleSubmit}>
+  <Field>
+    <FieldLabel>Email</FieldLabel>
+    <Input type='email' />
+  </Field>
+  <Button type='submit'>Submit</Button>
+</Form>
+```

@@ -1,0 +1,85 @@
+---
+title: Context Menu
+description: A menu that appears on right-click, providing contextual actions for the target element.
+links:
+  doc: https://base-ui.com/react/components/context-menu
+  api: https://base-ui.com/react/components/context-menu#api-reference
+---
+
+<ComponentPreview
+  name='context-menu-default'
+  description='A menu that appears on right-click, providing contextual actions for the target element.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/context-menu
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='context-menu' title='components/ui/context-menu.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  ContextMenu,
+  ContextMenuItem,
+  ContextMenuPopup,
+  ContextMenuSeparator,
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"
+```
+
+```tsx
+<ContextMenu>
+  <ContextMenuTrigger>Right click here</ContextMenuTrigger>
+  <ContextMenuPopup>
+    <ContextMenuItem>Back</ContextMenuItem>
+    <ContextMenuItem>Forward</ContextMenuItem>
+    <ContextMenuSeparator />
+    <ContextMenuItem>Save As...</ContextMenuItem>
+  </ContextMenuPopup>
+</ContextMenu>
+```
+
+## Examples
+
+### With Submenu
+
+<ComponentPreview
+  name='context-menu-with-submenu'
+  description='A context menu with a nested submenu for additional options.'
+  className='mb-4'
+/>

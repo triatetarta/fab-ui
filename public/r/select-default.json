@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select-default",
+  "registryDependencies": [
+    "select"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/select-default.tsx",
+      "content": "'use client';\n\nimport {\n  Select,\n  SelectContent,\n  SelectItem,\n  SelectTrigger,\n  SelectValue,\n} from '@/registry/default/ui/select';\n\nconst fonts = [\n  { label: 'Select font', value: null },\n  { label: 'Sans-serif', value: 'sans' },\n  { label: 'Serif', value: 'serif' },\n  { label: 'Monospace', value: 'mono' },\n  { label: 'Cursive', value: 'cursive' },\n];\n\nexport function SelectDefault() {\n  return (\n    <Select items={fonts}>\n      <SelectTrigger className='w-48'>\n        <SelectValue />\n      </SelectTrigger>\n      <SelectContent>\n        {fonts.map((font) => (\n          <SelectItem key={font.value} value={font.value}>\n            {font.label}\n          </SelectItem>\n        ))}\n      </SelectContent>\n    </Select>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

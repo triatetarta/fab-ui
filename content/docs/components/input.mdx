@@ -1,0 +1,71 @@
+---
+title: Input
+description: A text input field for capturing user data.
+links:
+  doc: https://base-ui.com/react/components/input
+  api: https://base-ui.com/react/components/input#api-reference
+---
+
+<ComponentPreview
+  name='input-default'
+  description='A text input field for capturing user data.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/input
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='input' title='components/ui/input.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Input } from "@/components/ui/input"
+```
+
+```tsx
+<Input type='email' placeholder='Enter your email' />
+```
+
+## Examples
+
+### Disabled
+
+<ComponentPreview
+  name='input-disabled'
+  description='An input in a disabled state.'
+  className='mb-4'
+/>

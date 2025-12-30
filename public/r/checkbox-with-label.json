@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox-with-label",
+  "registryDependencies": [
+    "checkbox",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/checkbox-with-label.tsx",
+      "content": "import { Checkbox } from '@/registry/default/ui/checkbox';\nimport { Label } from '@/registry/default/ui/label';\n\nexport function CheckboxWithLabel() {\n  return (\n    <Label>\n      <Checkbox />\n      Accept terms and conditions\n    </Label>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

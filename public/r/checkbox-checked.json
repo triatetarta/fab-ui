@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox-checked",
+  "registryDependencies": [
+    "checkbox"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/checkbox-checked.tsx",
+      "content": "import { Checkbox } from '@/registry/default/ui/checkbox';\n\nexport function CheckboxChecked() {\n  return <Checkbox defaultChecked />;\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -579,6 +579,32 @@
       ]
     },
     {
+      "name": "avatar-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/avatar-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "badge-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/badge-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "button-default",
       "type": "registry:example",
       "registryDependencies": [
@@ -665,6 +691,770 @@
       "files": [
         {
           "path": "registry/default/examples/button-with-icon.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "card-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "card"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/card-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/checkbox-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-checked",
+      "type": "registry:example",
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/checkbox-checked.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-disabled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/checkbox-disabled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-with-label",
+      "type": "registry:example",
+      "registryDependencies": [
+        "checkbox",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/checkbox-with-label.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-group-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "checkbox",
+        "checkbox-group",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/checkbox-group-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-group-with-field",
+      "type": "registry:example",
+      "registryDependencies": [
+        "checkbox",
+        "checkbox-group",
+        "field",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/checkbox-group-with-field.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "collapsible-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "collapsible"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/collapsible-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "combobox-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "combobox-with-clear",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-with-clear.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "context-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/context-menu-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-with-submenu",
+      "type": "registry:example",
+      "registryDependencies": [
+        "context-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/context-menu-with-submenu.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "dialog-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dialog-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "dialog-no-close-button",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dialog-no-close-button.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dropdown-menu",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dropdown-menu-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-with-submenu",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dropdown-menu",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dropdown-menu-with-submenu.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/field-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-with-description",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/field-with-description.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "fieldset-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "fieldset",
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/fieldset-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "form-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "form",
+        "field",
+        "input",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/form-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/input-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-disabled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/input-disabled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input-group",
+        "dropdown-menu",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/input-group-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "label-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "label",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/label-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "meter-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "meter"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/meter-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "meter-with-label",
+      "type": "registry:example",
+      "registryDependencies": [
+        "meter"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/meter-with-label.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "number-field-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "number-field"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/number-field-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "number-field-with-scrub",
+      "type": "registry:example",
+      "registryDependencies": [
+        "number-field"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/number-field-with-scrub.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "popover-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "popover",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/popover-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "popover-with-form",
+      "type": "registry:example",
+      "registryDependencies": [
+        "popover",
+        "button",
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/popover-with-form.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "preview-card-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "preview-card"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/preview-card-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "progress-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "progress"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/progress-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "progress-with-label",
+      "type": "registry:example",
+      "registryDependencies": [
+        "progress"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/progress-with-label.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "radio-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "radio",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/radio-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "radio-horizontal",
+      "type": "registry:example",
+      "registryDependencies": [
+        "radio",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/radio-horizontal.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "scroll-area",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/scroll-area-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area-horizontal",
+      "type": "registry:example",
+      "registryDependencies": [
+        "scroll-area"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/scroll-area-horizontal.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "select-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "select"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/select-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "select-grouped",
+      "type": "registry:example",
+      "registryDependencies": [
+        "select"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/select-grouped.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "separator-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/separator-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "slider-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "slider"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/slider-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "slider-with-value",
+      "type": "registry:example",
+      "registryDependencies": [
+        "slider",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/slider-with-value.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "switch-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/switch-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "switch-with-label",
+      "type": "registry:example",
+      "registryDependencies": [
+        "switch",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/switch-with-label.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "tabs-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/tabs-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "tabs-underline",
+      "type": "registry:example",
+      "registryDependencies": [
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/tabs-underline.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "textarea-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/textarea-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "textarea-with-label",
+      "type": "registry:example",
+      "registryDependencies": [
+        "textarea",
+        "field"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/textarea-with-label.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "toggle-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "toggle"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/toggle-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "toggle-outline",
+      "type": "registry:example",
+      "registryDependencies": [
+        "toggle"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/toggle-outline.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "toggle-with-text",
+      "type": "registry:example",
+      "registryDependencies": [
+        "toggle"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/toggle-with-text.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "toggle-group"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/toggle-group-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group-multiple",
+      "type": "registry:example",
+      "registryDependencies": [
+        "toggle-group"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/toggle-group-multiple.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "toolbar-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "toolbar",
+        "toggle-group",
+        "button",
+        "select",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/toolbar-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "tooltip",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/tooltip-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-positions",
+      "type": "registry:example",
+      "registryDependencies": [
+        "tooltip",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/tooltip-positions.tsx",
           "type": "registry:example"
         }
       ]

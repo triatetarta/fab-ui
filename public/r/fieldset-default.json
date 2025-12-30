@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "fieldset-default",
+  "registryDependencies": [
+    "fieldset",
+    "field",
+    "input"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/fieldset-default.tsx",
+      "content": "'use client';\n\nimport { Field, FieldLabel } from '@/registry/default/ui/field';\nimport { Fieldset, FieldsetLegend } from '@/registry/default/ui/fieldset';\nimport { Input } from '@/registry/default/ui/input';\n\nexport function FieldsetDefault() {\n  return (\n    <Fieldset className='flex flex-col gap-4'>\n      <FieldsetLegend>Shipping Address</FieldsetLegend>\n      <Field>\n        <FieldLabel>Street Address</FieldLabel>\n        <Input placeholder='123 Main St' />\n      </Field>\n      <Field>\n        <FieldLabel>City</FieldLabel>\n        <Input placeholder='New York' />\n      </Field>\n    </Fieldset>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

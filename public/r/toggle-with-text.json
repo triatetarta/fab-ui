@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-with-text",
+  "registryDependencies": [
+    "toggle"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/toggle-with-text.tsx",
+      "content": "'use client';\n\nimport { Toggle } from '@/registry/default/ui/toggle';\nimport { Italic } from 'lucide-react';\n\nexport function ToggleWithText() {\n  return (\n    <Toggle aria-label='Toggle italic'>\n      <Italic />\n      Italic\n    </Toggle>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

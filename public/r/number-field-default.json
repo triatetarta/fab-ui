@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "number-field-default",
+  "registryDependencies": [
+    "number-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/number-field-default.tsx",
+      "content": "'use client';\n\nimport {\n  NumberField,\n  NumberFieldDecrement,\n  NumberFieldGroup,\n  NumberFieldIncrement,\n  NumberFieldInput,\n} from '@/registry/default/ui/number-field';\n\nexport function NumberFieldDefault() {\n  return (\n    <NumberField defaultValue={5}>\n      <NumberFieldGroup>\n        <NumberFieldDecrement />\n        <NumberFieldInput />\n        <NumberFieldIncrement />\n      </NumberFieldGroup>\n    </NumberField>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}
