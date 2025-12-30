@@ -8,10 +8,7 @@ function Field({ className, ...props }: FieldPrimitive.Root.Props) {
   return (
     <FieldPrimitive.Root
       data-slot='field'
-      className={cn(
-        'flex w-full max-w-64 flex-col items-start gap-1',
-        className
-      )}
+      className={cn('flex w-full flex-col items-start gap-1', className)}
       {...props}
     />
   );

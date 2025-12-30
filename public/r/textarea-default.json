@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea-default",
+  "registryDependencies": [
+    "textarea"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/textarea-default.tsx",
+      "content": "'use client';\n\nimport { Textarea } from '@/registry/default/ui/textarea';\n\nexport function TextareaDefault() {\n  return <Textarea placeholder='Type your message here.' className='w-64' />;\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

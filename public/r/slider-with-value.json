@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slider-with-value",
+  "registryDependencies": [
+    "slider",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/slider-with-value.tsx",
+      "content": "'use client';\n\nimport { Label } from '@/registry/default/ui/label';\nimport { Slider, SliderValue } from '@/registry/default/ui/slider';\n\nexport function SliderWithValue() {\n  return (\n    <div className='w-full max-w-xs'>\n      <Slider defaultValue={75}>\n        <div className='mb-2 flex justify-between'>\n          <Label>Volume</Label>\n          <SliderValue />\n        </div>\n      </Slider>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

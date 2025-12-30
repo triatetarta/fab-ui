@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-group-outline",
+  "registryDependencies": [
+    "toggle-group"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/toggle-group-outline.tsx",
+      "content": "'use client';\n\nimport { AlignCenter, AlignLeft, AlignRight } from 'lucide-react';\n\nimport { ToggleGroup, ToggleGroupItem } from '@/registry/default/ui/toggle-group';\n\nexport function ToggleGroupOutline() {\n  return (\n    <ToggleGroup variant='outline' defaultValue='center' aria-label='Text alignment'>\n      <ToggleGroupItem value='left' aria-label='Align left'>\n        <AlignLeft />\n      </ToggleGroupItem>\n      <ToggleGroupItem value='center' aria-label='Align center'>\n        <AlignCenter />\n      </ToggleGroupItem>\n      <ToggleGroupItem value='right' aria-label='Align right'>\n        <AlignRight />\n      </ToggleGroupItem>\n    </ToggleGroup>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

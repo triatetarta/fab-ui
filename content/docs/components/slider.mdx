@@ -1,0 +1,71 @@
+---
+title: Slider
+description: A control for selecting a value from a range by dragging a thumb.
+links:
+  doc: https://base-ui.com/react/components/slider
+  api: https://base-ui.com/react/components/slider#api-reference
+---
+
+<ComponentPreview
+  name='slider-default'
+  description='A control for selecting a value from a range by dragging a thumb.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/slider
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='slider' title='components/ui/slider.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Slider, SliderValue } from "@/components/ui/slider"
+```
+
+```tsx
+<Slider defaultValue={50} />
+```
+
+## Examples
+
+### With Value
+
+<ComponentPreview
+  name='slider-with-value'
+  description='A slider with a label and value display.'
+  className='mb-4'
+/>

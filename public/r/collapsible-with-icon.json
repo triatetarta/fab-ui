@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible-with-icon",
+  "registryDependencies": [
+    "collapsible",
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/collapsible-with-icon.tsx",
+      "content": "'use client';\n\nimport { Button } from '@/registry/default/ui/button';\nimport {\n  Collapsible,\n  CollapsiblePanel,\n  CollapsibleTrigger,\n} from '@/registry/default/ui/collapsible';\nimport { ChevronDownIcon } from 'lucide-react';\n\nexport function CollapsibleWithIcon() {\n  return (\n    <Collapsible className='w-64'>\n      <CollapsibleTrigger\n        render={<Button variant='outline' className='w-full justify-between' />}\n      >\n        Show more\n        <ChevronDownIcon className='size-4 transition-transform duration-200 [[data-panel-open]_&]:rotate-180' />\n      </CollapsibleTrigger>\n      <CollapsiblePanel className='pt-2'>\n        <p className='text-sm text-muted-foreground'>\n          The chevron icon rotates when the panel is open.\n        </p>\n      </CollapsiblePanel>\n    </Collapsible>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

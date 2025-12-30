@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox-group-default",
+  "registryDependencies": [
+    "checkbox",
+    "checkbox-group",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/checkbox-group-default.tsx",
+      "content": "import { Checkbox } from '@/registry/default/ui/checkbox';\nimport { CheckboxGroup } from '@/registry/default/ui/checkbox-group';\nimport { Label } from '@/registry/default/ui/label';\n\nexport function CheckboxGroupDefault() {\n  return (\n    <CheckboxGroup defaultValue={['updates']}>\n      <Label>\n        <Checkbox name='notifications' value='updates' />\n        Product updates\n      </Label>\n      <Label>\n        <Checkbox name='notifications' value='news' />\n        Company news\n      </Label>\n      <Label>\n        <Checkbox name='notifications' value='offers' />\n        Special offers\n      </Label>\n    </CheckboxGroup>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

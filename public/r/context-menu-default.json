@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "context-menu-default",
+  "registryDependencies": [
+    "context-menu"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/context-menu-default.tsx",
+      "content": "'use client';\n\nimport {\n  ContextMenu,\n  ContextMenuItem,\n  ContextMenuPopup,\n  ContextMenuSeparator,\n  ContextMenuTrigger,\n} from '@/registry/default/ui/context-menu';\n\nexport function ContextMenuDefault() {\n  return (\n    <ContextMenu>\n      <ContextMenuTrigger className='flex h-32 w-64 items-center justify-center rounded-md border border-dashed'>\n        Right click here\n      </ContextMenuTrigger>\n      <ContextMenuPopup>\n        <ContextMenuItem>Back</ContextMenuItem>\n        <ContextMenuItem>Forward</ContextMenuItem>\n        <ContextMenuItem>Reload</ContextMenuItem>\n        <ContextMenuSeparator />\n        <ContextMenuItem>Save As...</ContextMenuItem>\n        <ContextMenuItem>Print...</ContextMenuItem>\n      </ContextMenuPopup>\n    </ContextMenu>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

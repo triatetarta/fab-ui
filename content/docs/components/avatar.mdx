@@ -1,0 +1,69 @@
+---
+title: Avatar
+description: An easily stylable avatar component.
+
+links:
+  doc: https://base-ui.com/react/components/avatar
+  api: https://base-ui.com/react/components/avatar#api-reference
+---
+
+<ComponentPreview
+  name='avatar-default'
+  description='An easily stylable avatar component.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/avatar
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='avatar' title='components/ui/avatar.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage
+} from "@/components/ui/avatar"
+```
+
+```tsx
+<Avatar>
+  <AvatarImage src="https://github.com/shadcn.png" alt="Shadcn avatar" />
+  <AvatarFallback>CN</AvatarFallback>
+</Avatar>
+```
