@@ -375,4 +375,15 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'input-group-default',
+    type: 'registry:example',
+    registryDependencies: ['input-group', 'dropdown-menu', 'separator'],
+    files: [
+      {
+        path: 'examples/input-group-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

@@ -999,6 +999,21 @@
       ]
     },
     {
+      "name": "input-group-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input-group",
+        "dropdown-menu",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/input-group-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [

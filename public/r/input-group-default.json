@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-default",
+  "registryDependencies": [
+    "input-group",
+    "dropdown-menu",
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/input-group-default.tsx",
+      "content": "'use client';\n\nimport {\n  ArrowUpIcon,\n  CheckIcon,\n  InfoIcon,\n  PlusIcon,\n  SearchIcon,\n} from 'lucide-react';\n\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuItem,\n  DropdownMenuTrigger,\n} from '@/registry/default/ui/dropdown-menu';\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupButton,\n  InputGroupInput,\n  InputGroupText,\n  InputGroupTextarea,\n} from '@/registry/default/ui/input-group';\nimport { Separator } from '@/registry/default/ui/separator';\n\nexport function InputGroupDefault() {\n  return (\n    <div className='grid w-full max-w-sm gap-6'>\n      <InputGroup>\n        <InputGroupInput placeholder='Search...' />\n        <InputGroupAddon>\n          <SearchIcon />\n        </InputGroupAddon>\n        <InputGroupAddon align='inline-end'>12 results</InputGroupAddon>\n      </InputGroup>\n      <InputGroup>\n        <InputGroupInput placeholder='example.com' className='pl-1!' />\n        <InputGroupAddon>\n          <InputGroupText>https://</InputGroupText>\n        </InputGroupAddon>\n        <InputGroupAddon align='inline-end'>\n          <InputGroupButton className='rounded-full' size='icon-xs'>\n            <InfoIcon />\n          </InputGroupButton>\n        </InputGroupAddon>\n      </InputGroup>\n      <InputGroup>\n        <InputGroupTextarea placeholder='Ask, Search or Chat...' />\n        <InputGroupAddon align='block-end'>\n          <InputGroupButton\n            variant='outline'\n            className='rounded-full'\n            size='icon-xs'\n          >\n            <PlusIcon />\n          </InputGroupButton>\n          <DropdownMenu>\n            <DropdownMenuTrigger\n              render={<InputGroupButton variant='ghost' />}\n            >\n              Auto\n            </DropdownMenuTrigger>\n            <DropdownMenuContent\n              side='top'\n              align='start'\n              className='[--radius:0.95rem]'\n            >\n              <DropdownMenuItem>Auto</DropdownMenuItem>\n              <DropdownMenuItem>Agent</DropdownMenuItem>\n              <DropdownMenuItem>Manual</DropdownMenuItem>\n            </DropdownMenuContent>\n          </DropdownMenu>\n          <InputGroupText className='ml-auto'>52% used</InputGroupText>\n          <Separator orientation='vertical' className='h-4!' />\n          <InputGroupButton\n            variant='default'\n            className='rounded-full'\n            size='icon-xs'\n            disabled\n          >\n            <ArrowUpIcon />\n            <span className='sr-only'>Send</span>\n          </InputGroupButton>\n        </InputGroupAddon>\n      </InputGroup>\n      <InputGroup>\n        <InputGroupInput placeholder='@shadcn' />\n        <InputGroupAddon align='inline-end'>\n          <div className='bg-primary text-primary-foreground flex size-4 items-center justify-center rounded-full'>\n            <CheckIcon className='size-3' />\n          </div>\n        </InputGroupAddon>\n      </InputGroup>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

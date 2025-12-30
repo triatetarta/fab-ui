@@ -1740,6 +1740,31 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'input-group-default': {
+    name: 'input-group-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['input-group', 'dropdown-menu', 'separator'],
+    files: [
+      {
+        path: 'registry/default/examples/input-group-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/input-group-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',

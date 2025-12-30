@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-with-button",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/input-group-with-button.tsx",
+      "content": "'use client';\n\nimport { SendIcon } from 'lucide-react';\n\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupButton,\n  InputGroupInput,\n} from '@/registry/default/ui/input-group';\n\nexport function InputGroupWithButton() {\n  return (\n    <InputGroup className='w-64'>\n      <InputGroupInput placeholder='Type a message...' />\n      <InputGroupAddon align='inline-end'>\n        <InputGroupButton size='icon-xs'>\n          <SendIcon />\n        </InputGroupButton>\n      </InputGroupAddon>\n    </InputGroup>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}
