@@ -2013,6 +2013,55 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'radio-default': {
+    name: 'radio-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['radio', 'label'],
+    files: [
+      {
+        path: 'registry/default/examples/radio-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/examples/radio-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'radio-horizontal': {
+    name: 'radio-horizontal',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['radio', 'label'],
+    files: [
+      {
+        path: 'registry/default/examples/radio-horizontal.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/radio-horizontal.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',

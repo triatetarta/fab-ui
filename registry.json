@@ -1149,6 +1149,34 @@
       ]
     },
     {
+      "name": "radio-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "radio",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/radio-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "radio-horizontal",
+      "type": "registry:example",
+      "registryDependencies": [
+        "radio",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/radio-horizontal.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [

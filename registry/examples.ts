@@ -496,4 +496,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'radio-default',
+    type: 'registry:example',
+    registryDependencies: ['radio', 'label'],
+    files: [
+      {
+        path: 'examples/radio-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'radio-horizontal',
+    type: 'registry:example',
+    registryDependencies: ['radio', 'label'],
+    files: [
+      {
+        path: 'examples/radio-horizontal.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];
