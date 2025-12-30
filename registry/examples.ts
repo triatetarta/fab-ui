@@ -24,6 +24,17 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'autocomplete-default',
+    type: 'registry:example',
+    registryDependencies: ['autocomplete'],
+    files: [
+      {
+        path: 'examples/autocomplete-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'button-default',
     type: 'registry:example',
     registryDependencies: ['button'],

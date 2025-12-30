@@ -948,6 +948,31 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'autocomplete-default': {
+    name: 'autocomplete-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['autocomplete'],
+    files: [
+      {
+        path: 'registry/default/examples/autocomplete-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/autocomplete-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   'button-default': {
     name: 'button-default',
     description: '',

@@ -1,0 +1,85 @@
+---
+title: Autocomplete
+description: An input that suggests options as you type.
+
+links:
+  doc: https://base-ui.com/react/components/autocomplete
+  api: https://base-ui.com/react/components/autocomplete#api-reference
+---
+
+<ComponentPreview
+  name='autocomplete-default'
+  description='An input that suggests options as you type.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/autocomplete
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='autocomplete' title='components/ui/autocomplete.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx showLineNumbers
+import {
+  Autocomplete,
+  AutocompleteEmpty,
+  AutocompleteInput,
+  AutocompleteItem,
+  AutocompleteList,
+  AutocompletePopup,
+} from "@/components/ui/autocomplete"
+```
+
+```tsx showLineNumbers
+const items = [
+  { label: 'React', value: 'react' },
+  { label: 'Next.js', value: 'nextjs' },
+  { label: 'Vue.js', value: 'vue' },
+  { label: 'Angular', value: 'angular' },
+  { label: 'Svelte', value: 'svelte' },
+];
+
+<Autocomplete items={items}>
+  <AutocompleteInput placeholder="Search frameworks..." />
+  <AutocompletePopup>
+    <AutocompleteEmpty>No results found.</AutocompleteEmpty>
+    <AutocompleteList>
+      {(item) => <AutocompleteItem key={item.value} value={item}>{item.label}</AutocompleteItem>}
+    </AutocompleteList>
+  </AutocompletePopup>
+</Autocomplete>
+```
