@@ -144,4 +144,70 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'checkbox-default',
+    type: 'registry:example',
+    registryDependencies: ['checkbox'],
+    files: [
+      {
+        path: 'examples/checkbox-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'checkbox-checked',
+    type: 'registry:example',
+    registryDependencies: ['checkbox'],
+    files: [
+      {
+        path: 'examples/checkbox-checked.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'checkbox-disabled',
+    type: 'registry:example',
+    registryDependencies: ['checkbox'],
+    files: [
+      {
+        path: 'examples/checkbox-disabled.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'checkbox-with-label',
+    type: 'registry:example',
+    registryDependencies: ['checkbox', 'label'],
+    files: [
+      {
+        path: 'examples/checkbox-with-label.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'checkbox-group-default',
+    type: 'registry:example',
+    registryDependencies: ['checkbox', 'checkbox-group', 'label'],
+    files: [
+      {
+        path: 'examples/checkbox-group-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'checkbox-group-with-field',
+    type: 'registry:example',
+    registryDependencies: ['checkbox', 'checkbox-group', 'field', 'label'],
+    files: [
+      {
+        path: 'examples/checkbox-group-with-field.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

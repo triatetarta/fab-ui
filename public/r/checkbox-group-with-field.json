@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox-group-with-field",
+  "registryDependencies": [
+    "checkbox",
+    "checkbox-group",
+    "field",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/checkbox-group-with-field.tsx",
+      "content": "import { Checkbox } from '@/registry/default/ui/checkbox';\nimport { CheckboxGroup } from '@/registry/default/ui/checkbox-group';\nimport {\n  Field,\n  FieldDescription,\n  FieldLabel,\n} from '@/registry/default/ui/field';\nimport { Label } from '@/registry/default/ui/label';\n\nexport function CheckboxGroupWithField() {\n  return (\n    <Field>\n      <FieldLabel>Email Preferences</FieldLabel>\n      <FieldDescription>\n        Choose which emails you'd like to receive.\n      </FieldDescription>\n      <CheckboxGroup className='mt-2'>\n        <Label>\n          <Checkbox name='emails' value='marketing' />\n          Marketing emails\n        </Label>\n        <Label>\n          <Checkbox name='emails' value='social' />\n          Social notifications\n        </Label>\n        <Label>\n          <Checkbox name='emails' value='security' />\n          Security alerts\n        </Label>\n      </CheckboxGroup>\n    </Field>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

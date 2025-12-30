@@ -1,0 +1,87 @@
+---
+title: Checkbox
+description: A control that allows the user to toggle between checked and not checked.
+links:
+  doc: https://base-ui.com/react/components/checkbox
+  api: https://base-ui.com/react/components/checkbox#api-reference
+---
+
+<ComponentPreview
+  name='checkbox-default'
+  description='A control that allows the user to toggle between checked and not checked.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/checkbox
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='checkbox' title='components/ui/checkbox.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Checkbox } from "@/components/ui/checkbox"
+```
+
+```tsx
+<Checkbox />
+```
+
+## Examples
+
+### Checked
+
+<ComponentPreview
+  name='checkbox-checked'
+  description='A checkbox that is checked by default.'
+  className='mb-4'
+/>
+
+### Disabled
+
+<ComponentPreview
+  name='checkbox-disabled'
+  description='A disabled checkbox in both unchecked and checked states.'
+  className='mb-4'
+/>
+
+### With Label
+
+<ComponentPreview
+  name='checkbox-with-label'
+  description='A checkbox with an associated label.'
+  className='mb-4'
+/>

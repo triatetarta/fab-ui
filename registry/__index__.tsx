@@ -1218,6 +1218,156 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'checkbox-default': {
+    name: 'checkbox-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['checkbox'],
+    files: [
+      {
+        path: 'registry/default/examples/checkbox-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/checkbox-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'checkbox-checked': {
+    name: 'checkbox-checked',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['checkbox'],
+    files: [
+      {
+        path: 'registry/default/examples/checkbox-checked.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/checkbox-checked.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'checkbox-disabled': {
+    name: 'checkbox-disabled',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['checkbox'],
+    files: [
+      {
+        path: 'registry/default/examples/checkbox-disabled.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/checkbox-disabled.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'checkbox-with-label': {
+    name: 'checkbox-with-label',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['checkbox', 'label'],
+    files: [
+      {
+        path: 'registry/default/examples/checkbox-with-label.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/checkbox-with-label.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'checkbox-group-default': {
+    name: 'checkbox-group-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['checkbox', 'checkbox-group', 'label'],
+    files: [
+      {
+        path: 'registry/default/examples/checkbox-group-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/checkbox-group-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'checkbox-group-with-field': {
+    name: 'checkbox-group-with-field',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['checkbox', 'checkbox-group', 'field', 'label'],
+    files: [
+      {
+        path: 'registry/default/examples/checkbox-group-with-field.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/checkbox-group-with-field.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',
