@@ -573,4 +573,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'slider-default',
+    type: 'registry:example',
+    registryDependencies: ['slider'],
+    files: [
+      {
+        path: 'examples/slider-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'slider-with-value',
+    type: 'registry:example',
+    registryDependencies: ['slider', 'label'],
+    files: [
+      {
+        path: 'examples/slider-with-value.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

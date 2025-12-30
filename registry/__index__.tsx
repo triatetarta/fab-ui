@@ -2187,6 +2187,56 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'slider-default': {
+    name: 'slider-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['slider'],
+    files: [
+      {
+        path: 'registry/default/examples/slider-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/slider-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'slider-with-value': {
+    name: 'slider-with-value',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['slider', 'label'],
+    files: [
+      {
+        path: 'registry/default/examples/slider-with-value.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/slider-with-value.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',
