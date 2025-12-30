@@ -386,4 +386,15 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'label-default',
+    type: 'registry:example',
+    registryDependencies: ['label', 'input'],
+    files: [
+      {
+        path: 'examples/label-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

@@ -1014,6 +1014,20 @@
       ]
     },
     {
+      "name": "label-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "label",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/label-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [
