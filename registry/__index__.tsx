@@ -1194,6 +1194,30 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'card-default': {
+    name: 'card-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['card'],
+    files: [
+      {
+        path: 'registry/default/examples/card-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/examples/card-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',

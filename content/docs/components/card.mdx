@@ -1,0 +1,78 @@
+---
+title: Card
+description: Displays a card with header, content, and footer.
+---
+
+<ComponentPreview
+  name='card-default'
+  description='Displays a card with header, content, and footer.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/card
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='card' title='components/ui/card.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx showLineNumbers
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+```
+
+```tsx showLineNumbers
+<Card>
+  <CardHeader>
+    <CardTitle>Card Title</CardTitle>
+    <CardDescription>Card Description</CardDescription>
+    <CardAction>Card Action</CardAction>
+  </CardHeader>
+  <CardContent>
+    <p>Card Content</p>
+  </CardContent>
+  <CardFooter>
+    <p>Card Footer</p>
+  </CardFooter>
+</Card>
+```

@@ -133,4 +133,15 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'card-default',
+    type: 'registry:example',
+    registryDependencies: ['card'],
+    files: [
+      {
+        path: 'examples/card-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

@@ -696,6 +696,19 @@
       ]
     },
     {
+      "name": "card-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "card"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/card-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [
