@@ -923,6 +923,31 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'alert-dialog-default': {
+    name: 'alert-dialog-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['alert-dialog'],
+    files: [
+      {
+        path: 'registry/default/examples/alert-dialog-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/alert-dialog-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   'button-default': {
     name: 'button-default',
     description: '',
