@@ -441,4 +441,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'popover-default',
+    type: 'registry:example',
+    registryDependencies: ['popover', 'button'],
+    files: [
+      {
+        path: 'examples/popover-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'popover-with-form',
+    type: 'registry:example',
+    registryDependencies: ['popover', 'button', 'field', 'input'],
+    files: [
+      {
+        path: 'examples/popover-with-form.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

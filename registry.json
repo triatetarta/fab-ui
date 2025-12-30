@@ -1080,6 +1080,36 @@
       ]
     },
     {
+      "name": "popover-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "popover",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/popover-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "popover-with-form",
+      "type": "registry:example",
+      "registryDependencies": [
+        "popover",
+        "button",
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/popover-with-form.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [

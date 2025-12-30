@@ -1888,6 +1888,56 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'popover-default': {
+    name: 'popover-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['popover', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/popover-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/popover-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'popover-with-form': {
+    name: 'popover-with-form',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['popover', 'button', 'field', 'input'],
+    files: [
+      {
+        path: 'registry/default/examples/popover-with-form.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/popover-with-form.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',
