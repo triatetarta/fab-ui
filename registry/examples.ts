@@ -474,4 +474,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'progress-default',
+    type: 'registry:example',
+    registryDependencies: ['progress'],
+    files: [
+      {
+        path: 'examples/progress-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'progress-with-label',
+    type: 'registry:example',
+    registryDependencies: ['progress'],
+    files: [
+      {
+        path: 'examples/progress-with-label.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

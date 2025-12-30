@@ -1963,6 +1963,56 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'progress-default': {
+    name: 'progress-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['progress'],
+    files: [
+      {
+        path: 'registry/default/examples/progress-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/progress-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'progress-with-label': {
+    name: 'progress-with-label',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['progress'],
+    files: [
+      {
+        path: 'registry/default/examples/progress-with-label.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/progress-with-label.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',

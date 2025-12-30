@@ -1123,6 +1123,32 @@
       ]
     },
     {
+      "name": "progress-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "progress"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/progress-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "progress-with-label",
+      "type": "registry:example",
+      "registryDependencies": [
+        "progress"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/progress-with-label.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [
