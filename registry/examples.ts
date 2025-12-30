@@ -2,6 +2,17 @@ import { Registry } from 'shadcn/schema';
 
 export const examples: Registry['items'] = [
   {
+    name: 'accordion-default',
+    type: 'registry:example',
+    registryDependencies: ['accordion'],
+    files: [
+      {
+        path: 'examples/accordion-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'button-default',
     type: 'registry:example',
     registryDependencies: ['button'],

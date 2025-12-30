@@ -23,10 +23,10 @@ function AccordionTrigger({
   ...props
 }: AccordionPrimitive.Trigger.Props) {
   return (
-    <AccordionPrimitive.Header className='flex'>
+    <AccordionPrimitive.Header className='mt-0 mb-0 flex py-4'>
       <AccordionPrimitive.Trigger
         className={cn(
-          'flex flex-1 cursor-pointer items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none focus-visible:ring-[3px] focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-64 [&[data-panel-open]>svg]:rotate-45',
+          'flex flex-1 cursor-pointer items-start justify-between gap-4 rounded-md text-left text-sm font-medium transition-all outline-none focus-visible:ring-[3px] focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-64 [&[data-panel-open]>svg]:rotate-45',
           className
         )}
         data-slot='accordion-trigger'

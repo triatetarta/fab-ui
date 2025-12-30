@@ -540,6 +540,19 @@
       ]
     },
     {
+      "name": "accordion-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "accordion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/accordion-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "button-default",
       "type": "registry:example",
       "registryDependencies": [
