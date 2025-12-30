@@ -1028,6 +1028,32 @@
       ]
     },
     {
+      "name": "meter-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "meter"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/meter-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "meter-with-label",
+      "type": "registry:example",
+      "registryDependencies": [
+        "meter"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/meter-with-label.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [

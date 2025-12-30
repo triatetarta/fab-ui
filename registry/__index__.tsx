@@ -1789,6 +1789,55 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'meter-default': {
+    name: 'meter-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['meter'],
+    files: [
+      {
+        path: 'registry/default/examples/meter-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/examples/meter-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'meter-with-label': {
+    name: 'meter-with-label',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['meter'],
+    files: [
+      {
+        path: 'registry/default/examples/meter-with-label.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/meter-with-label.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',

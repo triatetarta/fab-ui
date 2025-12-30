@@ -397,4 +397,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'meter-default',
+    type: 'registry:example',
+    registryDependencies: ['meter'],
+    files: [
+      {
+        path: 'examples/meter-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'meter-with-label',
+    type: 'registry:example',
+    registryDependencies: ['meter'],
+    files: [
+      {
+        path: 'examples/meter-with-label.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];
