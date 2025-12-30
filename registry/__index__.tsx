@@ -1838,6 +1838,56 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'number-field-default': {
+    name: 'number-field-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['number-field'],
+    files: [
+      {
+        path: 'registry/default/examples/number-field-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/number-field-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'number-field-with-scrub': {
+    name: 'number-field-with-scrub',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['number-field'],
+    files: [
+      {
+        path: 'registry/default/examples/number-field-with-scrub.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/number-field-with-scrub.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',

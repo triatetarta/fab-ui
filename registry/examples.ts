@@ -419,4 +419,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'number-field-default',
+    type: 'registry:example',
+    registryDependencies: ['number-field'],
+    files: [
+      {
+        path: 'examples/number-field-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'number-field-with-scrub',
+    type: 'registry:example',
+    registryDependencies: ['number-field'],
+    files: [
+      {
+        path: 'examples/number-field-with-scrub.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

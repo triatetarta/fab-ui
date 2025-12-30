@@ -1,0 +1,83 @@
+---
+title: Number Field
+description: A numeric input with increment and decrement buttons.
+links:
+  doc: https://base-ui.com/react/components/number-field
+  api: https://base-ui.com/react/components/number-field#api-reference
+---
+
+<ComponentPreview
+  name='number-field-default'
+  description='A numeric input with increment and decrement buttons.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/number-field
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='number-field' title='components/ui/number-field.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  NumberField,
+  NumberFieldDecrement,
+  NumberFieldGroup,
+  NumberFieldIncrement,
+  NumberFieldInput,
+} from "@/components/ui/number-field"
+```
+
+```tsx
+<NumberField defaultValue={5}>
+  <NumberFieldGroup>
+    <NumberFieldDecrement />
+    <NumberFieldInput />
+    <NumberFieldIncrement />
+  </NumberFieldGroup>
+</NumberField>
+```
+
+## Examples
+
+### With Scrub Area
+
+<ComponentPreview
+  name='number-field-with-scrub'
+  description='A number field with a draggable scrub area to change the value.'
+  className='mb-4'
+/>
