@@ -1691,6 +1691,55 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'input-default': {
+    name: 'input-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['input'],
+    files: [
+      {
+        path: 'registry/default/examples/input-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/examples/input-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'input-disabled': {
+    name: 'input-disabled',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['input'],
+    files: [
+      {
+        path: 'registry/default/examples/input-disabled.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/input-disabled.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',

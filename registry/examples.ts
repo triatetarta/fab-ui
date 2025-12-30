@@ -353,4 +353,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'input-default',
+    type: 'registry:example',
+    registryDependencies: ['input'],
+    files: [
+      {
+        path: 'examples/input-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'input-disabled',
+    type: 'registry:example',
+    registryDependencies: ['input'],
+    files: [
+      {
+        path: 'examples/input-disabled.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

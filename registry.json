@@ -973,6 +973,32 @@
       ]
     },
     {
+      "name": "input-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/input-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-disabled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/input-disabled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [
