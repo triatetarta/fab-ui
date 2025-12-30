@@ -21,17 +21,25 @@ function AutocompleteInput(props: AutocompletePrimitive.Input.Props) {
 
 function AutocompletePopup({
   className,
+  sideOffset = 4,
+  children,
   ...props
-}: AutocompletePrimitive.Popup.Props) {
+}: AutocompletePrimitive.Popup.Props & {
+  sideOffset?: number;
+}) {
   return (
-    <AutocompletePrimitive.Popup
-      data-slot='autocomplete-popup'
-      className={cn(
-        'max-h-[min(var(--available-height),23rem)] w-(--anchor-width) max-w-(--available-width) scroll-pt-2 scroll-pb-2 overflow-y-auto overscroll-contain rounded-md bg-[canvas] py-2 text-foreground shadow-sm outline-1 outline-muted dark:shadow-none dark:-outline-offset-1 dark:outline-muted',
-        className
-      )}
-      {...props}
-    />
+    <AutocompletePositioner sideOffset={sideOffset}>
+      <AutocompletePrimitive.Popup
+        data-slot='autocomplete-popup'
+        className={cn(
+          'max-h-[min(var(--available-height),23rem)] w-(--anchor-width) max-w-(--available-width) scroll-pt-2 scroll-pb-2 overflow-y-auto overscroll-contain rounded-2xl bg-popover text-popover-foreground shadow-lg outline-1 outline-muted dark:shadow-none dark:-outline-offset-1 dark:outline-muted',
+          className
+        )}
+        {...props}
+      >
+        {children}
+      </AutocompletePrimitive.Popup>
+    </AutocompletePositioner>
   );
 }
 
@@ -57,7 +65,7 @@ function AutocompleteList({
   return (
     <AutocompletePrimitive.List
       data-slot='autocomplete-list'
-      className={cn('not-empty:p-1.5', className)}
+      className={cn('p-1 data-empty:p-0', className)}
       {...props}
     />
   );
@@ -87,7 +95,7 @@ function AutocompleteItem({
     <AutocompletePrimitive.Item
       data-slot='autocomplete-item'
       className={cn(
-        'flex cursor-default py-2 pr-8 pl-4 text-base leading-4 outline-none select-none data-highlighted:relative data-highlighted:z-0 data-highlighted:text-accent-foreground data-highlighted:before:absolute data-highlighted:before:inset-x-2 data-highlighted:before:inset-y-0 data-highlighted:before:z-[-1] data-highlighted:before:rounded data-highlighted:before:bg-accent',
+        "relative flex w-full cursor-default items-center gap-2.5 rounded-xl py-2 pr-8 pl-3 text-sm outline-hidden select-none data-disabled:pointer-events-none data-disabled:opacity-50 data-highlighted:bg-accent data-highlighted:text-accent-foreground not-data-[variant=destructive]:data-highlighted:**:text-accent-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         className
       )}
       {...props}
