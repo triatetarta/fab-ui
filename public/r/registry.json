@@ -1204,6 +1204,32 @@
       ]
     },
     {
+      "name": "select-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "select"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/select-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "select-grouped",
+      "type": "registry:example",
+      "registryDependencies": [
+        "select"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/select-grouped.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [

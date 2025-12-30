@@ -2112,6 +2112,56 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'select-default': {
+    name: 'select-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['select'],
+    files: [
+      {
+        path: 'registry/default/examples/select-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/select-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'select-grouped': {
+    name: 'select-grouped',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['select'],
+    files: [
+      {
+        path: 'registry/default/examples/select-grouped.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/select-grouped.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',

@@ -540,4 +540,26 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'select-default',
+    type: 'registry:example',
+    registryDependencies: ['select'],
+    files: [
+      {
+        path: 'examples/select-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'select-grouped',
+    type: 'registry:example',
+    registryDependencies: ['select'],
+    files: [
+      {
+        path: 'examples/select-grouped.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];
