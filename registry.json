@@ -1230,6 +1230,19 @@
       ]
     },
     {
+      "name": "separator-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/separator-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [

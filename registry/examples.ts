@@ -562,4 +562,15 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'separator-default',
+    type: 'registry:example',
+    registryDependencies: ['separator'],
+    files: [
+      {
+        path: 'examples/separator-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

@@ -1,0 +1,62 @@
+---
+title: Separator
+description: A visual divider between content sections.
+links:
+  doc: https://base-ui.com/react/components/separator
+  api: https://base-ui.com/react/components/separator#api-reference
+---
+
+<ComponentPreview
+  name='separator-default'
+  description='A visual divider between content sections.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/separator
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='separator' title='components/ui/separator.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Separator } from "@/components/ui/separator"
+```
+
+```tsx
+<Separator />
+<Separator orientation='vertical' />
+```
