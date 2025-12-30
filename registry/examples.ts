@@ -331,4 +331,15 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'fieldset-default',
+    type: 'registry:example',
+    registryDependencies: ['fieldset', 'field', 'input'],
+    files: [
+      {
+        path: 'examples/fieldset-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

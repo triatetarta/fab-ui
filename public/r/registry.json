@@ -942,6 +942,21 @@
       ]
     },
     {
+      "name": "fieldset-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "fieldset",
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/fieldset-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [
