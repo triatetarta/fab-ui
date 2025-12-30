@@ -793,6 +793,19 @@
       ]
     },
     {
+      "name": "collapsible-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "collapsible"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/collapsible-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [

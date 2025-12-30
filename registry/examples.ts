@@ -210,4 +210,15 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'collapsible-default',
+    type: 'registry:example',
+    registryDependencies: ['collapsible'],
+    files: [
+      {
+        path: 'examples/collapsible-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];
