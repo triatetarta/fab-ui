@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-default",
+  "registryDependencies": [
+    "tabs"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/tabs-default.tsx",
+      "content": "'use client';\n\nimport {\n  Tabs,\n  TabsList,\n  TabsPanel,\n  TabsTrigger,\n} from '@/registry/default/ui/tabs';\n\nexport function TabsDefault() {\n  return (\n    <Tabs defaultValue='account'>\n      <TabsList>\n        <TabsTrigger value='account'>Account</TabsTrigger>\n        <TabsTrigger value='password'>Password</TabsTrigger>\n        <TabsTrigger value='settings'>Settings</TabsTrigger>\n      </TabsList>\n      <TabsPanel value='account' className='p-4'>\n        <p className='text-sm text-muted-foreground'>\n          Make changes to your account.\n        </p>\n      </TabsPanel>\n      <TabsPanel value='password' className='p-4'>\n        <p className='text-sm text-muted-foreground'>\n          Change your password here.\n        </p>\n      </TabsPanel>\n      <TabsPanel value='settings' className='p-4'>\n        <p className='text-sm text-muted-foreground'>\n          Adjust your settings here.\n        </p>\n      </TabsPanel>\n    </Tabs>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

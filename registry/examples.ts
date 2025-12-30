@@ -617,4 +617,142 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'tabs-default',
+    type: 'registry:example',
+    registryDependencies: ['tabs'],
+    files: [
+      {
+        path: 'examples/tabs-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'tabs-underline',
+    type: 'registry:example',
+    registryDependencies: ['tabs'],
+    files: [
+      {
+        path: 'examples/tabs-underline.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'textarea-default',
+    type: 'registry:example',
+    registryDependencies: ['textarea'],
+    files: [
+      {
+        path: 'examples/textarea-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'textarea-with-label',
+    type: 'registry:example',
+    registryDependencies: ['textarea', 'field'],
+    files: [
+      {
+        path: 'examples/textarea-with-label.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'toggle-default',
+    type: 'registry:example',
+    registryDependencies: ['toggle'],
+    files: [
+      {
+        path: 'examples/toggle-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'toggle-outline',
+    type: 'registry:example',
+    registryDependencies: ['toggle'],
+    files: [
+      {
+        path: 'examples/toggle-outline.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'toggle-with-text',
+    type: 'registry:example',
+    registryDependencies: ['toggle'],
+    files: [
+      {
+        path: 'examples/toggle-with-text.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'toggle-group-default',
+    type: 'registry:example',
+    registryDependencies: ['toggle-group'],
+    files: [
+      {
+        path: 'examples/toggle-group-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'toggle-group-multiple',
+    type: 'registry:example',
+    registryDependencies: ['toggle-group'],
+    files: [
+      {
+        path: 'examples/toggle-group-multiple.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'toolbar-default',
+    type: 'registry:example',
+    registryDependencies: [
+      'toolbar',
+      'toggle-group',
+      'button',
+      'select',
+      'tooltip',
+    ],
+    files: [
+      {
+        path: 'examples/toolbar-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'tooltip-default',
+    type: 'registry:example',
+    registryDependencies: ['tooltip', 'button'],
+    files: [
+      {
+        path: 'examples/tooltip-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'tooltip-positions',
+    type: 'registry:example',
+    registryDependencies: ['tooltip', 'button'],
+    files: [
+      {
+        path: 'examples/tooltip-positions.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];

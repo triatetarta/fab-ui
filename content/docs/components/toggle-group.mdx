@@ -1,0 +1,69 @@
+---
+title: Toggle Group
+description: A set of toggle buttons that allows single or multiple selections.
+links:
+  doc: https://base-ui.com/react/components/toggle-group
+  api: https://base-ui.com/react/components/toggle-group#api-reference
+---
+
+<ComponentPreview name='toggle-group-default' />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/toggle-group
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='toggle-group' title='components/ui/toggle-group.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
+```
+
+```tsx
+<ToggleGroup defaultValue="center">
+  <ToggleGroupItem value="left">Left</ToggleGroupItem>
+  <ToggleGroupItem value="center">Center</ToggleGroupItem>
+  <ToggleGroupItem value="right">Right</ToggleGroupItem>
+</ToggleGroup>
+```
+
+## Examples
+
+### Multiple
+
+Use `multiple` to allow multiple items to be selected.
+
+<ComponentPreview name='toggle-group-multiple' />

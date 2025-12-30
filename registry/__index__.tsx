@@ -2287,6 +2287,311 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'tabs-default': {
+    name: 'tabs-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['tabs'],
+    files: [
+      {
+        path: 'registry/default/examples/tabs-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/examples/tabs-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'tabs-underline': {
+    name: 'tabs-underline',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['tabs'],
+    files: [
+      {
+        path: 'registry/default/examples/tabs-underline.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/tabs-underline.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'textarea-default': {
+    name: 'textarea-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['textarea'],
+    files: [
+      {
+        path: 'registry/default/examples/textarea-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/textarea-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'textarea-with-label': {
+    name: 'textarea-with-label',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['textarea', 'field'],
+    files: [
+      {
+        path: 'registry/default/examples/textarea-with-label.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/textarea-with-label.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'toggle-default': {
+    name: 'toggle-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['toggle'],
+    files: [
+      {
+        path: 'registry/default/examples/toggle-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/toggle-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'toggle-outline': {
+    name: 'toggle-outline',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['toggle'],
+    files: [
+      {
+        path: 'registry/default/examples/toggle-outline.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/toggle-outline.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'toggle-with-text': {
+    name: 'toggle-with-text',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['toggle'],
+    files: [
+      {
+        path: 'registry/default/examples/toggle-with-text.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/toggle-with-text.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'toggle-group-default': {
+    name: 'toggle-group-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['toggle-group'],
+    files: [
+      {
+        path: 'registry/default/examples/toggle-group-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/toggle-group-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'toggle-group-multiple': {
+    name: 'toggle-group-multiple',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['toggle-group'],
+    files: [
+      {
+        path: 'registry/default/examples/toggle-group-multiple.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/toggle-group-multiple.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'toolbar-default': {
+    name: 'toolbar-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: [
+      'toolbar',
+      'toggle-group',
+      'button',
+      'select',
+      'tooltip',
+    ],
+    files: [
+      {
+        path: 'registry/default/examples/toolbar-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/toolbar-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'tooltip-default': {
+    name: 'tooltip-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['tooltip', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/tooltip-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/tooltip-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'tooltip-positions': {
+    name: 'tooltip-positions',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['tooltip', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/tooltip-positions.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/tooltip-positions.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   utils: {
     name: 'utils',
     description: '',
