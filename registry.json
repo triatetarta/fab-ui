@@ -957,6 +957,22 @@
       ]
     },
     {
+      "name": "form-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "form",
+        "field",
+        "input",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/form-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "utils",
       "type": "registry:lib",
       "dependencies": [

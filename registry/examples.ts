@@ -342,4 +342,15 @@ export const examples: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'form-default',
+    type: 'registry:example',
+    registryDependencies: ['form', 'field', 'input', 'button'],
+    files: [
+      {
+        path: 'examples/form-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
 ];
