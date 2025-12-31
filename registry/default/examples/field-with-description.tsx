@@ -9,12 +9,14 @@ import { Input } from '@/registry/default/ui/input';
 
 export function FieldWithDescription() {
   return (
-    <Field>
-      <FieldLabel>Username</FieldLabel>
-      <Input placeholder='Enter your username' />
-      <FieldDescription className='my-0!'>
-        This will be your public display name.
-      </FieldDescription>
-    </Field>
+    <div>
+      <Field>
+        <FieldLabel>Username</FieldLabel>
+        <Input placeholder='Enter your username' />
+        <FieldDescription className='my-0!'>
+          This will be your public display name.
+        </FieldDescription>
+      </Field>
+    </div>
   );
 }
