@@ -16,7 +16,6 @@ import {
   Toolbar,
   ToolbarButton,
   ToolbarGroup,
-  ToolbarLink,
   ToolbarSeparator,
 } from '@/registry/default/ui/toolbar';
 import {
