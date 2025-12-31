@@ -1,20 +1,22 @@
 import Link from 'next/link';
 
-import { Example } from './example';
-
 export default function HomePage() {
   return (
-    <div className='flex flex-1 flex-col justify-center text-center'>
-      <h1 className='mb-4 text-2xl font-bold'>fab ui</h1>
-      <p>
-        You can open{' '}
-        <Link href='/docs' className='font-medium underline'>
-          /docs
-        </Link>{' '}
-        and see the documentation.
+    <div className='flex flex-1 flex-col items-center justify-center px-4 text-center'>
+      <h1 className='text-4xl font-bold tracking-tight sm:text-5xl'>fab ui</h1>
+      <p className='mt-4 max-w-xl text-lg text-muted-foreground'>
+        A modern registry of React and Next.js components, built on top of Base
+        UI and beyond.
       </p>
-
-      <Example />
+      <p className='mt-2 text-muted-foreground'>
+        Open source, accessible, customizable.
+      </p>
+      <Link
+        href='/docs'
+        className='mt-8 inline-flex h-10 items-center justify-center rounded-4xl bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80'
+      >
+        Get Started
+      </Link>
     </div>
   );
 }
