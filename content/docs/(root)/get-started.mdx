@@ -1,0 +1,61 @@
+---
+title: Get Started
+description: Install and configure fab-ui components in your project.
+---
+
+## Installation
+
+### Direct URL
+
+Install components directly without any configuration:
+
+```bash
+npx shadcn@latest add https://fab-ui.com/r/button.json
+```
+
+### Namespaced Registry
+
+For a cleaner workflow, configure the fab-ui registry in your `components.json`:
+
+```json title="components.json"
+{
+  "$schema": "https://shadcn.com/schema.json",
+  "registries": {
+    "fab-ui": "https://fab-ui.com/r/{name}.json"
+  }
+}
+```
+
+Then install components using short names:
+
+```bash
+npx shadcn@latest add fab-ui/button
+```
+
+## Portals Setup
+
+fab-ui uses portals for popup components like Dialog and Popover. To ensure these display above all page content, add an `isolation: isolate` style to your application root element:
+
+```css title="globals.css"
+.root {
+  isolation: isolate;
+}
+```
+
+This creates a separate stacking context, preventing `z-index` conflicts with other page styles.
+
+## iOS 26+ Safari
+
+Starting with iOS 26, Safari displays content beneath the UI chrome. Dialog backdrops and similar elements must use `position: absolute` instead of `position: fixed` to cover the visual viewport properly after scrolling. Add this style globally:
+
+```css title="globals.css"
+body {
+  position: relative;
+}
+```
+
+## Working with LLMs
+
+fab-ui is built on Base UI. When working with AI assistants, you can reference the Base UI documentation in markdown format for accurate component APIs and patterns.
+
+See [Base UI's llms.txt](https://base-ui.com/llms.txt) for AI-friendly documentation.

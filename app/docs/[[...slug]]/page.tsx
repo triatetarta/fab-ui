@@ -81,7 +81,7 @@ export default async function Page(props: PageProps<'/docs/[[...slug]]'>) {
         </div>
       ) : null}
 
-      <DocsBody>
+      <DocsBody className='pb-10'>
         <MDX
           components={getMDXComponents({
             // this allows you to link to other pages with relative file paths
