@@ -5,6 +5,6 @@ import { type Registry } from 'shadcn/schema';
 
 export const registry = {
   name: 'fab-ui',
-  homepage: 'https://fab-ui.vercel.app',
+  homepage: 'https://fab-ui.com',
   items: [...ui, ...examples, ...lib],
 } satisfies Registry;
