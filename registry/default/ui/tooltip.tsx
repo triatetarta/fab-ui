@@ -14,7 +14,7 @@ function TooltipArrow({ className, ...props }: TooltipPrimitive.Arrow.Props) {
   return (
     <TooltipPrimitive.Arrow
       className={cn(
-        'flex data-[side=bottom]:-top-2 data-[side=bottom]:rotate-0 data-[side=left]:right-[-13px] data-[side=left]:rotate-90 data-[side=right]:left-[-13px] data-[side=right]:-rotate-90 data-[side=top]:-bottom-2 data-[side=top]:rotate-180',
+        'flex data-[side=bottom]:-top-2 data-[side=bottom]:rotate-0 data-[side=left]:-right-3.25 data-[side=left]:rotate-90 data-[side=right]:-left-3.25 data-[side=right]:-rotate-90 data-[side=top]:-bottom-2 data-[side=top]:rotate-180',
         className
       )}
       {...props}
@@ -46,7 +46,7 @@ function TooltipPopup({
         <TooltipPrimitive.Popup
           data-slot='tooltip-content'
           className={cn(
-            'flex origin-(--transform-origin) flex-col rounded-md bg-[canvas] px-2 py-1 text-sm shadow-sm transition-[transform,scale,opacity] data-ending-style:scale-90 data-ending-style:opacity-0 data-instant:transition-none data-starting-style:scale-90 data-starting-style:opacity-0 dark:shadow-none',
+            'flex origin-(--transform-origin) flex-col rounded-md bg-foreground px-2 py-1 text-sm text-background shadow-sm transition-[transform,scale,opacity] data-ending-style:scale-90 data-ending-style:opacity-0 data-instant:transition-none data-starting-style:scale-90 data-starting-style:opacity-0 dark:shadow-none',
             className
           )}
           {...props}

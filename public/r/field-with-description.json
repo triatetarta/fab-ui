@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/default/examples/field-with-description.tsx",
-      "content": "'use client';\n\nimport {\n  Field,\n  FieldDescription,\n  FieldLabel,\n} from '@/registry/default/ui/field';\nimport { Input } from '@/registry/default/ui/input';\n\nexport function FieldWithDescription() {\n  return (\n    <Field>\n      <FieldLabel>Username</FieldLabel>\n      <Input placeholder='Enter your username' />\n      <FieldDescription className='my-0!'>\n        This will be your public display name.\n      </FieldDescription>\n    </Field>\n  );\n}\n",
+      "content": "'use client';\n\nimport {\n  Field,\n  FieldDescription,\n  FieldLabel,\n} from '@/registry/default/ui/field';\nimport { Input } from '@/registry/default/ui/input';\n\nexport function FieldWithDescription() {\n  return (\n    <div>\n      <Field>\n        <FieldLabel>Username</FieldLabel>\n        <Input placeholder='Enter your username' />\n        <FieldDescription className='my-0!'>\n          This will be your public display name.\n        </FieldDescription>\n      </Field>\n    </div>\n  );\n}\n",
       "type": "registry:example"
     }
   ],
