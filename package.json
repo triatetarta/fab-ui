@@ -22,7 +22,7 @@
     "*.{js,jsx,ts,tsx,css}": "prettier --write"
   },
   "dependencies": {
-    "@base-ui/react": "1.0.0",
+    "@base-ui/react": "1.1.0",
     "@paper-design/shaders-react": "^0.0.70",
     "@vercel/analytics": "1.6.1",
     "@vercel/speed-insights": "1.3.1",
