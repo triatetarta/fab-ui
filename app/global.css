@@ -149,6 +149,11 @@
   isolation: isolate;
 }
 
+/* Fumadocs nav border */
+header nav {
+  @apply border-x;
+}
+
 @layer base {
   body {
     @apply relative bg-background text-foreground;

@@ -30,7 +30,7 @@ export default function Layout({ children }: LayoutProps<'/'>) {
     <html lang='en' className={geist.className} suppressHydrationWarning>
       <body suppressHydrationWarning>
         <div className='root flex min-h-screen flex-col'>
-          <RootProvider>
+          <RootProvider theme={{ defaultTheme: 'dark' }}>
             {children}
             <SpeedInsights />
             <Analytics />
