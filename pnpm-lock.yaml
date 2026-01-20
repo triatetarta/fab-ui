@@ -15,7 +15,7 @@ importers:
         specifier: 1.1.0
         version: 1.1.0(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@paper-design/shaders-react':
-        specifier: ^0.0.71
+        specifier: 0.0.71
         version: 0.0.71(@types/react@19.2.7)(react@19.2.3)
       '@vercel/analytics':
         specifier: 1.6.1
