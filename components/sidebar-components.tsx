@@ -2,7 +2,13 @@
 
 import type { ComponentProps } from 'react';
 
+import {
+  Collapsible,
+  CollapsiblePanel,
+  CollapsibleTrigger,
+} from '@/registry/default/ui/collapsible';
 import type { SidebarPageTreeComponents } from 'fumadocs-ui/components/sidebar/page-tree';
+import { ChevronDownIcon } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -13,14 +19,17 @@ export function Folder({
   item,
 }: ComponentProps<SidebarPageTreeComponents['Folder']>) {
   return (
-    <div className='flex flex-col gap-2 not-first:mt-8'>
-      <div className='px-2 text-xs font-medium text-muted-foreground uppercase'>
+    <Collapsible defaultOpen className='flex flex-col gap-2 not-first:mt-8'>
+      <CollapsibleTrigger className='flex items-center justify-between px-2 text-sm font-medium text-muted-foreground'>
         {item.name}
-      </div>
-      <div className='[&_a]:text-foreground [&_a]:hover:text-foreground'>
-        {children}
-      </div>
-    </div>
+        <ChevronDownIcon className='size-3.5 transition-transform duration-200 in-data-panel-open:rotate-180' />
+      </CollapsibleTrigger>
+      <CollapsiblePanel>
+        <div className='[&_a]:text-foreground [&_a]:hover:text-foreground'>
+          {children}
+        </div>
+      </CollapsiblePanel>
+    </Collapsible>
   );
 }
 
