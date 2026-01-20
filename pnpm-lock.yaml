@@ -15,8 +15,8 @@ importers:
         specifier: 1.1.0
         version: 1.1.0(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@paper-design/shaders-react':
-        specifier: ^0.0.70
-        version: 0.0.70(@types/react@19.2.7)(react@19.2.3)
+        specifier: ^0.0.71
+        version: 0.0.71(@types/react@19.2.7)(react@19.2.3)
       '@vercel/analytics':
         specifier: 1.6.1
         version: 1.6.1(next@16.1.2(@babel/core@7.28.5)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)
@@ -1054,8 +1054,8 @@ packages:
     resolution: {integrity: sha512-a61ljmRVVyG5MC/698C8/FfFDw5a8LOIvyOLW5fztgUXqUpc1jOfQzOitSCbge657OgXXThmY3Tk8fpiDb4UcA==}
     engines: {node: '>= 20.0.0'}
 
-  '@paper-design/shaders-react@0.0.70':
-    resolution: {integrity: sha512-9DkZXcyehorsZzyWnYV3OOO1i7rF7a5CkasjKJ1h1tLlY3JJLUEX9W+gZz7JgWHyvCimUu0OSq1sbHTb2OntRw==}
+  '@paper-design/shaders-react@0.0.71':
+    resolution: {integrity: sha512-kTqjIlyZcpkwqJie+3ldEDscTtx1oOi8eRBD5QgWKI21GaNn/SSg26092M5zzqr3e8dVANv0ktS2ICSjbMFKbw==}
     peerDependencies:
       '@types/react': 19.2.7
       react: ^18 || ^19
@@ -1063,8 +1063,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@paper-design/shaders@0.0.70':
-    resolution: {integrity: sha512-d9LQcmPoEm3+Y6Vuz7cvsnSelfTM5QD63yQ3ddLM7QGYfoSjbQiU38kzjA4O3oCQ6zv23o/IGvGA8k9S/L+kZw==}
+  '@paper-design/shaders@0.0.71':
+    resolution: {integrity: sha512-brCt05YxxyjBrhnE3l1wJJHcFXsM8aE4lmpd9TMQp+p0dMU3F+OWkJZL9m/RC1Tt7om5xr0Wg7d0HYm+b9NYZA==}
 
   '@radix-ui/number@1.1.1':
     resolution: {integrity: sha512-MkKCwxlXTgz6CFoJx3pCwn07GKp36+aZyu/u2Ln2VrA5DcdyCZkASEDBTd8x5whTQQL5CiYf4prXKLcgQdv29g==}
@@ -5494,14 +5494,14 @@ snapshots:
 
   '@orama/orama@3.1.18': {}
 
-  '@paper-design/shaders-react@0.0.70(@types/react@19.2.7)(react@19.2.3)':
+  '@paper-design/shaders-react@0.0.71(@types/react@19.2.7)(react@19.2.3)':
     dependencies:
-      '@paper-design/shaders': 0.0.70
+      '@paper-design/shaders': 0.0.71
       react: 19.2.3
     optionalDependencies:
       '@types/react': 19.2.7
 
-  '@paper-design/shaders@0.0.70': {}
+  '@paper-design/shaders@0.0.71': {}
 
   '@radix-ui/number@1.1.1': {}
 
