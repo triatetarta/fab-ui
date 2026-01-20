@@ -41,7 +41,7 @@
     "react-dom": "19.2.3",
     "rehype-pretty-code": "0.14.1",
     "rimraf": "6.1.2",
-    "shadcn": "3.6.3",
+    "shadcn": "3.7.0",
     "shiki": "3.21.0",
     "tailwind-merge": "3.4.0",
     "ts-morph": "27.0.2",
