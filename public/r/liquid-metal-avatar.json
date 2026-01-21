@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "liquid-metal-avatar",
+  "title": "Liquid Metal Avatar",
+  "dependencies": [
+    "@paper-design/shaders-react"
+  ],
+  "registryDependencies": [
+    "@fab-ui/avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/liquid-metal-avatar.tsx",
+      "content": "'use client';\n\nimport {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n} from '@/registry/default/ui/avatar';\nimport { LiquidMetal, LiquidMetalProps } from '@paper-design/shaders-react';\nimport { cva, type VariantProps } from 'class-variance-authority';\n\nimport { cn } from '@/lib/utils';\n\nconst avatarVariants = cva(\n  'relative flex items-center justify-center rounded-full overflow-visible bg-transparent',\n  {\n    variants: {\n      size: {\n        sm: 'size-8',\n        md: 'size-12',\n        lg: 'size-16',\n      },\n    },\n    defaultVariants: { size: 'md' },\n  }\n);\n\nconst innerVariants = cva(\n  'absolute rounded-full bg-primary-foreground inset-shadow-lg',\n  {\n    variants: {\n      size: {\n        sm: 'inset-[1px]',\n        md: 'inset-[2px]',\n        lg: 'inset-[3px]',\n      },\n    },\n    defaultVariants: { size: 'md' },\n  }\n);\n\ntype ShaderProps = Omit<LiquidMetalProps, 'className' | 'style' | 'shape'>;\n\ntype LiquidMetalAvatarProps = React.ComponentProps<'div'> &\n  Partial<ShaderProps> &\n  VariantProps<typeof avatarVariants>;\n\nfunction LiquidMetalAvatar({\n  size,\n  className,\n  children,\n  speed = 0.6,\n  repetition = 4,\n  softness = 0.5,\n  shiftRed = 0.3,\n  shiftBlue = 0.3,\n  distortion = 0,\n  contour = 0,\n  angle = 45,\n  scale = 8,\n  offsetX = 0.1,\n  offsetY = -0.1,\n  ...props\n}: LiquidMetalAvatarProps) {\n  return (\n    <div\n      data-slot='liquid-metal-avatar'\n      className={cn(avatarVariants({ size }), className)}\n      {...props}\n    >\n      <LiquidMetal\n        className='absolute inset-0 rounded-full'\n        shape='none'\n        speed={speed}\n        repetition={repetition}\n        softness={softness}\n        shiftRed={shiftRed}\n        shiftBlue={shiftBlue}\n        distortion={distortion}\n        contour={contour}\n        angle={angle}\n        scale={scale}\n        offsetX={offsetX}\n        offsetY={offsetY}\n      />\n      <Avatar\n        className={cn(innerVariants({ size }), 'size-auto bg-transparent')}\n      >\n        {children}\n      </Avatar>\n    </div>\n  );\n}\n\nexport { LiquidMetalAvatar, AvatarImage, AvatarFallback };\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "--inset-shadow-lg": "inset 0 10px 8px color-mix(in oklch, var(--background) 7%, transparent)"
+    }
+  },
+  "type": "registry:ui"
+}

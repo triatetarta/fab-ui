@@ -250,6 +250,44 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'liquid-metal-avatar',
+    type: 'registry:ui',
+    title: 'Liquid Metal Avatar',
+    registryDependencies: ['@fab-ui/avatar'],
+    dependencies: ['@paper-design/shaders-react'],
+    files: [
+      {
+        path: 'ui/liquid-metal-avatar.tsx',
+        type: 'registry:ui',
+      },
+    ],
+    cssVars: {
+      theme: {
+        '--inset-shadow-lg':
+          'inset 0 10px 8px color-mix(in oklch, var(--background) 7%, transparent)',
+      },
+    },
+  },
+  {
+    name: 'liquid-metal-button',
+    type: 'registry:ui',
+    title: 'Liquid Metal Button',
+    registryDependencies: ['@fab-ui/button'],
+    dependencies: ['@paper-design/shaders-react'],
+    files: [
+      {
+        path: 'ui/liquid-metal-button.tsx',
+        type: 'registry:ui',
+      },
+    ],
+    cssVars: {
+      theme: {
+        '--inset-shadow-lg':
+          'inset 0 10px 8px color-mix(in oklch, var(--background) 7%, transparent)',
+      },
+    },
+  },
+  {
     name: 'meter',
     type: 'registry:ui',
     title: 'Meter',

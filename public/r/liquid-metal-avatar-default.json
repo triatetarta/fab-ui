@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "liquid-metal-avatar-default",
+  "registryDependencies": [
+    "liquid-metal-avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/liquid-metal-avatar-default.tsx",
+      "content": "import {\n  AvatarFallback,\n  AvatarImage,\n  LiquidMetalAvatar,\n} from '@/registry/default/ui/liquid-metal-avatar';\n\nexport function LiquidMetalAvatarDefault() {\n  return (\n    <LiquidMetalAvatar>\n      <AvatarImage\n        src='https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=128&h=128&dpr=2&q=80'\n        alt='Avatar'\n      />\n      <AvatarFallback>JD</AvatarFallback>\n    </LiquidMetalAvatar>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

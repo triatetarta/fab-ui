@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "liquid-metal-button-sizes",
+  "registryDependencies": [
+    "liquid-metal-button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/liquid-metal-button-sizes.tsx",
+      "content": "import { LiquidMetalButton } from '@/registry/default/ui/liquid-metal-button';\n\nexport function LiquidMetalButtonSizes() {\n  return (\n    <div className='flex flex-wrap items-center gap-4'>\n      <LiquidMetalButton size='sm'>Small</LiquidMetalButton>\n      <LiquidMetalButton size='md'>Medium</LiquidMetalButton>\n      <LiquidMetalButton size='lg'>Large</LiquidMetalButton>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

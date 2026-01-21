@@ -490,6 +490,54 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'liquid-metal-avatar': {
+    name: 'liquid-metal-avatar',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: ['@fab-ui/avatar'],
+    files: [
+      {
+        path: 'registry/default/ui/liquid-metal-avatar.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/liquid-metal-avatar.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'liquid-metal-button': {
+    name: 'liquid-metal-button',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: ['@fab-ui/button'],
+    files: [
+      {
+        path: 'registry/default/ui/liquid-metal-button.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/liquid-metal-button.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   meter: {
     name: 'meter',
     description: '',
@@ -1779,6 +1827,181 @@ export const Index: Record<string, any> = {
     ],
     component: React.lazy(async () => {
       const mod = await import('@/registry/default/examples/label-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'liquid-metal-avatar-default': {
+    name: 'liquid-metal-avatar-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-avatar'],
+    files: [
+      {
+        path: 'registry/default/examples/liquid-metal-avatar-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/liquid-metal-avatar-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'liquid-metal-avatar-sizes': {
+    name: 'liquid-metal-avatar-sizes',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-avatar'],
+    files: [
+      {
+        path: 'registry/default/examples/liquid-metal-avatar-sizes.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/liquid-metal-avatar-sizes.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'liquid-metal-avatar-custom': {
+    name: 'liquid-metal-avatar-custom',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-avatar'],
+    files: [
+      {
+        path: 'registry/default/examples/liquid-metal-avatar-custom.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/liquid-metal-avatar-custom.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'liquid-metal-avatar-fallback': {
+    name: 'liquid-metal-avatar-fallback',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-avatar'],
+    files: [
+      {
+        path: 'registry/default/examples/liquid-metal-avatar-fallback.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/liquid-metal-avatar-fallback.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'liquid-metal-button-default': {
+    name: 'liquid-metal-button-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-button'],
+    files: [
+      {
+        path: 'registry/default/examples/liquid-metal-button-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/liquid-metal-button-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'liquid-metal-button-sizes': {
+    name: 'liquid-metal-button-sizes',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-button'],
+    files: [
+      {
+        path: 'registry/default/examples/liquid-metal-button-sizes.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/liquid-metal-button-sizes.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'liquid-metal-button-custom': {
+    name: 'liquid-metal-button-custom',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-button'],
+    files: [
+      {
+        path: 'registry/default/examples/liquid-metal-button-custom.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/liquid-metal-button-custom.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
