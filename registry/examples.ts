@@ -398,6 +398,39 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'liquid-metal-button-default',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-button'],
+    files: [
+      {
+        path: 'examples/liquid-metal-button-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'liquid-metal-button-sizes',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-button'],
+    files: [
+      {
+        path: 'examples/liquid-metal-button-sizes.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'liquid-metal-button-custom',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-button'],
+    files: [
+      {
+        path: 'examples/liquid-metal-button-custom.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'meter-default',
     type: 'registry:example',
     registryDependencies: ['meter'],

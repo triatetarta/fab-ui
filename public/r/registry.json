@@ -300,6 +300,28 @@
       ]
     },
     {
+      "name": "liquid-metal-button",
+      "type": "registry:ui",
+      "title": "Liquid Metal Button",
+      "registryDependencies": [
+        "@fab-ui/button"
+      ],
+      "dependencies": [
+        "@paper-design/shaders-react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/liquid-metal-button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "--inset-shadow-lg": "inset 0 10px 8px color-mix(in oklch, var(--background) 7%, transparent)"
+        }
+      }
+    },
+    {
       "name": "meter",
       "type": "registry:ui",
       "title": "Meter",
@@ -1023,6 +1045,45 @@
       "files": [
         {
           "path": "registry/default/examples/label-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "liquid-metal-button-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "liquid-metal-button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/liquid-metal-button-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "liquid-metal-button-sizes",
+      "type": "registry:example",
+      "registryDependencies": [
+        "liquid-metal-button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/liquid-metal-button-sizes.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "liquid-metal-button-custom",
+      "type": "registry:example",
+      "registryDependencies": [
+        "liquid-metal-button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/liquid-metal-button-custom.tsx",
           "type": "registry:example"
         }
       ]
