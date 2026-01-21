@@ -3,7 +3,7 @@
 # fab ui
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/kfirfitousi/fab-ui?style=social)](https://github.com/kfirfitousi/fab-ui)
+[![GitHub Stars](https://img.shields.io/github/stars/triatetarta/fab-ui?style=social)](https://github.com/triatetarta/fab-ui)
 
 A modern registry of React and Next.js components, built on Base UI.
 Open source, accessible, customizable.
