@@ -300,6 +300,28 @@
       ]
     },
     {
+      "name": "liquid-metal-avatar",
+      "type": "registry:ui",
+      "title": "Liquid Metal Avatar",
+      "registryDependencies": [
+        "@fab-ui/avatar"
+      ],
+      "dependencies": [
+        "@paper-design/shaders-react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/liquid-metal-avatar.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "--inset-shadow-lg": "inset 0 10px 8px color-mix(in oklch, var(--background) 7%, transparent)"
+        }
+      }
+    },
+    {
       "name": "liquid-metal-button",
       "type": "registry:ui",
       "title": "Liquid Metal Button",
@@ -1045,6 +1067,58 @@
       "files": [
         {
           "path": "registry/default/examples/label-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "liquid-metal-avatar-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "liquid-metal-avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/liquid-metal-avatar-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "liquid-metal-avatar-sizes",
+      "type": "registry:example",
+      "registryDependencies": [
+        "liquid-metal-avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/liquid-metal-avatar-sizes.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "liquid-metal-avatar-custom",
+      "type": "registry:example",
+      "registryDependencies": [
+        "liquid-metal-avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/liquid-metal-avatar-custom.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "liquid-metal-avatar-fallback",
+      "type": "registry:example",
+      "registryDependencies": [
+        "liquid-metal-avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/liquid-metal-avatar-fallback.tsx",
           "type": "registry:example"
         }
       ]
