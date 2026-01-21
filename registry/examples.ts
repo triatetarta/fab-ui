@@ -398,6 +398,83 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'liquid-metal-avatar-default',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-avatar'],
+    files: [
+      {
+        path: 'examples/liquid-metal-avatar-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'liquid-metal-avatar-sizes',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-avatar'],
+    files: [
+      {
+        path: 'examples/liquid-metal-avatar-sizes.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'liquid-metal-avatar-custom',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-avatar'],
+    files: [
+      {
+        path: 'examples/liquid-metal-avatar-custom.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'liquid-metal-avatar-fallback',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-avatar'],
+    files: [
+      {
+        path: 'examples/liquid-metal-avatar-fallback.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'liquid-metal-button-default',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-button'],
+    files: [
+      {
+        path: 'examples/liquid-metal-button-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'liquid-metal-button-sizes',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-button'],
+    files: [
+      {
+        path: 'examples/liquid-metal-button-sizes.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'liquid-metal-button-custom',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-button'],
+    files: [
+      {
+        path: 'examples/liquid-metal-button-custom.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'meter-default',
     type: 'registry:example',
     registryDependencies: ['meter'],

@@ -6,6 +6,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --inset-shadow-lg: inset 0 10px 8px
+    color-mix(in oklch, var(--background) 7%, transparent);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);

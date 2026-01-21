@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "liquid-metal-avatar-sizes",
+  "registryDependencies": [
+    "liquid-metal-avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/liquid-metal-avatar-sizes.tsx",
+      "content": "import {\n  AvatarFallback,\n  AvatarImage,\n  LiquidMetalAvatar,\n} from '@/registry/default/ui/liquid-metal-avatar';\n\nexport function LiquidMetalAvatarSizes() {\n  return (\n    <div className='flex items-center gap-4'>\n      <LiquidMetalAvatar size='sm'>\n        <AvatarImage\n          src='https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=128&h=128&dpr=2&q=80'\n          alt='Avatar'\n        />\n        <AvatarFallback>SM</AvatarFallback>\n      </LiquidMetalAvatar>\n      <LiquidMetalAvatar size='md'>\n        <AvatarImage\n          src='https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=128&h=128&dpr=2&q=80'\n          alt='Avatar'\n        />\n        <AvatarFallback>MD</AvatarFallback>\n      </LiquidMetalAvatar>\n      <LiquidMetalAvatar size='lg'>\n        <AvatarImage\n          src='https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=128&h=128&dpr=2&q=80'\n          alt='Avatar'\n        />\n        <AvatarFallback>LG</AvatarFallback>\n      </LiquidMetalAvatar>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}
