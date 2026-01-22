@@ -344,6 +344,28 @@
       }
     },
     {
+      "name": "liquid-metal-card",
+      "type": "registry:ui",
+      "title": "Liquid Metal Card",
+      "registryDependencies": [
+        "@fab-ui/card"
+      ],
+      "dependencies": [
+        "@paper-design/shaders-react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/liquid-metal-card.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "--inset-shadow-lg": "inset 0 10px 8px color-mix(in oklch, var(--background) 7%, transparent)"
+        }
+      }
+    },
+    {
       "name": "meter",
       "type": "registry:ui",
       "title": "Meter",
@@ -1158,6 +1180,35 @@
       "files": [
         {
           "path": "registry/default/examples/liquid-metal-button-custom.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "liquid-metal-card-default",
+      "type": "registry:example",
+      "registryDependencies": [
+        "liquid-metal-card",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/liquid-metal-card-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "liquid-metal-card-custom",
+      "type": "registry:example",
+      "registryDependencies": [
+        "liquid-metal-card",
+        "button",
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/liquid-metal-card-custom.tsx",
           "type": "registry:example"
         }
       ]
