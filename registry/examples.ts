@@ -475,6 +475,28 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'liquid-metal-card-default',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-card', 'button'],
+    files: [
+      {
+        path: 'examples/liquid-metal-card-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'liquid-metal-card-custom',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-card', 'button', 'badge'],
+    files: [
+      {
+        path: 'examples/liquid-metal-card-custom.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'meter-default',
     type: 'registry:example',
     registryDependencies: ['meter'],

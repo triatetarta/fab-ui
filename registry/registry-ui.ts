@@ -288,6 +288,25 @@ export const ui: Registry['items'] = [
     },
   },
   {
+    name: 'liquid-metal-card',
+    type: 'registry:ui',
+    title: 'Liquid Metal Card',
+    registryDependencies: ['@fab-ui/card'],
+    dependencies: ['@paper-design/shaders-react'],
+    files: [
+      {
+        path: 'ui/liquid-metal-card.tsx',
+        type: 'registry:ui',
+      },
+    ],
+    cssVars: {
+      theme: {
+        '--inset-shadow-lg':
+          'inset 0 10px 8px color-mix(in oklch, var(--background) 7%, transparent)',
+      },
+    },
+  },
+  {
     name: 'meter',
     type: 'registry:ui',
     title: 'Meter',

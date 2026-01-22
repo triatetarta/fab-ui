@@ -538,6 +538,30 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'liquid-metal-card': {
+    name: 'liquid-metal-card',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: ['@fab-ui/card'],
+    files: [
+      {
+        path: 'registry/default/ui/liquid-metal-card.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/liquid-metal-card.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   meter: {
     name: 'meter',
     description: '',
@@ -2002,6 +2026,56 @@ export const Index: Record<string, any> = {
     component: React.lazy(async () => {
       const mod =
         await import('@/registry/default/examples/liquid-metal-button-custom.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'liquid-metal-card-default': {
+    name: 'liquid-metal-card-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-card', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/liquid-metal-card-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/liquid-metal-card-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'liquid-metal-card-custom': {
+    name: 'liquid-metal-card-custom',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-card', 'button', 'badge'],
+    files: [
+      {
+        path: 'registry/default/examples/liquid-metal-card-custom.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/liquid-metal-card-custom.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
