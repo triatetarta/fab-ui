@@ -937,6 +937,71 @@
       ]
     },
     {
+      "name": "combobox-multiple",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-multiple.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "combobox-groups",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-groups.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "combobox-invalid",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-invalid.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "combobox-disabled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-disabled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "combobox-auto-highlight",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-auto-highlight.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "context-menu-default",
       "type": "registry:example",
       "registryDependencies": [

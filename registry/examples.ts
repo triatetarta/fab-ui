@@ -277,6 +277,61 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'combobox-multiple',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-multiple.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'combobox-groups',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-groups.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'combobox-invalid',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-invalid.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'combobox-disabled',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-disabled.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'combobox-auto-highlight',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-auto-highlight.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'context-menu-default',
     type: 'registry:example',
     registryDependencies: ['context-menu'],
