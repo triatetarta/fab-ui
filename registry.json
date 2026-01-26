@@ -411,15 +411,15 @@
       ]
     },
     {
-      "name": "preview-card",
+      "name": "hover-card",
       "type": "registry:ui",
-      "title": "Preview Card",
+      "title": "Hover Card",
       "dependencies": [
         "@base-ui/react"
       ],
       "files": [
         {
-          "path": "registry/default/ui/preview-card.tsx",
+          "path": "registry/default/ui/hover-card.tsx",
           "type": "registry:ui"
         }
       ]
@@ -1445,14 +1445,28 @@
       ]
     },
     {
-      "name": "preview-card-default",
+      "name": "hover-card-default",
       "type": "registry:example",
       "registryDependencies": [
-        "preview-card"
+        "hover-card"
       ],
       "files": [
         {
-          "path": "registry/default/examples/preview-card-default.tsx",
+          "path": "registry/default/examples/hover-card-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "hover-card-sides",
+      "type": "registry:example",
+      "registryDependencies": [
+        "hover-card",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/hover-card-sides.tsx",
           "type": "registry:example"
         }
       ]

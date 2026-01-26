@@ -684,12 +684,23 @@ export const examples: Registry['items'] = [
     ],
   },
   {
-    name: 'preview-card-default',
+    name: 'hover-card-default',
     type: 'registry:example',
-    registryDependencies: ['preview-card'],
+    registryDependencies: ['hover-card'],
     files: [
       {
-        path: 'examples/preview-card-default.tsx',
+        path: 'examples/hover-card-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'hover-card-sides',
+    type: 'registry:example',
+    registryDependencies: ['hover-card', 'button'],
+    files: [
+      {
+        path: 'examples/hover-card-sides.tsx',
         type: 'registry:example',
       },
     ],

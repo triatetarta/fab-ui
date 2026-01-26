@@ -634,20 +634,20 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
-  'preview-card': {
-    name: 'preview-card',
+  'hover-card': {
+    name: 'hover-card',
     description: '',
     type: 'registry:ui',
     registryDependencies: undefined,
     files: [
       {
-        path: 'registry/default/ui/preview-card.tsx',
+        path: 'registry/default/ui/hover-card.tsx',
         type: 'registry:ui',
         target: '',
       },
     ],
     component: React.lazy(async () => {
-      const mod = await import('@/registry/default/ui/preview-card.tsx');
+      const mod = await import('@/registry/default/ui/hover-card.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
@@ -2509,21 +2509,46 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
-  'preview-card-default': {
-    name: 'preview-card-default',
+  'hover-card-default': {
+    name: 'hover-card-default',
     description: '',
     type: 'registry:example',
-    registryDependencies: ['preview-card'],
+    registryDependencies: ['hover-card'],
     files: [
       {
-        path: 'registry/default/examples/preview-card-default.tsx',
+        path: 'registry/default/examples/hover-card-default.tsx',
         type: 'registry:example',
         target: '',
       },
     ],
     component: React.lazy(async () => {
       const mod =
-        await import('@/registry/default/examples/preview-card-default.tsx');
+        await import('@/registry/default/examples/hover-card-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'hover-card-sides': {
+    name: 'hover-card-sides',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['hover-card', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/hover-card-sides.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/hover-card-sides.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>

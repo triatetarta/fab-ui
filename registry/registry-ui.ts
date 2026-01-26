@@ -344,13 +344,13 @@ export const ui: Registry['items'] = [
     ],
   },
   {
-    name: 'preview-card',
+    name: 'hover-card',
     type: 'registry:ui',
-    title: 'Preview Card',
+    title: 'Hover Card',
     dependencies: ['@base-ui/react'],
     files: [
       {
-        path: 'ui/preview-card.tsx',
+        path: 'ui/hover-card.tsx',
         type: 'registry:ui',
       },
     ],
