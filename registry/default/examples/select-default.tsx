@@ -1,9 +1,9 @@
-'use client';
-
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
+  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from '@/registry/default/ui/select';
@@ -16,18 +16,21 @@ const fonts = [
   { label: 'Cursive', value: 'cursive' },
 ];
 
-export function SelectDefault() {
+export function SelectDemo() {
   return (
     <Select items={fonts}>
-      <SelectTrigger className='w-48'>
+      <SelectTrigger className='w-full max-w-48'>
         <SelectValue />
       </SelectTrigger>
       <SelectContent>
-        {fonts.map((font) => (
-          <SelectItem key={font.value} value={font.value}>
-            {font.label}
-          </SelectItem>
-        ))}
+        <SelectGroup>
+          <SelectLabel>Fonts</SelectLabel>
+          {fonts.map((font) => (
+            <SelectItem key={font.value} value={font.value}>
+              {font.label}
+            </SelectItem>
+          ))}
+        </SelectGroup>
       </SelectContent>
     </Select>
   );
