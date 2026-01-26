@@ -5,7 +5,7 @@ import * as React from 'react';
 import { Button } from '@/registry/default/ui/button';
 import {
   Collapsible,
-  CollapsiblePanel,
+  CollapsibleContent,
   CollapsibleTrigger,
 } from '@/registry/default/ui/collapsible';
 import { Separator } from '@/registry/default/ui/separator';
@@ -36,13 +36,13 @@ export function CodeCollapsibleWrapper({
         />
         <Separator className='mx-1.5 h-4!' orientation='vertical' />
       </div>
-      <CollapsiblePanel
+      <CollapsibleContent
         className='relative mt-6 h-full overflow-hidden data-closed:max-h-82 [&>figure]:mt-0 [&>figure]:md:mx-0!'
         hidden={false}
         keepMounted
       >
         {children}
-      </CollapsiblePanel>
+      </CollapsibleContent>
       <CollapsibleTrigger className='absolute inset-x-0 -bottom-2 flex h-20 cursor-pointer items-center justify-center rounded-b-lg bg-linear-to-b from-code/50 to-code text-sm font-medium text-muted-foreground transition-colors group-data-open/collapsible:hidden hover:text-foreground'>
         {isOpened ? 'Collapse' : 'Expand'}
       </CollapsibleTrigger>

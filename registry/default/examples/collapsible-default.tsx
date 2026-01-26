@@ -2,7 +2,7 @@
 
 import {
   Collapsible,
-  CollapsiblePanel,
+  CollapsibleContent,
   CollapsibleTrigger,
 } from '@/registry/default/ui/collapsible';
 import { ChevronDownIcon } from 'lucide-react';
@@ -14,11 +14,11 @@ export function CollapsibleDefault() {
         Show more
         <ChevronDownIcon className='size-4 transition-transform duration-200 in-data-panel-open:rotate-180' />
       </CollapsibleTrigger>
-      <CollapsiblePanel className='pt-2'>
+      <CollapsibleContent>
         <p className='text-sm text-muted-foreground'>
           The chevron icon rotates when the panel is open.
         </p>
-      </CollapsiblePanel>
+      </CollapsibleContent>
     </Collapsible>
   );
 }

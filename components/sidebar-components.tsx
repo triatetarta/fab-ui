@@ -4,7 +4,7 @@ import type { ComponentProps } from 'react';
 
 import {
   Collapsible,
-  CollapsiblePanel,
+  CollapsibleContent,
   CollapsibleTrigger,
 } from '@/registry/default/ui/collapsible';
 import type { SidebarPageTreeComponents } from 'fumadocs-ui/components/sidebar/page-tree';
@@ -24,11 +24,11 @@ export function Folder({
         {item.name}
         <ChevronDownIcon className='size-3.5 transition-transform duration-200 in-data-panel-open:rotate-180' />
       </CollapsibleTrigger>
-      <CollapsiblePanel>
+      <CollapsibleContent>
         <div className='[&_a]:text-foreground [&_a]:hover:text-foreground'>
           {children}
         </div>
-      </CollapsiblePanel>
+      </CollapsibleContent>
     </Collapsible>
   );
 }
