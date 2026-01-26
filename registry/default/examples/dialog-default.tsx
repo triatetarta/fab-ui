@@ -3,10 +3,10 @@
 import { Button } from '@/registry/default/ui/button';
 import {
   Dialog,
+  DialogContent,
   DialogDescription,
   DialogFooter,
   DialogHeader,
-  DialogPopup,
   DialogTitle,
   DialogTrigger,
 } from '@/registry/default/ui/dialog';
@@ -17,7 +17,7 @@ export function DialogDefault() {
       <DialogTrigger render={<Button variant='outline' />}>
         Open Dialog
       </DialogTrigger>
-      <DialogPopup>
+      <DialogContent>
         <DialogHeader>
           <DialogTitle>Edit Profile</DialogTitle>
           <DialogDescription>
@@ -32,7 +32,7 @@ export function DialogDefault() {
         <DialogFooter>
           <Button type='submit'>Save changes</Button>
         </DialogFooter>
-      </DialogPopup>
+      </DialogContent>
     </Dialog>
   );
 }

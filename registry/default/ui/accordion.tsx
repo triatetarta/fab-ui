@@ -1,17 +1,25 @@
+'use client';
+
 import { Accordion as AccordionPrimitive } from '@base-ui/react/accordion';
 import { PlusIcon } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 
-function Accordion({ ...props }: AccordionPrimitive.Root.Props) {
-  return <AccordionPrimitive.Root data-slot='accordion' {...props} />;
+function Accordion({ className, ...props }: AccordionPrimitive.Root.Props) {
+  return (
+    <AccordionPrimitive.Root
+      data-slot='accordion'
+      className={cn('flex w-full flex-col', className)}
+      {...props}
+    />
+  );
 }
 
 function AccordionItem({ className, ...props }: AccordionPrimitive.Item.Props) {
   return (
     <AccordionPrimitive.Item
-      className={cn('border-b last:border-b-0', className)}
       data-slot='accordion-item'
+      className={cn('not-last:border-b', className)}
       {...props}
     />
   );
@@ -26,7 +34,7 @@ function AccordionTrigger({
     <AccordionPrimitive.Header className='mt-0 mb-0 flex py-4'>
       <AccordionPrimitive.Trigger
         className={cn(
-          'flex flex-1 cursor-pointer items-start justify-between gap-4 rounded-md text-left text-sm font-medium transition-all outline-none focus-visible:ring-[3px] focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-64 [&[data-panel-open]>svg]:rotate-45',
+          'group/accordion-trigger relative flex flex-1 cursor-pointer items-start justify-between gap-4 rounded-md border border-transparent text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:after:border-ring disabled:pointer-events-none disabled:opacity-64 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground [&[data-panel-open]>svg]:rotate-45',
           className
         )}
         data-slot='accordion-trigger'
@@ -39,7 +47,7 @@ function AccordionTrigger({
   );
 }
 
-function AccordionPanel({
+function AccordionContent({
   className,
   children,
   ...props
@@ -55,4 +63,4 @@ function AccordionPanel({
   );
 }
 
-export { Accordion, AccordionItem, AccordionTrigger, AccordionPanel };
+export { Accordion, AccordionItem, AccordionTrigger, AccordionContent };

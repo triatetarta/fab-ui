@@ -5,8 +5,8 @@ import { Field, FieldLabel } from '@/registry/default/ui/field';
 import { Input } from '@/registry/default/ui/input';
 import {
   Popover,
+  PopoverContent,
   PopoverDescription,
-  PopoverPopup,
   PopoverTitle,
   PopoverTrigger,
 } from '@/registry/default/ui/popover';
@@ -17,7 +17,7 @@ export function PopoverWithForm() {
       <PopoverTrigger render={<Button variant='outline' />}>
         Edit Profile
       </PopoverTrigger>
-      <PopoverPopup className='w-80'>
+      <PopoverContent className='w-80'>
         <PopoverTitle>Edit Profile</PopoverTitle>
         <PopoverDescription className='mt-1'>
           Make changes to your profile here.
@@ -33,7 +33,7 @@ export function PopoverWithForm() {
           </Field>
           <Button className='mt-2'>Save changes</Button>
         </div>
-      </PopoverPopup>
+      </PopoverContent>
     </Popover>
   );
 }

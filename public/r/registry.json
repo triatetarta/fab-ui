@@ -7,7 +7,8 @@
       "type": "registry:ui",
       "title": "Accordion",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -38,10 +39,12 @@
       "type": "registry:ui",
       "title": "Autocomplete",
       "registryDependencies": [
-        "@fab-ui/input"
+        "@fab-ui/input",
+        "@fab-ui/button"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -69,7 +72,8 @@
       "type": "registry:ui",
       "title": "Badge",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "class-variance-authority"
       ],
       "files": [
         {
@@ -83,7 +87,8 @@
       "type": "registry:ui",
       "title": "Button",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "class-variance-authority"
       ],
       "files": [
         {
@@ -111,7 +116,8 @@
       "type": "registry:ui",
       "title": "Checkbox",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -172,7 +178,8 @@
       "type": "registry:ui",
       "title": "Context Menu",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -185,6 +192,9 @@
       "name": "dialog",
       "type": "registry:ui",
       "title": "Dialog",
+      "registryDependencies": [
+        "@fab-ui/button"
+      ],
       "dependencies": [
         "@base-ui/react",
         "lucide-react"
@@ -201,7 +211,8 @@
       "type": "registry:ui",
       "title": "Dropdown Menu",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -276,7 +287,8 @@
         "@fab-ui/textarea"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "class-variance-authority"
       ],
       "files": [
         {
@@ -383,8 +395,12 @@
       "name": "number-field",
       "type": "registry:ui",
       "title": "Number Field",
+      "registryDependencies": [
+        "@fab-ui/label"
+      ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -408,15 +424,15 @@
       ]
     },
     {
-      "name": "preview-card",
+      "name": "hover-card",
       "type": "registry:ui",
-      "title": "Preview Card",
+      "title": "Hover Card",
       "dependencies": [
         "@base-ui/react"
       ],
       "files": [
         {
-          "path": "registry/default/ui/preview-card.tsx",
+          "path": "registry/default/ui/hover-card.tsx",
           "type": "registry:ui"
         }
       ]
@@ -435,15 +451,16 @@
       ]
     },
     {
-      "name": "radio",
+      "name": "radio-group",
       "type": "registry:ui",
-      "title": "Radio",
+      "title": "Radio Group",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
-          "path": "registry/default/ui/radio.tsx",
+          "path": "registry/default/ui/radio-group.tsx",
           "type": "registry:ui"
         }
       ]
@@ -467,7 +484,8 @@
       "type": "registry:ui",
       "title": "Select",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -568,7 +586,8 @@
       "type": "registry:ui",
       "title": "Toggle",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "class-variance-authority"
       ],
       "files": [
         {
@@ -653,6 +672,45 @@
       "files": [
         {
           "path": "registry/default/examples/avatar-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "avatar-with-badge",
+      "type": "registry:example",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/avatar-with-badge.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "avatar-badge-icon",
+      "type": "registry:example",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/avatar-badge-icon.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "avatar-group",
+      "type": "registry:example",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/avatar-group.tsx",
           "type": "registry:example"
         }
       ]
@@ -898,6 +956,71 @@
       ]
     },
     {
+      "name": "combobox-multiple",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-multiple.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "combobox-groups",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-groups.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "combobox-invalid",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-invalid.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "combobox-disabled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-disabled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "combobox-auto-highlight",
+      "type": "registry:example",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/combobox-auto-highlight.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "context-menu-default",
       "type": "registry:example",
       "registryDependencies": [
@@ -952,6 +1075,20 @@
       ]
     },
     {
+      "name": "dialog-scrollable-content",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dialog-scrollable-content.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "dropdown-menu-default",
       "type": "registry:example",
       "registryDependencies": [
@@ -975,6 +1112,34 @@
       "files": [
         {
           "path": "registry/default/examples/dropdown-menu-with-submenu.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-checkboxes",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dropdown-menu",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dropdown-menu-checkboxes.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-radio-group",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dropdown-menu",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dropdown-menu-radio-group.tsx",
           "type": "registry:example"
         }
       ]
@@ -1068,9 +1233,7 @@
       "name": "input-group-default",
       "type": "registry:example",
       "registryDependencies": [
-        "input-group",
-        "dropdown-menu",
-        "separator"
+        "input-group"
       ],
       "files": [
         {
@@ -1296,14 +1459,28 @@
       ]
     },
     {
-      "name": "preview-card-default",
+      "name": "hover-card-default",
       "type": "registry:example",
       "registryDependencies": [
-        "preview-card"
+        "hover-card"
       ],
       "files": [
         {
-          "path": "registry/default/examples/preview-card-default.tsx",
+          "path": "registry/default/examples/hover-card-default.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "hover-card-sides",
+      "type": "registry:example",
+      "registryDependencies": [
+        "hover-card",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/hover-card-sides.tsx",
           "type": "registry:example"
         }
       ]
@@ -1338,26 +1515,12 @@
       "name": "radio-default",
       "type": "registry:example",
       "registryDependencies": [
-        "radio",
+        "radio-group",
         "label"
       ],
       "files": [
         {
           "path": "registry/default/examples/radio-default.tsx",
-          "type": "registry:example"
-        }
-      ]
-    },
-    {
-      "name": "radio-horizontal",
-      "type": "registry:example",
-      "registryDependencies": [
-        "radio",
-        "label"
-      ],
-      "files": [
-        {
-          "path": "registry/default/examples/radio-horizontal.tsx",
           "type": "registry:example"
         }
       ]

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-checkboxes",
+  "registryDependencies": [
+    "dropdown-menu",
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/default/examples/dropdown-menu-checkboxes.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\n\nimport { Button } from '@/registry/default/ui/button';\nimport {\n  DropdownMenu,\n  DropdownMenuCheckboxItem,\n  DropdownMenuContent,\n  DropdownMenuGroup,\n  DropdownMenuLabel,\n  DropdownMenuTrigger,\n} from '@/registry/default/ui/dropdown-menu';\n\nexport function DropdownMenuCheckboxes() {\n  const [emailNotifs, setEmailNotifs] = React.useState(true);\n  const [pushNotifs, setPushNotifs] = React.useState(false);\n  const [smsNotifs, setSmsNotifs] = React.useState(false);\n\n  return (\n    <DropdownMenu>\n      <DropdownMenuTrigger render={<Button variant='outline' />}>\n        Notifications\n      </DropdownMenuTrigger>\n      <DropdownMenuContent className='w-44'>\n        <DropdownMenuGroup>\n          <DropdownMenuLabel>Notify me via</DropdownMenuLabel>\n          <DropdownMenuCheckboxItem\n            checked={emailNotifs}\n            onCheckedChange={setEmailNotifs}\n          >\n            Email\n          </DropdownMenuCheckboxItem>\n          <DropdownMenuCheckboxItem\n            checked={pushNotifs}\n            onCheckedChange={setPushNotifs}\n          >\n            Push notifications\n          </DropdownMenuCheckboxItem>\n          <DropdownMenuCheckboxItem\n            checked={smsNotifs}\n            onCheckedChange={setSmsNotifs}\n            disabled\n          >\n            SMS\n          </DropdownMenuCheckboxItem>\n        </DropdownMenuGroup>\n      </DropdownMenuContent>\n    </DropdownMenu>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

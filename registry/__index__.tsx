@@ -58,7 +58,7 @@ export const Index: Record<string, any> = {
     name: 'autocomplete',
     description: '',
     type: 'registry:ui',
-    registryDependencies: ['@fab-ui/input'],
+    registryDependencies: ['@fab-ui/input', '@fab-ui/button'],
     files: [
       {
         path: 'registry/default/ui/autocomplete.tsx',
@@ -298,7 +298,7 @@ export const Index: Record<string, any> = {
     name: 'dialog',
     description: '',
     type: 'registry:ui',
-    registryDependencies: undefined,
+    registryDependencies: ['@fab-ui/button'],
     files: [
       {
         path: 'registry/default/ui/dialog.tsx',
@@ -590,7 +590,7 @@ export const Index: Record<string, any> = {
     name: 'number-field',
     description: '',
     type: 'registry:ui',
-    registryDependencies: undefined,
+    registryDependencies: ['@fab-ui/label'],
     files: [
       {
         path: 'registry/default/ui/number-field.tsx',
@@ -634,20 +634,20 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
-  'preview-card': {
-    name: 'preview-card',
+  'hover-card': {
+    name: 'hover-card',
     description: '',
     type: 'registry:ui',
     registryDependencies: undefined,
     files: [
       {
-        path: 'registry/default/ui/preview-card.tsx',
+        path: 'registry/default/ui/hover-card.tsx',
         type: 'registry:ui',
         target: '',
       },
     ],
     component: React.lazy(async () => {
-      const mod = await import('@/registry/default/ui/preview-card.tsx');
+      const mod = await import('@/registry/default/ui/hover-card.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
@@ -682,20 +682,20 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
-  radio: {
-    name: 'radio',
+  'radio-group': {
+    name: 'radio-group',
     description: '',
     type: 'registry:ui',
     registryDependencies: undefined,
     files: [
       {
-        path: 'registry/default/ui/radio.tsx',
+        path: 'registry/default/ui/radio-group.tsx',
         type: 'registry:ui',
         target: '',
       },
     ],
     component: React.lazy(async () => {
-      const mod = await import('@/registry/default/ui/radio.tsx');
+      const mod = await import('@/registry/default/ui/radio-group.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
@@ -1060,6 +1060,80 @@ export const Index: Record<string, any> = {
     component: React.lazy(async () => {
       const mod =
         await import('@/registry/default/examples/avatar-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'avatar-with-badge': {
+    name: 'avatar-with-badge',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['avatar'],
+    files: [
+      {
+        path: 'registry/default/examples/avatar-with-badge.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/avatar-with-badge.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'avatar-badge-icon': {
+    name: 'avatar-badge-icon',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['avatar'],
+    files: [
+      {
+        path: 'registry/default/examples/avatar-badge-icon.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/avatar-badge-icon.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'avatar-group': {
+    name: 'avatar-group',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['avatar'],
+    files: [
+      {
+        path: 'registry/default/examples/avatar-group.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/examples/avatar-group.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
@@ -1515,6 +1589,131 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'combobox-multiple': {
+    name: 'combobox-multiple',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'registry/default/examples/combobox-multiple.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/combobox-multiple.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'combobox-groups': {
+    name: 'combobox-groups',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'registry/default/examples/combobox-groups.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/combobox-groups.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'combobox-invalid': {
+    name: 'combobox-invalid',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'registry/default/examples/combobox-invalid.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/combobox-invalid.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'combobox-disabled': {
+    name: 'combobox-disabled',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'registry/default/examples/combobox-disabled.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/combobox-disabled.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'combobox-auto-highlight': {
+    name: 'combobox-auto-highlight',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'registry/default/examples/combobox-auto-highlight.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/combobox-auto-highlight.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   'context-menu-default': {
     name: 'context-menu-default',
     description: '',
@@ -1615,6 +1814,31 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'dialog-scrollable-content': {
+    name: 'dialog-scrollable-content',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['dialog', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/dialog-scrollable-content.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/dialog-scrollable-content.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   'dropdown-menu-default': {
     name: 'dropdown-menu-default',
     description: '',
@@ -1655,6 +1879,56 @@ export const Index: Record<string, any> = {
     component: React.lazy(async () => {
       const mod =
         await import('@/registry/default/examples/dropdown-menu-with-submenu.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'dropdown-menu-checkboxes': {
+    name: 'dropdown-menu-checkboxes',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['dropdown-menu', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/dropdown-menu-checkboxes.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/dropdown-menu-checkboxes.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'dropdown-menu-radio-group': {
+    name: 'dropdown-menu-radio-group',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['dropdown-menu', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/dropdown-menu-radio-group.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/dropdown-menu-radio-group.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
@@ -1816,7 +2090,7 @@ export const Index: Record<string, any> = {
     name: 'input-group-default',
     description: '',
     type: 'registry:example',
-    registryDependencies: ['input-group', 'dropdown-menu', 'separator'],
+    registryDependencies: ['input-group'],
     files: [
       {
         path: 'registry/default/examples/input-group-default.tsx',
@@ -2235,21 +2509,46 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
-  'preview-card-default': {
-    name: 'preview-card-default',
+  'hover-card-default': {
+    name: 'hover-card-default',
     description: '',
     type: 'registry:example',
-    registryDependencies: ['preview-card'],
+    registryDependencies: ['hover-card'],
     files: [
       {
-        path: 'registry/default/examples/preview-card-default.tsx',
+        path: 'registry/default/examples/hover-card-default.tsx',
         type: 'registry:example',
         target: '',
       },
     ],
     component: React.lazy(async () => {
       const mod =
-        await import('@/registry/default/examples/preview-card-default.tsx');
+        await import('@/registry/default/examples/hover-card-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'hover-card-sides': {
+    name: 'hover-card-sides',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['hover-card', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/hover-card-sides.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/hover-card-sides.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
@@ -2314,7 +2613,7 @@ export const Index: Record<string, any> = {
     name: 'radio-default',
     description: '',
     type: 'registry:example',
-    registryDependencies: ['radio', 'label'],
+    registryDependencies: ['radio-group', 'label'],
     files: [
       {
         path: 'registry/default/examples/radio-default.tsx',
@@ -2324,31 +2623,6 @@ export const Index: Record<string, any> = {
     ],
     component: React.lazy(async () => {
       const mod = await import('@/registry/default/examples/radio-default.tsx');
-      const exportName =
-        Object.keys(mod).find(
-          (key) =>
-            typeof mod[key] === 'function' || typeof mod[key] === 'object'
-        ) || item.name;
-      return { default: mod.default || mod[exportName] };
-    }),
-    categories: undefined,
-    meta: undefined,
-  },
-  'radio-horizontal': {
-    name: 'radio-horizontal',
-    description: '',
-    type: 'registry:example',
-    registryDependencies: ['radio', 'label'],
-    files: [
-      {
-        path: 'registry/default/examples/radio-horizontal.tsx',
-        type: 'registry:example',
-        target: '',
-      },
-    ],
-    component: React.lazy(async () => {
-      const mod =
-        await import('@/registry/default/examples/radio-horizontal.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>

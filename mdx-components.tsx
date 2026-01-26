@@ -1,4 +1,4 @@
-import { TabsList, TabsPanel, TabsTrigger } from '@/registry/default/ui/tabs';
+import { TabsContent, TabsList, TabsTrigger } from '@/registry/default/ui/tabs';
 import defaultMdxComponents from 'fumadocs-ui/mdx';
 import type { MDXComponents } from 'mdx/types';
 import Image from 'next/image';
@@ -293,8 +293,8 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     TabsPanel: ({
       className,
       ...props
-    }: React.ComponentProps<typeof TabsPanel>) => (
-      <TabsPanel
+    }: React.ComponentProps<typeof TabsContent>) => (
+      <TabsContent
         className={cn(
           'relative [&_h3.font-heading]:text-base *:[figure]:first:mt-0 [&>.steps]:mt-6',
           className

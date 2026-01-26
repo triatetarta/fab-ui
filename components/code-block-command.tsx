@@ -5,8 +5,8 @@ import * as React from 'react';
 import { Button } from '@/registry/default/ui/button';
 import {
   Tabs,
+  TabsContent,
   TabsList,
-  TabsPanel,
   TabsTrigger,
 } from '@/registry/default/ui/tabs';
 import {
@@ -97,7 +97,7 @@ export function CodeBlockCommand({
         <div className='no-scrollbar overflow-x-auto'>
           {Object.entries(tabs).map(([key, value]) => {
             return (
-              <TabsPanel key={key} value={key} className='mt-0 px-4 py-3.5'>
+              <TabsContent key={key} value={key} className='mt-0 px-4 py-3.5'>
                 <pre>
                   <code
                     className='relative font-mono text-sm leading-none'
@@ -106,7 +106,7 @@ export function CodeBlockCommand({
                     {value}
                   </code>
                 </pre>
-              </TabsPanel>
+              </TabsContent>
             );
           })}
         </div>

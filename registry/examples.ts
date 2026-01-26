@@ -46,6 +46,39 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'avatar-with-badge',
+    type: 'registry:example',
+    registryDependencies: ['avatar'],
+    files: [
+      {
+        path: 'examples/avatar-with-badge.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'avatar-badge-icon',
+    type: 'registry:example',
+    registryDependencies: ['avatar'],
+    files: [
+      {
+        path: 'examples/avatar-badge-icon.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'avatar-group',
+    type: 'registry:example',
+    registryDependencies: ['avatar'],
+    files: [
+      {
+        path: 'examples/avatar-group.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'badge-default',
     type: 'registry:example',
     registryDependencies: ['badge'],
@@ -244,6 +277,61 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'combobox-multiple',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-multiple.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'combobox-groups',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-groups.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'combobox-invalid',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-invalid.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'combobox-disabled',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-disabled.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'combobox-auto-highlight',
+    type: 'registry:example',
+    registryDependencies: ['combobox'],
+    files: [
+      {
+        path: 'examples/combobox-auto-highlight.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'context-menu-default',
     type: 'registry:example',
     registryDependencies: ['context-menu'],
@@ -288,6 +376,17 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'dialog-scrollable-content',
+    type: 'registry:example',
+    registryDependencies: ['dialog', 'button'],
+    files: [
+      {
+        path: 'examples/dialog-scrollable-content.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'dropdown-menu-default',
     type: 'registry:example',
     registryDependencies: ['dropdown-menu', 'button'],
@@ -305,6 +404,28 @@ export const examples: Registry['items'] = [
     files: [
       {
         path: 'examples/dropdown-menu-with-submenu.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'dropdown-menu-checkboxes',
+    type: 'registry:example',
+    registryDependencies: ['dropdown-menu', 'button'],
+    files: [
+      {
+        path: 'examples/dropdown-menu-checkboxes.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'dropdown-menu-radio-group',
+    type: 'registry:example',
+    registryDependencies: ['dropdown-menu', 'button'],
+    files: [
+      {
+        path: 'examples/dropdown-menu-radio-group.tsx',
         type: 'registry:example',
       },
     ],
@@ -378,7 +499,7 @@ export const examples: Registry['items'] = [
   {
     name: 'input-group-default',
     type: 'registry:example',
-    registryDependencies: ['input-group', 'dropdown-menu', 'separator'],
+    registryDependencies: ['input-group'],
     files: [
       {
         path: 'examples/input-group-default.tsx',
@@ -563,12 +684,23 @@ export const examples: Registry['items'] = [
     ],
   },
   {
-    name: 'preview-card-default',
+    name: 'hover-card-default',
     type: 'registry:example',
-    registryDependencies: ['preview-card'],
+    registryDependencies: ['hover-card'],
     files: [
       {
-        path: 'examples/preview-card-default.tsx',
+        path: 'examples/hover-card-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'hover-card-sides',
+    type: 'registry:example',
+    registryDependencies: ['hover-card', 'button'],
+    files: [
+      {
+        path: 'examples/hover-card-sides.tsx',
         type: 'registry:example',
       },
     ],
@@ -598,21 +730,10 @@ export const examples: Registry['items'] = [
   {
     name: 'radio-default',
     type: 'registry:example',
-    registryDependencies: ['radio', 'label'],
+    registryDependencies: ['radio-group', 'label'],
     files: [
       {
         path: 'examples/radio-default.tsx',
-        type: 'registry:example',
-      },
-    ],
-  },
-  {
-    name: 'radio-horizontal',
-    type: 'registry:example',
-    registryDependencies: ['radio', 'label'],
-    files: [
-      {
-        path: 'examples/radio-horizontal.tsx',
         type: 'registry:example',
       },
     ],

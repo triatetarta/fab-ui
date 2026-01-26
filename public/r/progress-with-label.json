@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "registry/default/examples/progress-with-label.tsx",
-      "content": "'use client';\n\nimport * as React from 'react';\n\nimport {\n  Progress,\n  ProgressIndicator,\n  ProgressLabel,\n  ProgressTrack,\n  ProgressValue,\n} from '@/registry/default/ui/progress';\n\nexport function ProgressWithLabel() {\n  const [value, setValue] = React.useState(0);\n\n  React.useEffect(() => {\n    const interval = setInterval(() => {\n      setValue((current) =>\n        Math.min(100, Math.round(current + Math.random() * 25))\n      );\n    }, 1000);\n    return () => clearInterval(interval);\n  }, []);\n\n  return (\n    <Progress value={value} className='w-64'>\n      <div className='flex justify-between'>\n        <ProgressLabel>Uploading...</ProgressLabel>\n        <ProgressValue />\n      </div>\n      <ProgressTrack>\n        <ProgressIndicator />\n      </ProgressTrack>\n    </Progress>\n  );\n}\n",
+      "content": "'use client';\n\nimport {\n  Progress,\n  ProgressLabel,\n  ProgressValue,\n} from '@/registry/default/ui/progress';\n\nexport function ProgressWithLabel() {\n  return (\n    <Progress value={56} className='w-64'>\n      <ProgressLabel>Upload progress</ProgressLabel>\n      <ProgressValue />\n    </Progress>\n  );\n}\n",
       "type": "registry:example"
     }
   ],
