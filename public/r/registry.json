@@ -438,15 +438,15 @@
       ]
     },
     {
-      "name": "radio",
+      "name": "radio-group",
       "type": "registry:ui",
-      "title": "Radio",
+      "title": "Radio Group",
       "dependencies": [
         "@base-ui/react"
       ],
       "files": [
         {
-          "path": "registry/default/ui/radio.tsx",
+          "path": "registry/default/ui/radio-group.tsx",
           "type": "registry:ui"
         }
       ]
@@ -1499,26 +1499,12 @@
       "name": "radio-default",
       "type": "registry:example",
       "registryDependencies": [
-        "radio",
+        "radio-group",
         "label"
       ],
       "files": [
         {
           "path": "registry/default/examples/radio-default.tsx",
-          "type": "registry:example"
-        }
-      ]
-    },
-    {
-      "name": "radio-horizontal",
-      "type": "registry:example",
-      "registryDependencies": [
-        "radio",
-        "label"
-      ],
-      "files": [
-        {
-          "path": "registry/default/examples/radio-horizontal.tsx",
           "type": "registry:example"
         }
       ]

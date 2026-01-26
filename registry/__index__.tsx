@@ -682,20 +682,20 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
-  radio: {
-    name: 'radio',
+  'radio-group': {
+    name: 'radio-group',
     description: '',
     type: 'registry:ui',
     registryDependencies: undefined,
     files: [
       {
-        path: 'registry/default/ui/radio.tsx',
+        path: 'registry/default/ui/radio-group.tsx',
         type: 'registry:ui',
         target: '',
       },
     ],
     component: React.lazy(async () => {
-      const mod = await import('@/registry/default/ui/radio.tsx');
+      const mod = await import('@/registry/default/ui/radio-group.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
@@ -2613,7 +2613,7 @@ export const Index: Record<string, any> = {
     name: 'radio-default',
     description: '',
     type: 'registry:example',
-    registryDependencies: ['radio', 'label'],
+    registryDependencies: ['radio-group', 'label'],
     files: [
       {
         path: 'registry/default/examples/radio-default.tsx',
@@ -2623,31 +2623,6 @@ export const Index: Record<string, any> = {
     ],
     component: React.lazy(async () => {
       const mod = await import('@/registry/default/examples/radio-default.tsx');
-      const exportName =
-        Object.keys(mod).find(
-          (key) =>
-            typeof mod[key] === 'function' || typeof mod[key] === 'object'
-        ) || item.name;
-      return { default: mod.default || mod[exportName] };
-    }),
-    categories: undefined,
-    meta: undefined,
-  },
-  'radio-horizontal': {
-    name: 'radio-horizontal',
-    description: '',
-    type: 'registry:example',
-    registryDependencies: ['radio', 'label'],
-    files: [
-      {
-        path: 'registry/default/examples/radio-horizontal.tsx',
-        type: 'registry:example',
-        target: '',
-      },
-    ],
-    component: React.lazy(async () => {
-      const mod =
-        await import('@/registry/default/examples/radio-horizontal.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>

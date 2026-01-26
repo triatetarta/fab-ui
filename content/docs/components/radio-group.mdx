@@ -1,9 +1,9 @@
 ---
-title: Radio
+title: Radio Group
 description: A set of mutually exclusive options where only one can be selected.
 links:
-  doc: https://base-ui.com/react/components/radio
-  api: https://base-ui.com/react/components/radio#api-reference
+  doc: https://base-ui.com/react/components/radio-group
+  api: https://base-ui.com/react/components/radio-group#api-reference
 ---
 
 <ComponentPreview
@@ -23,7 +23,7 @@ links:
 <TabsPanel value="cli">
 
 ```bash
-npx shadcn@latest add @fab-ui/radio
+npx shadcn@latest add @fab-ui/radio-group
 ```
 
 </TabsPanel>
@@ -40,7 +40,7 @@ npm install @base-ui-components/react
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name='radio' title='components/ui/radio.tsx' />
+<ComponentSource name='radio-group' title='components/ui/radio-group.tsx' />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,28 +53,18 @@ npm install @base-ui-components/react
 ## Usage
 
 ```tsx
-import { Radio, RadioGroup } from "@/components/ui/radio"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 ```
 
 ```tsx
 <RadioGroup defaultValue='option-1'>
   <div className='flex items-center gap-2'>
-    <Radio value='option-1' id='option-1' />
+    <RadioGroupItem value='option-1' id='option-1' />
     <Label htmlFor='option-1'>Option 1</Label>
   </div>
   <div className='flex items-center gap-2'>
-    <Radio value='option-2' id='option-2' />
+    <RadioGroupItem value='option-2' id='option-2' />
     <Label htmlFor='option-2'>Option 2</Label>
   </div>
 </RadioGroup>
 ```
-
-## Examples
-
-### Horizontal
-
-<ComponentPreview
-  name='radio-horizontal'
-  description='A radio group with horizontal layout.'
-  className='mb-4'
-/>

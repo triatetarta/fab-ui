@@ -367,13 +367,13 @@ export const ui: Registry['items'] = [
     ],
   },
   {
-    name: 'radio',
+    name: 'radio-group',
     type: 'registry:ui',
-    title: 'Radio',
+    title: 'Radio Group',
     dependencies: ['@base-ui/react'],
     files: [
       {
-        path: 'ui/radio.tsx',
+        path: 'ui/radio-group.tsx',
         type: 'registry:ui',
       },
     ],
