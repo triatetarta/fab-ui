@@ -46,6 +46,39 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'avatar-with-badge',
+    type: 'registry:example',
+    registryDependencies: ['avatar'],
+    files: [
+      {
+        path: 'examples/avatar-with-badge.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'avatar-badge-icon',
+    type: 'registry:example',
+    registryDependencies: ['avatar'],
+    files: [
+      {
+        path: 'examples/avatar-badge-icon.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'avatar-group',
+    type: 'registry:example',
+    registryDependencies: ['avatar'],
+    files: [
+      {
+        path: 'examples/avatar-group.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'badge-default',
     type: 'registry:example',
     registryDependencies: ['badge'],

@@ -658,6 +658,45 @@
       ]
     },
     {
+      "name": "avatar-with-badge",
+      "type": "registry:example",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/avatar-with-badge.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "avatar-badge-icon",
+      "type": "registry:example",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/avatar-badge-icon.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "avatar-group",
+      "type": "registry:example",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/avatar-group.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "badge-default",
       "type": "registry:example",
       "registryDependencies": [
