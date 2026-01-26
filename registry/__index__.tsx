@@ -2090,7 +2090,7 @@ export const Index: Record<string, any> = {
     name: 'input-group-default',
     description: '',
     type: 'registry:example',
-    registryDependencies: ['input-group', 'dropdown-menu', 'separator'],
+    registryDependencies: ['input-group'],
     files: [
       {
         path: 'registry/default/examples/input-group-default.tsx',
