@@ -4,10 +4,10 @@ import { Button } from '@/registry/default/ui/button';
 import {
   Dialog,
   DialogClose,
+  DialogContent,
   DialogDescription,
   DialogFooter,
   DialogHeader,
-  DialogPopup,
   DialogTitle,
   DialogTrigger,
 } from '@/registry/default/ui/dialog';
@@ -18,7 +18,7 @@ export function DialogNoCloseButton() {
       <DialogTrigger render={<Button variant='outline' />}>
         Open Dialog
       </DialogTrigger>
-      <DialogPopup showCloseButton={false}>
+      <DialogContent showCloseButton={false}>
         <DialogHeader>
           <DialogTitle>Confirm Action</DialogTitle>
           <DialogDescription>
@@ -31,7 +31,7 @@ export function DialogNoCloseButton() {
           </DialogClose>
           <Button>Confirm</Button>
         </DialogFooter>
-      </DialogPopup>
+      </DialogContent>
     </Dialog>
   );
 }

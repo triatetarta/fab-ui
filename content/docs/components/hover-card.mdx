@@ -1,5 +1,5 @@
 ---
-title: Preview Card
+title: Hover Card
 description: A card that appears on hover to preview content.
 links:
   doc: https://base-ui.com/react/components/preview-card
@@ -7,7 +7,7 @@ links:
 ---
 
 <ComponentPreview
-  name='preview-card-default'
+  name='hover-card-default'
   description='A card that appears on hover to preview content.'
   className='mb-4'
 />
@@ -23,7 +23,7 @@ links:
 <TabsPanel value="cli">
 
 ```bash
-npx shadcn@latest add @fab-ui/preview-card
+npx shadcn@latest add @fab-ui/hover-card
 ```
 
 </TabsPanel>
@@ -40,7 +40,7 @@ npm install @base-ui-components/react
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name='preview-card' title='components/ui/preview-card.tsx' />
+<ComponentSource name='hover-card' title='components/ui/hover-card.tsx' />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -54,17 +54,27 @@ npm install @base-ui-components/react
 
 ```tsx
 import {
-  PreviewCard,
-  PreviewCardPopup,
-  PreviewCardTrigger,
-} from "@/components/ui/preview-card"
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
 ```
 
 ```tsx
-<PreviewCard>
-  <PreviewCardTrigger>Hover over me</PreviewCardTrigger>
-  <PreviewCardPopup>
+<HoverCard>
+  <HoverCardTrigger>Hover over me</HoverCardTrigger>
+  <HoverCardContent>
     <p>Preview content goes here.</p>
-  </PreviewCardPopup>
-</PreviewCard>
+  </HoverCardContent>
+</HoverCard>
 ```
+
+## Examples
+
+### Sides
+
+<ComponentPreview
+  name='hover-card-sides'
+  description='Hover cards can appear on different sides of the trigger.'
+  className='mb-4'
+/>

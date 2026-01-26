@@ -1,7 +1,7 @@
 import {
   Accordion,
+  AccordionContent,
   AccordionItem,
-  AccordionPanel,
   AccordionTrigger,
 } from '@/registry/default/ui/accordion';
 
@@ -39,7 +39,7 @@ export function AccordionDemo() {
         return (
           <AccordionItem key={accordionItem.id} value={accordionItem.id}>
             <AccordionTrigger>{accordionItem.title}</AccordionTrigger>
-            <AccordionPanel>{accordionItem.content}</AccordionPanel>
+            <AccordionContent>{accordionItem.content}</AccordionContent>
           </AccordionItem>
         );
       })}

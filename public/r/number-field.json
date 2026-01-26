@@ -3,7 +3,11 @@
   "name": "number-field",
   "title": "Number Field",
   "dependencies": [
-    "@base-ui/react"
+    "@base-ui/react",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@fab-ui/label"
   ],
   "files": [
     {

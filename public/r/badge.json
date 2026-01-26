@@ -3,7 +3,8 @@
   "name": "badge",
   "title": "Badge",
   "dependencies": [
-    "@base-ui/react"
+    "@base-ui/react",
+    "class-variance-authority"
   ],
   "files": [
     {
