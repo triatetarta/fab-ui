@@ -376,6 +376,17 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'dialog-scrollable-content',
+    type: 'registry:example',
+    registryDependencies: ['dialog', 'button'],
+    files: [
+      {
+        path: 'examples/dialog-scrollable-content.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'dropdown-menu-default',
     type: 'registry:example',
     registryDependencies: ['dropdown-menu', 'button'],

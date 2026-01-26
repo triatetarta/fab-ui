@@ -152,6 +152,7 @@ export const ui: Registry['items'] = [
     name: 'dialog',
     type: 'registry:ui',
     title: 'Dialog',
+    registryDependencies: ['@fab-ui/button'],
     dependencies: ['@base-ui/react', 'lucide-react'],
     files: [
       {

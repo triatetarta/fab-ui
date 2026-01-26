@@ -298,7 +298,7 @@ export const Index: Record<string, any> = {
     name: 'dialog',
     description: '',
     type: 'registry:ui',
-    registryDependencies: undefined,
+    registryDependencies: ['@fab-ui/button'],
     files: [
       {
         path: 'registry/default/ui/dialog.tsx',
@@ -1804,6 +1804,31 @@ export const Index: Record<string, any> = {
     component: React.lazy(async () => {
       const mod =
         await import('@/registry/default/examples/dialog-no-close-button.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'dialog-scrollable-content': {
+    name: 'dialog-scrollable-content',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['dialog', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/dialog-scrollable-content.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/dialog-scrollable-content.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>

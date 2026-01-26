@@ -185,6 +185,9 @@
       "name": "dialog",
       "type": "registry:ui",
       "title": "Dialog",
+      "registryDependencies": [
+        "@fab-ui/button"
+      ],
       "dependencies": [
         "@base-ui/react",
         "lucide-react"
@@ -1051,6 +1054,20 @@
       "files": [
         {
           "path": "registry/default/examples/dialog-no-close-button.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "dialog-scrollable-content",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/default/examples/dialog-scrollable-content.tsx",
           "type": "registry:example"
         }
       ]
