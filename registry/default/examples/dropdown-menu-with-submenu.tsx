@@ -4,8 +4,10 @@ import { Button } from '@/registry/default/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuSeparator,
+  DropdownMenuShortcut,
   DropdownMenuSub,
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
@@ -19,19 +21,38 @@ export function DropdownMenuWithSubmenu() {
         Open Menu
       </DropdownMenuTrigger>
       <DropdownMenuContent>
-        <DropdownMenuItem>New File</DropdownMenuItem>
-        <DropdownMenuItem>Open File</DropdownMenuItem>
-        <DropdownMenuSeparator />
-        <DropdownMenuSub>
-          <DropdownMenuSubTrigger>Share</DropdownMenuSubTrigger>
-          <DropdownMenuSubContent>
-            <DropdownMenuItem>Email</DropdownMenuItem>
-            <DropdownMenuItem>Messages</DropdownMenuItem>
-            <DropdownMenuItem>AirDrop</DropdownMenuItem>
-          </DropdownMenuSubContent>
-        </DropdownMenuSub>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>Print</DropdownMenuItem>
+        <DropdownMenuGroup>
+          <DropdownMenuItem>
+            New File
+            <DropdownMenuShortcut>⌘N</DropdownMenuShortcut>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            Open File
+            <DropdownMenuShortcut>⌘O</DropdownMenuShortcut>
+          </DropdownMenuItem>
+          <DropdownMenuSeparator />
+          <DropdownMenuSub>
+            <DropdownMenuSubTrigger>Share</DropdownMenuSubTrigger>
+            <DropdownMenuSubContent>
+              <DropdownMenuItem>Email</DropdownMenuItem>
+              <DropdownMenuItem>Messages</DropdownMenuItem>
+              <DropdownMenuSub>
+                <DropdownMenuSubTrigger>More options</DropdownMenuSubTrigger>
+                <DropdownMenuSubContent>
+                  <DropdownMenuItem>Copy Link</DropdownMenuItem>
+                  <DropdownMenuItem>QR Code</DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem>AirDrop</DropdownMenuItem>
+                </DropdownMenuSubContent>
+              </DropdownMenuSub>
+            </DropdownMenuSubContent>
+          </DropdownMenuSub>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem>
+            Print
+            <DropdownMenuShortcut>⌘P</DropdownMenuShortcut>
+          </DropdownMenuItem>
+        </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
   );
