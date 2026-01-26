@@ -3,7 +3,8 @@
   "name": "input-group",
   "title": "Input Group",
   "dependencies": [
-    "@base-ui/react"
+    "@base-ui/react",
+    "class-variance-authority"
   ],
   "registryDependencies": [
     "@fab-ui/button",

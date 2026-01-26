@@ -3,7 +3,8 @@
   "name": "checkbox",
   "title": "Checkbox",
   "dependencies": [
-    "@base-ui/react"
+    "@base-ui/react",
+    "lucide-react"
   ],
   "files": [
     {

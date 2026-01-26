@@ -5,7 +5,7 @@ export const ui: Registry['items'] = [
     name: 'accordion',
     type: 'registry:ui',
     title: 'Accordion',
-    dependencies: ['@base-ui/react'],
+    dependencies: ['@base-ui/react', 'lucide-react'],
     files: [
       {
         path: 'ui/accordion.tsx',
@@ -30,8 +30,8 @@ export const ui: Registry['items'] = [
     name: 'autocomplete',
     type: 'registry:ui',
     title: 'Autocomplete',
-    registryDependencies: ['@fab-ui/input'],
-    dependencies: ['@base-ui/react'],
+    registryDependencies: ['@fab-ui/input', '@fab-ui/button'],
+    dependencies: ['@base-ui/react', 'lucide-react'],
     files: [
       {
         path: 'ui/autocomplete.tsx',
@@ -55,7 +55,7 @@ export const ui: Registry['items'] = [
     name: 'badge',
     type: 'registry:ui',
     title: 'Badge',
-    dependencies: ['@base-ui/react'],
+    dependencies: ['@base-ui/react', 'class-variance-authority'],
     files: [
       {
         path: 'ui/badge.tsx',
@@ -67,7 +67,7 @@ export const ui: Registry['items'] = [
     name: 'button',
     type: 'registry:ui',
     title: 'Button',
-    dependencies: ['@base-ui/react'],
+    dependencies: ['@base-ui/react', 'class-variance-authority'],
     files: [
       {
         path: 'ui/button.tsx',
@@ -91,7 +91,7 @@ export const ui: Registry['items'] = [
     name: 'checkbox',
     type: 'registry:ui',
     title: 'Checkbox',
-    dependencies: ['@base-ui/react'],
+    dependencies: ['@base-ui/react', 'lucide-react'],
     files: [
       {
         path: 'ui/checkbox.tsx',
@@ -140,7 +140,7 @@ export const ui: Registry['items'] = [
     name: 'context-menu',
     type: 'registry:ui',
     title: 'Context Menu',
-    dependencies: ['@base-ui/react'],
+    dependencies: ['@base-ui/react', 'lucide-react'],
     files: [
       {
         path: 'ui/context-menu.tsx',
@@ -165,7 +165,7 @@ export const ui: Registry['items'] = [
     name: 'dropdown-menu',
     type: 'registry:ui',
     title: 'Dropdown Menu',
-    dependencies: ['@base-ui/react'],
+    dependencies: ['@base-ui/react', 'lucide-react'],
     files: [
       {
         path: 'ui/dropdown-menu.tsx',
@@ -230,7 +230,7 @@ export const ui: Registry['items'] = [
       '@fab-ui/input',
       '@fab-ui/textarea',
     ],
-    dependencies: ['@base-ui/react'],
+    dependencies: ['@base-ui/react', 'class-variance-authority'],
     files: [
       {
         path: 'ui/input-group.tsx',
@@ -323,7 +323,8 @@ export const ui: Registry['items'] = [
     name: 'number-field',
     type: 'registry:ui',
     title: 'Number Field',
-    dependencies: ['@base-ui/react'],
+    registryDependencies: ['@fab-ui/label'],
+    dependencies: ['@base-ui/react', 'lucide-react'],
     files: [
       {
         path: 'ui/number-field.tsx',
@@ -370,7 +371,7 @@ export const ui: Registry['items'] = [
     name: 'radio-group',
     type: 'registry:ui',
     title: 'Radio Group',
-    dependencies: ['@base-ui/react'],
+    dependencies: ['@base-ui/react', 'lucide-react'],
     files: [
       {
         path: 'ui/radio-group.tsx',
@@ -394,7 +395,7 @@ export const ui: Registry['items'] = [
     name: 'select',
     type: 'registry:ui',
     title: 'Select',
-    dependencies: ['@base-ui/react'],
+    dependencies: ['@base-ui/react', 'lucide-react'],
     files: [
       {
         path: 'ui/select.tsx',
@@ -479,7 +480,7 @@ export const ui: Registry['items'] = [
     name: 'toggle',
     type: 'registry:ui',
     title: 'Toggle',
-    dependencies: ['@base-ui/react'],
+    dependencies: ['@base-ui/react', 'class-variance-authority'],
     files: [
       {
         path: 'ui/toggle.tsx',

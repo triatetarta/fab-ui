@@ -7,7 +7,8 @@
       "type": "registry:ui",
       "title": "Accordion",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -38,10 +39,12 @@
       "type": "registry:ui",
       "title": "Autocomplete",
       "registryDependencies": [
-        "@fab-ui/input"
+        "@fab-ui/input",
+        "@fab-ui/button"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -69,7 +72,8 @@
       "type": "registry:ui",
       "title": "Badge",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "class-variance-authority"
       ],
       "files": [
         {
@@ -83,7 +87,8 @@
       "type": "registry:ui",
       "title": "Button",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "class-variance-authority"
       ],
       "files": [
         {
@@ -111,7 +116,8 @@
       "type": "registry:ui",
       "title": "Checkbox",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -172,7 +178,8 @@
       "type": "registry:ui",
       "title": "Context Menu",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -204,7 +211,8 @@
       "type": "registry:ui",
       "title": "Dropdown Menu",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -279,7 +287,8 @@
         "@fab-ui/textarea"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "class-variance-authority"
       ],
       "files": [
         {
@@ -386,8 +395,12 @@
       "name": "number-field",
       "type": "registry:ui",
       "title": "Number Field",
+      "registryDependencies": [
+        "@fab-ui/label"
+      ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -442,7 +455,8 @@
       "type": "registry:ui",
       "title": "Radio Group",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -470,7 +484,8 @@
       "type": "registry:ui",
       "title": "Select",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -571,7 +586,8 @@
       "type": "registry:ui",
       "title": "Toggle",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "class-variance-authority"
       ],
       "files": [
         {

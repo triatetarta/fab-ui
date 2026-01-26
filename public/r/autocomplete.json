@@ -3,10 +3,12 @@
   "name": "autocomplete",
   "title": "Autocomplete",
   "dependencies": [
-    "@base-ui/react"
+    "@base-ui/react",
+    "lucide-react"
   ],
   "registryDependencies": [
-    "@fab-ui/input"
+    "@fab-ui/input",
+    "@fab-ui/button"
   ],
   "files": [
     {

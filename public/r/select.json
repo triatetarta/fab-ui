@@ -3,7 +3,8 @@
   "name": "select",
   "title": "Select",
   "dependencies": [
-    "@base-ui/react"
+    "@base-ui/react",
+    "lucide-react"
   ],
   "files": [
     {

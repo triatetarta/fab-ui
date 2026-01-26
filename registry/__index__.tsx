@@ -58,7 +58,7 @@ export const Index: Record<string, any> = {
     name: 'autocomplete',
     description: '',
     type: 'registry:ui',
-    registryDependencies: ['@fab-ui/input'],
+    registryDependencies: ['@fab-ui/input', '@fab-ui/button'],
     files: [
       {
         path: 'registry/default/ui/autocomplete.tsx',
@@ -590,7 +590,7 @@ export const Index: Record<string, any> = {
     name: 'number-field',
     description: '',
     type: 'registry:ui',
-    registryDependencies: undefined,
+    registryDependencies: ['@fab-ui/label'],
     files: [
       {
         path: 'registry/default/ui/number-field.tsx',

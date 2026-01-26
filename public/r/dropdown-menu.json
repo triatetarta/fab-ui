@@ -3,7 +3,8 @@
   "name": "dropdown-menu",
   "title": "Dropdown Menu",
   "dependencies": [
-    "@base-ui/react"
+    "@base-ui/react",
+    "lucide-react"
   ],
   "files": [
     {
