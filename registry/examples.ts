@@ -409,6 +409,28 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'dropdown-menu-checkboxes',
+    type: 'registry:example',
+    registryDependencies: ['dropdown-menu', 'button'],
+    files: [
+      {
+        path: 'examples/dropdown-menu-checkboxes.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'dropdown-menu-radio-group',
+    type: 'registry:example',
+    registryDependencies: ['dropdown-menu', 'button'],
+    files: [
+      {
+        path: 'examples/dropdown-menu-radio-group.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'field-default',
     type: 'registry:example',
     registryDependencies: ['field', 'input'],
