@@ -36,3 +36,8 @@ next-env.d.ts
 CLAUDE.md
 
 .eslintcache
+
+.agents
+.claude
+.codex
+.opencode

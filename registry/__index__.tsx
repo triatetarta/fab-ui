@@ -2360,6 +2360,56 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'liquid-metal-card-player': {
+    name: 'liquid-metal-card-player',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-card', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/liquid-metal-card-player.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/liquid-metal-card-player.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'liquid-metal-card-login': {
+    name: 'liquid-metal-card-login',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-card', 'button', 'input'],
+    files: [
+      {
+        path: 'registry/default/examples/liquid-metal-card-login.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/liquid-metal-card-login.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   'meter-default': {
     name: 'meter-default',
     description: '',

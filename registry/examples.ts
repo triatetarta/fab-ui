@@ -618,6 +618,28 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'liquid-metal-card-player',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-card', 'button'],
+    files: [
+      {
+        path: 'examples/liquid-metal-card-player.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'liquid-metal-card-login',
+    type: 'registry:example',
+    registryDependencies: ['liquid-metal-card', 'button', 'input'],
+    files: [
+      {
+        path: 'examples/liquid-metal-card-login.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'meter-default',
     type: 'registry:example',
     registryDependencies: ['meter'],
