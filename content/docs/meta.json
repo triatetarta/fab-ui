@@ -1,4 +1,4 @@
 {
   "root": true,
-  "pages": ["(root)", "components", "fab-components"]
+  "pages": ["(root)", "fab-components", "components"]
 }
