@@ -98,6 +98,7 @@ export function DocsCopyPage({
                 key={menuItem.label}
                 render={
                   <Link
+                    prefetch={false}
                     href={menuItem.href}
                     target='_blank'
                     rel='noopener noreferrer'

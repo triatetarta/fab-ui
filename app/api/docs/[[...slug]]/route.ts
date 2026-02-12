@@ -21,6 +21,7 @@ export async function GET(
   return new NextResponse(markdown, {
     headers: {
       'Content-Type': 'text/markdown; charset=utf-8',
+      'Cache-Control': 'public, max-age=3600, s-maxage=31536000',
     },
   });
 }

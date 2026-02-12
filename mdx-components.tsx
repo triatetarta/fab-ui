@@ -307,6 +307,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     CodeTabs,
     Link: ({ className, ...props }: React.ComponentProps<typeof Link>) => (
       <Link
+        prefetch={false}
         className={cn('font-medium underline underline-offset-4', className)}
         {...props}
       />
@@ -316,6 +317,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
       ...props
     }: React.ComponentProps<typeof Link>) => (
       <Link
+        prefetch={false}
         className={cn(
           'flex w-full flex-col items-center rounded-xl bg-surface p-6 text-surface-foreground transition-colors hover:bg-surface/80 sm:p-10',
           className

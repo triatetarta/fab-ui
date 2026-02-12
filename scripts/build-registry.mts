@@ -77,7 +77,12 @@ export const Index: Record<string, any> = {`;
   index += `
   }`;
 
-  console.log(`#️⃣  ${Object.keys(registry.items).length} items found`);
+  const exampleCount = registry.items.filter(
+    (item: RegistryItem) => item.type === 'registry:example'
+  ).length;
+  console.log(
+    `#️⃣  ${registry.items.length} items found (${registry.items.length - exampleCount} components, ${exampleCount} examples)`
+  );
 
   // Write style index.
   rimraf.sync(path.join(process.cwd(), 'registry/__index__.tsx'));
@@ -88,19 +93,21 @@ async function buildRegistryJsonFile() {
   // 1. Fix the path for registry items.
   const fixedRegistry = {
     ...registry,
-    items: registry.items.map((item: RegistryItem) => {
-      const files = item.files?.map((file: RegistryFile) => {
-        return {
-          ...file,
-          path: `registry/default/${file.path}`,
-        };
-      });
+    items: registry.items
+      .filter((item: RegistryItem) => item.type !== 'registry:example')
+      .map((item: RegistryItem) => {
+        const files = item.files?.map((file: RegistryFile) => {
+          return {
+            ...file,
+            path: `registry/default/${file.path}`,
+          };
+        });
 
-      return {
-        ...item,
-        files,
-      };
-    }),
+        return {
+          ...item,
+          files,
+        };
+      }),
   };
 
   // 2. Write the content of the registry to `registry.json`
@@ -136,7 +143,7 @@ try {
   console.log('🗂️ Building unified registry/__index__.tsx...');
   await buildRegistryIndex();
 
-  console.log('💅 Building registry.json...');
+  console.log('💅 Building registry.json (excluding examples)...');
   await buildRegistryJsonFile();
 
   console.log('🏗️ Building registry...');

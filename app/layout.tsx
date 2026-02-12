@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import './global.css';
 
 import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Geist } from 'next/font/google';
 
 export const metadata: Metadata = {
@@ -32,7 +31,6 @@ export default function Layout({ children }: LayoutProps<'/'>) {
         <div className='root flex min-h-screen flex-col'>
           <RootProvider theme={{ defaultTheme: 'dark' }}>
             {children}
-            <SpeedInsights />
             <Analytics />
           </RootProvider>
         </div>

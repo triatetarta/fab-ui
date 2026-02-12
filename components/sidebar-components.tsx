@@ -40,6 +40,7 @@ export function Item({
 
   return (
     <Link
+      prefetch={false}
       href={item.url}
       className={cn(
         '-ml-1 flex items-center justify-between rounded-lg py-2 ps-3 pe-2',
