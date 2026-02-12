@@ -39,6 +39,7 @@ export default function HomePage() {
       </p>
       <div className='mt-8 flex gap-3'>
         <Link
+          prefetch={false}
           href='/docs'
           className='inline-flex h-10 items-center justify-center rounded-4xl bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80'
         >
@@ -49,6 +50,7 @@ export default function HomePage() {
             <TooltipTrigger
               render={
                 <Link
+                  prefetch={false}
                   href='https://github.com/triatetarta/fab-ui'
                   target='_blank'
                   rel='noopener noreferrer'
