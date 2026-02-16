@@ -387,6 +387,72 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'drawer-action-sheet',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'examples/drawer-action-sheet.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'drawer-default',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'examples/drawer-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'drawer-nested',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'examples/drawer-nested.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'drawer-non-modal',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'examples/drawer-non-modal.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'drawer-right',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'examples/drawer-right.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
+    name: 'drawer-snap-points',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'examples/drawer-snap-points.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'dropdown-menu-default',
     type: 'registry:example',
     registryDependencies: ['dropdown-menu', 'button'],

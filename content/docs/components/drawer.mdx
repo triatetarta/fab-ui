@@ -1,0 +1,133 @@
+---
+title: Drawer
+description: A panel that slides in from the edge of the screen with swipe-to-dismiss gestures.
+links:
+  doc: https://base-ui.com/react/components/drawer
+  api: https://base-ui.com/react/components/drawer#api-reference
+---
+
+<ComponentPreview
+  name='drawer-default'
+  description='A panel that slides in from the edge of the screen.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/drawer
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui-components/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='drawer' title='components/ui/drawer.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+```
+
+```tsx
+<Drawer>
+  <DrawerTrigger>Open</DrawerTrigger>
+  <DrawerContent>
+    <DrawerHeader>
+      <DrawerTitle>Drawer Title</DrawerTitle>
+      <DrawerDescription>Drawer description goes here.</DrawerDescription>
+    </DrawerHeader>
+    <DrawerFooter>
+      <DrawerClose>Close</DrawerClose>
+    </DrawerFooter>
+  </DrawerContent>
+</Drawer>
+```
+
+## Examples
+
+### Right Side
+
+Use `swipeDirection="right"` on the `Drawer` component to slide the panel in from the right.
+
+<ComponentPreview
+  name='drawer-right'
+  description='A drawer that slides in from the right side.'
+  className='mb-4'
+/>
+
+### Non-Modal
+
+Set `modal={false}` and `disablePointerDismissal` on the `Drawer` to keep the page interactive while the drawer is open.
+
+<ComponentPreview
+  name='drawer-non-modal'
+  description='A non-modal drawer that does not trap focus or dismiss on outside clicks.'
+  className='mb-4'
+/>
+
+### Nested Drawers
+
+Nest multiple `Drawer` components and manage each with controlled `open` / `onOpenChange` state to create a stacking effect.
+
+<ComponentPreview
+  name='drawer-nested'
+  description='Three nested drawers with a stacking peek effect.'
+  className='mb-4'
+/>
+
+### Snap Points
+
+Pass a `snapPoints` array to `Drawer` and use `unstyled` on `DrawerPopup` to apply custom popup styling for snap behavior.
+
+<ComponentPreview
+  name='drawer-snap-points'
+  description='A bottom sheet that snaps between a compact peek and full height.'
+  className='mb-4'
+/>
+
+### Action Sheet
+
+Use `DrawerPopup` with `unstyled` and `overlayClassName` to customize the popup and overlay styling for an action sheet layout.
+
+<ComponentPreview
+  name='drawer-action-sheet'
+  description='An action sheet with grouped actions and a separate destructive button.'
+  className='mb-4'
+/>
