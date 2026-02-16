@@ -318,6 +318,30 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  drawer: {
+    name: 'drawer',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: ['@fab-ui/button'],
+    files: [
+      {
+        path: 'registry/default/ui/drawer.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/drawer.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   'dropdown-menu': {
     name: 'dropdown-menu',
     description: '',
@@ -1829,6 +1853,154 @@ export const Index: Record<string, any> = {
     component: React.lazy(async () => {
       const mod =
         await import('@/registry/default/examples/dialog-scrollable-content.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'drawer-action-sheet': {
+    name: 'drawer-action-sheet',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/drawer-action-sheet.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/drawer-action-sheet.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'drawer-default': {
+    name: 'drawer-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/drawer-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/drawer-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'drawer-nested': {
+    name: 'drawer-nested',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/drawer-nested.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/examples/drawer-nested.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'drawer-non-modal': {
+    name: 'drawer-non-modal',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/drawer-non-modal.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/drawer-non-modal.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'drawer-right': {
+    name: 'drawer-right',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/drawer-right.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/examples/drawer-right.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'drawer-snap-points': {
+    name: 'drawer-snap-points',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['drawer', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/drawer-snap-points.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/drawer-snap-points.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
