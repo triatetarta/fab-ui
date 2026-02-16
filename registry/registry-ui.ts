@@ -162,6 +162,19 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'drawer',
+    type: 'registry:ui',
+    title: 'Drawer',
+    registryDependencies: ['@fab-ui/button'],
+    dependencies: ['@base-ui/react', 'lucide-react'],
+    files: [
+      {
+        path: 'ui/drawer.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'dropdown-menu',
     type: 'registry:ui',
     title: 'Dropdown Menu',
