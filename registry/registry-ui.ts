@@ -333,6 +333,18 @@ export const ui: Registry['items'] = [
     ],
   },
   {
+    name: 'navigation-menu',
+    type: 'registry:ui',
+    title: 'Navigation Menu',
+    dependencies: ['@base-ui/react', 'lucide-react'],
+    files: [
+      {
+        path: 'ui/navigation-menu.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'number-field',
     type: 'registry:ui',
     title: 'Number Field',
