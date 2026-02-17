@@ -32,7 +32,7 @@ export function DrawerActionSheet() {
       <DrawerPopup
         unstyled
         overlayClassName='bg-black/40'
-        className='pointer-events-none relative flex w-full max-w-[28rem] [transform:translateY(var(--drawer-swipe-movement-y))] touch-auto flex-col gap-3 overflow-y-auto overscroll-contain bg-transparent px-4 pb-[calc(1rem+env(safe-area-inset-bottom,0px))] text-foreground ring-0 transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] outline-none data-ending-style:[transform:translateY(calc(100%+1rem))] data-ending-style:duration-[calc(var(--drawer-swipe-strength)*300ms)] data-starting-style:[transform:translateY(calc(100%+1rem))] data-swiping:transition-none data-swiping:select-none'
+        className='pointer-events-none relative flex w-full max-w-md transform-[translateY(var(--drawer-swipe-movement-y))] touch-auto flex-col gap-3 overflow-y-auto overscroll-contain bg-transparent px-4 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom,0px))] text-foreground ring-0 transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] outline-none data-ending-style:transform-[translateY(calc(100%+1rem))] data-ending-style:duration-[calc(var(--drawer-swipe-strength)*300ms)] data-starting-style:transform-[translateY(calc(100%+1rem))] data-swiping:transition-none data-swiping:select-none'
       >
         <DrawerContent className='pointer-events-auto overflow-hidden rounded-2xl bg-background ring-1 ring-foreground/10'>
           <DrawerTitle className='sr-only'>Profile actions</DrawerTitle>
@@ -41,7 +41,7 @@ export function DrawerActionSheet() {
           </DrawerDescription>
 
           <ul
-            className='m-0 list-none divide-y divide-border p-0'
+            className='m-0 list-none divide-y divide-foreground/10 p-0'
             aria-label='Profile actions'
           >
             {ACTIONS.map((action, index) => (
