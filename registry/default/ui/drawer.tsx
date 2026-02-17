@@ -219,7 +219,7 @@ function DrawerFooter({ className, ...props }: React.ComponentProps<'div'>) {
     <div
       data-slot='drawer-footer'
       className={cn(
-        'flex flex-col-reverse gap-2 sm:flex-row sm:justify-end',
+        'mt-4 flex flex-col-reverse gap-2 sm:flex-row sm:justify-end',
         className
       )}
       {...props}
