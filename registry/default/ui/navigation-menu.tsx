@@ -57,7 +57,7 @@ function NavigationMenuTrigger({
     <NavigationMenuPrimitive.Trigger
       data-slot='navigation-menu-trigger'
       className={cn(
-        'm-0 box-border flex h-10 items-center justify-center gap-1.5 rounded-md bg-popover px-3.5 text-base leading-6 font-medium text-popover-foreground no-underline select-none hover:bg-accent focus-visible:relative focus-visible:outline focus-visible:-outline-offset-1 focus-visible:outline-ring active:bg-accent data-popup-open:bg-accent',
+        'm-0 box-border flex h-10 items-center justify-center gap-1.5 rounded-md bg-popover px-3.5 text-base leading-6 font-medium text-popover-foreground no-underline select-none hover:bg-accent focus-visible:relative focus-visible:z-10 focus-visible:ring-[3px] focus-visible:ring-foreground/10 focus-visible:outline-none active:bg-accent data-popup-open:bg-accent',
         className
       )}
       {...props}
@@ -108,7 +108,7 @@ function NavigationMenuLink({
     <NavigationMenuPrimitive.Link
       data-slot='navigation-menu-link'
       className={cn(
-        'block rounded-md p-3 text-inherit no-underline hover:bg-accent focus-visible:relative focus-visible:outline focus-visible:-outline-offset-1 focus-visible:outline-ring data-active:bg-accent',
+        'block rounded-md p-3 text-inherit no-underline hover:bg-accent focus-visible:relative focus-visible:z-10 focus-visible:ring-[3px] focus-visible:ring-foreground/10 focus-visible:outline-none data-active:bg-accent',
         className
       )}
       {...props}
