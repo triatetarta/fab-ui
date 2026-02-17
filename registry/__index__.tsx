@@ -2680,6 +2680,31 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'navigation-menu-nested': {
+    name: 'navigation-menu-nested',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['navigation-menu'],
+    files: [
+      {
+        path: 'registry/default/examples/navigation-menu-nested.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/navigation-menu-nested.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   'number-field-default': {
     name: 'number-field-default',
     description: '',

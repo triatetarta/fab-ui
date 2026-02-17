@@ -739,6 +739,17 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'navigation-menu-nested',
+    type: 'registry:example',
+    registryDependencies: ['navigation-menu'],
+    files: [
+      {
+        path: 'examples/navigation-menu-nested.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'number-field-default',
     type: 'registry:example',
     registryDependencies: ['number-field'],

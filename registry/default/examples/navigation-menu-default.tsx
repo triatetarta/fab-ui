@@ -3,9 +3,11 @@
 import {
   NavigationMenu,
   NavigationMenuContent,
+  NavigationMenuIcon,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuPositioner,
   NavigationMenuTrigger,
 } from '@/registry/default/ui/navigation-menu';
 
@@ -58,7 +60,9 @@ export function NavigationMenuDefault() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Overview</NavigationMenuTrigger>
+          <NavigationMenuTrigger>
+            Overview <NavigationMenuIcon />
+          </NavigationMenuTrigger>
 
           <NavigationMenuContent className='w-max min-w-100'>
             <ul className='grid list-none grid-cols-[12rem_12rem] gap-0'>
@@ -79,7 +83,9 @@ export function NavigationMenuDefault() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Handbook</NavigationMenuTrigger>
+          <NavigationMenuTrigger>
+            Handbook <NavigationMenuIcon />
+          </NavigationMenuTrigger>
 
           <NavigationMenuContent className='w-max min-w-100'>
             <ul className='flex max-w-100 flex-col justify-center'>
@@ -108,6 +114,7 @@ export function NavigationMenuDefault() {
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
+      <NavigationMenuPositioner />
     </NavigationMenu>
   );
 }

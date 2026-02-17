@@ -8,12 +8,9 @@ import { ChevronDownIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 function NavigationMenu({
-  align = 'center',
   className,
-  children,
   ...props
-}: NavigationMenuPrimitive.Root.Props &
-  Pick<NavigationMenuPrimitive.Positioner.Props, 'align'>) {
+}: React.ComponentPropsWithRef<typeof NavigationMenuPrimitive.Root>) {
   return (
     <NavigationMenuPrimitive.Root
       data-slot='navigation-menu'
@@ -22,10 +19,7 @@ function NavigationMenu({
         className
       )}
       {...props}
-    >
-      {children}
-      <NavigationMenuPositioner align={align} />
-    </NavigationMenuPrimitive.Root>
+    />
   );
 }
 
@@ -57,7 +51,6 @@ function NavigationMenuItem({
 
 function NavigationMenuTrigger({
   className,
-  children,
   ...props
 }: NavigationMenuPrimitive.Trigger.Props) {
   return (
@@ -68,10 +61,7 @@ function NavigationMenuTrigger({
         className
       )}
       {...props}
-    >
-      {children}
-      <NavigationMenuIcon />
-    </NavigationMenuPrimitive.Trigger>
+    />
   );
 }
 
