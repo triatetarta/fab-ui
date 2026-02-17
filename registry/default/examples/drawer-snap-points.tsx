@@ -42,7 +42,7 @@ export function DrawerSnapPoints() {
           </DrawerTitle>
         </div>
         <DrawerContent className='min-h-0 flex-1 touch-auto overflow-y-auto overscroll-contain px-6 pt-4 pb-[calc(1.5rem+env(safe-area-inset-bottom,0px))]'>
-          <div className='mx-auto w-full max-w-[350px]'>
+          <div className='mx-auto w-full max-w-87.5'>
             <DrawerDescription className='mb-4'>
               Drag the sheet to snap between a compact peek and a near
               full-height view.
