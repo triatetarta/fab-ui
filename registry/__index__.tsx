@@ -610,6 +610,30 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'navigation-menu': {
+    name: 'navigation-menu',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/navigation-menu.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/navigation-menu.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   'number-field': {
     name: 'number-field',
     description: '',
@@ -2621,6 +2645,31 @@ export const Index: Record<string, any> = {
     component: React.lazy(async () => {
       const mod =
         await import('@/registry/default/examples/meter-with-label.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'navigation-menu-default': {
+    name: 'navigation-menu-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['navigation-menu'],
+    files: [
+      {
+        path: 'registry/default/examples/navigation-menu-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/navigation-menu-default.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>

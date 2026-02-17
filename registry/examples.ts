@@ -728,6 +728,17 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'navigation-menu-default',
+    type: 'registry:example',
+    registryDependencies: ['navigation-menu'],
+    files: [
+      {
+        path: 'examples/navigation-menu-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'number-field-default',
     type: 'registry:example',
     registryDependencies: ['number-field'],
