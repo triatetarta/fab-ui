@@ -91,7 +91,7 @@ export function DocsCopyPage({
         >
           <ChevronDown />
         </DropdownMenuTrigger>
-        <DropdownMenuContent>
+        <DropdownMenuContent className='w-fit'>
           {menuItems.map((menuItem) => {
             return (
               <DropdownMenuItem
