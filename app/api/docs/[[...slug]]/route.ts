@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { NextResponse, type NextRequest } from 'next/server';
 
+import { processMdxForLLMs } from '@/lib/llm';
 import { source } from '@/lib/source';
 
 export const revalidate = false;
@@ -16,7 +17,8 @@ export async function GET(
     notFound();
   }
 
-  const markdown = await page.data.getText('raw');
+  const rawMarkdown = await page.data.getText('raw');
+  const markdown = processMdxForLLMs(rawMarkdown);
 
   return new NextResponse(markdown, {
     headers: {
