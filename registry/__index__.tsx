@@ -2655,6 +2655,56 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'mesh-gradient-card-custom': {
+    name: 'mesh-gradient-card-custom',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['mesh-gradient-card'],
+    files: [
+      {
+        path: 'registry/default/examples/mesh-gradient-card-custom.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/mesh-gradient-card-custom.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'mesh-gradient-card-custom-steps': {
+    name: 'mesh-gradient-card-custom-steps',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['mesh-gradient-card'],
+    files: [
+      {
+        path: 'registry/default/examples/mesh-gradient-card-custom-steps.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/mesh-gradient-card-custom-steps.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   'meter-default': {
     name: 'meter-default',
     description: '',

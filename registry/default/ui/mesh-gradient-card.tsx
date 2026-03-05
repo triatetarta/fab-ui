@@ -158,7 +158,7 @@ function MeshGradientCard({
           {...config}
           {...shaderProps}
         />
-        <div className='relative z-10'>{children}</div>
+        {children}
       </MeshGradientCardRoot>
     </MeshGradientCardContext.Provider>
   );
@@ -206,7 +206,7 @@ function MeshGradientCardMessage({
         textShadow: '0 1px 4px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.2)',
       }}
       className={cn(
-        'absolute right-5 bottom-4 pb-1 text-lg font-medium text-white',
+        'absolute right-5 bottom-4 pb-1 text-lg font-medium text-white select-none',
         className
       )}
     >
