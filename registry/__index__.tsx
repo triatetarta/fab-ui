@@ -586,6 +586,30 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  'mesh-gradient-card': {
+    name: 'mesh-gradient-card',
+    description: '',
+    type: 'registry:ui',
+    registryDependencies: undefined,
+    files: [
+      {
+        path: 'registry/default/ui/mesh-gradient-card.tsx',
+        type: 'registry:ui',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod = await import('@/registry/default/ui/mesh-gradient-card.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   meter: {
     name: 'meter',
     description: '',
@@ -2596,6 +2620,81 @@ export const Index: Record<string, any> = {
     component: React.lazy(async () => {
       const mod =
         await import('@/registry/default/examples/liquid-metal-card-login.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'mesh-gradient-card-default': {
+    name: 'mesh-gradient-card-default',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['mesh-gradient-card', 'button'],
+    files: [
+      {
+        path: 'registry/default/examples/mesh-gradient-card-default.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/mesh-gradient-card-default.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'mesh-gradient-card-custom': {
+    name: 'mesh-gradient-card-custom',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['mesh-gradient-card'],
+    files: [
+      {
+        path: 'registry/default/examples/mesh-gradient-card-custom.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/mesh-gradient-card-custom.tsx');
+      const exportName =
+        Object.keys(mod).find(
+          (key) =>
+            typeof mod[key] === 'function' || typeof mod[key] === 'object'
+        ) || item.name;
+      return { default: mod.default || mod[exportName] };
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  'mesh-gradient-card-custom-steps': {
+    name: 'mesh-gradient-card-custom-steps',
+    description: '',
+    type: 'registry:example',
+    registryDependencies: ['mesh-gradient-card'],
+    files: [
+      {
+        path: 'registry/default/examples/mesh-gradient-card-custom-steps.tsx',
+        type: 'registry:example',
+        target: '',
+      },
+    ],
+    component: React.lazy(async () => {
+      const mod =
+        await import('@/registry/default/examples/mesh-gradient-card-custom-steps.tsx');
       const exportName =
         Object.keys(mod).find(
           (key) =>
