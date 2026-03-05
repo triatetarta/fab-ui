@@ -706,6 +706,17 @@ export const examples: Registry['items'] = [
     ],
   },
   {
+    name: 'mesh-gradient-card-default',
+    type: 'registry:example',
+    registryDependencies: ['mesh-gradient-card', 'button'],
+    files: [
+      {
+        path: 'examples/mesh-gradient-card-default.tsx',
+        type: 'registry:example',
+      },
+    ],
+  },
+  {
     name: 'meter-default',
     type: 'registry:example',
     registryDependencies: ['meter'],

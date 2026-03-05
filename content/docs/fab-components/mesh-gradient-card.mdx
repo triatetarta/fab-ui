@@ -1,0 +1,104 @@
+---
+title: Mesh Gradient Card
+description: A card with an animated mesh gradient shader effect that cycles through configurable steps.
+---
+
+<Callout>
+  This card uses a WebGL mesh gradient shader from `@paper-design/shaders-react`
+  and animates between gradient steps using `motion`. Text is white by default
+  to contrast with the gradient background.
+</Callout>
+
+<ComponentPreview
+  name='mesh-gradient-card-default'
+  description='A card with an animated mesh gradient shader effect.'
+  className='mb-4'
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsList variant='underline'>
+  <TabsTrigger value='cli'>CLI</TabsTrigger>
+  <TabsTrigger value='manual'>Manual</TabsTrigger>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @fab-ui/mesh-gradient-card
+```
+
+</TabsPanel>
+
+<TabsPanel value='manual'>
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @paper-design/shaders-react motion
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource
+  name='mesh-gradient-card'
+  title='components/ui/mesh-gradient-card.tsx'
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  MeshGradientCard,
+  MeshGradientCardMessage,
+  MeshGradientCardMessages,
+} from "@/components/ui/mesh-gradient-card"
+```
+
+```tsx
+const messages = ["First message.", "Second message.", "Third message."]
+
+function Example() {
+  return (
+    <MeshGradientCard className="aspect-video w-full max-w-md">
+      <MeshGradientCardMessages>
+        {messages.map((msg) => (
+          <MeshGradientCardMessage key={msg}>
+            {msg}
+          </MeshGradientCardMessage>
+        ))}
+      </MeshGradientCardMessages>
+    </MeshGradientCard>
+  )
+}
+```
+
+## API Reference
+
+### Props
+
+| Prop           | Type             | Default                                        | Description                                      |
+| -------------- | ---------------- | ---------------------------------------------- | ------------------------------------------------ |
+| `colors`       | `string[]`       | `['#fafafa', '#18181b', '#fafafa', '#18181b']` | Array of colors for the mesh gradient.           |
+| `steps`        | `GradientStep[]` | 7 built-in steps                               | Array of gradient step configurations to cycle.  |
+| `interval`     | `number`         | `4000`                                         | Time in ms between gradient step transitions.    |
+| `distortion`   | `number`         | per step                                       | Distortion amount applied to the gradient.       |
+| `swirl`        | `number`         | per step                                       | Swirl intensity of the gradient.                 |
+| `grainMixer`   | `number`         | per step                                       | Grain mixer intensity.                           |
+| `grainOverlay` | `number`         | per step                                       | Grain overlay intensity.                         |
+| `speed`        | `number`         | per step                                       | Animation speed of the shader effect.            |
+| `scale`        | `number`         | per step                                       | Scale of the gradient pattern.                   |
+| `rotation`     | `number`         | per step                                       | Rotation angle of the gradient in degrees.       |
+| `offsetX`      | `number`         | per step                                       | Horizontal offset of the gradient.               |
+| `offsetY`      | `number`         | per step                                       | Vertical offset of the gradient.                 |

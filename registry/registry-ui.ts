@@ -321,6 +321,18 @@ export const ui: Registry['items'] = [
     },
   },
   {
+    name: 'mesh-gradient-card',
+    type: 'registry:ui',
+    title: 'Mesh Gradient Card',
+    dependencies: ['@paper-design/shaders-react', 'motion'],
+    files: [
+      {
+        path: 'ui/mesh-gradient-card.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
+  {
     name: 'meter',
     type: 'registry:ui',
     title: 'Meter',
