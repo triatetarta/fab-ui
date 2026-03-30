@@ -31,7 +31,7 @@
     "fumadocs-core": "16.4.7",
     "fumadocs-mdx": "14.2.11",
     "fumadocs-ui": "16.4.7",
-    "geist": "1.5.1",
+    "geist": "1.7.0",
     "husky": "9.1.7",
     "jotai": "2.16.2",
     "lucide-react": "0.562.0",
