@@ -112,7 +112,7 @@ importers:
         specifier: 19.2.3
         version: 19.2.3(@types/react@19.2.7)
       baseline-browser-mapping:
-        specifier: ^2.10.12
+        specifier: 2.10.12
         version: 2.10.12
       eslint:
         specifier: 9.39.4
