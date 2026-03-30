@@ -7,7 +7,9 @@ import {
   CardTitle,
   LiquidMetalCard,
 } from '@/registry/default/ui/liquid-metal-card';
-import { Github, User } from 'lucide-react';
+import { User } from 'lucide-react';
+
+import { Icons } from '@/components/icons';
 
 export function LiquidMetalCardLogin() {
   return (
@@ -39,7 +41,7 @@ export function LiquidMetalCardLogin() {
         </div>
         <div className='grid grid-cols-2 gap-2'>
           <Button variant='outline' className='gap-2'>
-            <Github className='size-4' />
+            <Icons.gitHub className='size-4' />
             GitHub
           </Button>
           <Button variant='outline' className='gap-2'>
