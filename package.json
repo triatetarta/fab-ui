@@ -37,8 +37,8 @@
     "lucide-react": "0.562.0",
     "motion": "12.38.0",
     "next": "16.1.4",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
     "rehype-pretty-code": "0.14.3",
     "rimraf": "6.1.3",
     "shadcn": "3.8.5",
@@ -55,7 +55,7 @@
     "@tailwindcss/postcss": "4.2.2",
     "@types/mdx": "2.0.13",
     "@types/node": "24.10.9",
-    "@types/react": "19.2.3",
+    "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "baseline-browser-mapping": "2.10.12",
     "eslint": "9.39.4",
@@ -70,7 +70,7 @@
   },
   "pnpm": {
     "overrides": {
-      "@types/react": "19.2.7"
+      "@types/react": "19.2.14"
     },
     "ignoredBuiltDependencies": [
       "esbuild"
