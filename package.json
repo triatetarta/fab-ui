@@ -52,7 +52,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "3.3.5",
     "@ianvs/prettier-plugin-sort-imports": "4.7.1",
-    "@tailwindcss/postcss": "4.1.18",
+    "@tailwindcss/postcss": "4.2.2",
     "@types/mdx": "2.0.13",
     "@types/node": "24.10.9",
     "@types/react": "19.2.3",
@@ -65,7 +65,7 @@
     "postcss": "8.5.8",
     "prettier": "3.8.1",
     "prettier-plugin-tailwindcss": "0.7.2",
-    "tailwindcss": "4.1.18",
+    "tailwindcss": "4.2.2",
     "typescript": "5.9.3"
   },
   "pnpm": {
