@@ -9,7 +9,7 @@ import {
   InputGroupButton,
   InputGroupInput,
 } from '@/registry/default/ui/input-group';
-import { Combobox as ComboboxPrimitive } from '@base-ui/react';
+import { Combobox as ComboboxPrimitive } from '@base-ui/react/combobox';
 import { CheckIcon, ChevronDownIcon, XIcon } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
